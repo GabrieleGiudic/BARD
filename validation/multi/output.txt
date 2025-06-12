@@ -1,0 +1,100 @@
+bos-vs-ind-0022300507_364,player 8 Free Throw Made color green  _ .
+nyk-vs-phi-0022300483_334,.
+nop-vs-min-0022300471_358,player 23 3ptmade Made assisted by 11 color white  _ .
+bos-vs-ind-0022300493_393,player 00 2PT Shot Made color black  _ player 12 Foul color green  _ .
+sac-vs-det-0022300512_366,player 0 2PT Shot Miss color white  _ player 10 Rebound color white  _ player 10 2PT Shot Miss color white  _ player 10 Rebound color white  _ .
+min-vs-hou-0022300485_387,player 7 Steal color white  _ player 7 2PT Shot Made color white  _ player 23 3PT Shot Miss color blue  _ player 55 Rebound color blue  _ .
+chi-vs-phi-0022300459_411,player 5, Foul color red  _ .
+dal-vs-uta-0022300457_323,player 77 2PT Shot Miss color white  _ player 24 Block color black  _ .
+mia-vs-lal-0022300475_351,player 42 2PT Shot Made color black  _ .
+bos-vs-ind-0022300493_366,player 0 2PT Shot Miss color black  _ player 0 Rebound color green  _ .
+min-vs-nyk-0022300451_388,player 3 3PT Shot Miss color blue  _ player 27 Rebound color blue  _ player 32 3ptmade Made assisted by 10 color blue  _ .
+cha-vs-chi-0022300484_364,player 9 2PT Shot Miss color white  _ player 4 Rebound color light blue  _ player 8 Foul color white  _ .
+okc-vs-bkn-0022300481_356,player 8 Free Throw Made color light blue  _ .
+det-vs-hou-0022300453_341,player 9 Turnover color black  _ .
+chi-vs-nyk-0022300468_317,player 30 Free Throw Made color white  _ .
+bkn-vs-hou-0022300469_377,player 28 2PT Shot Miss color black  _ player 2 Rebound color white  _ .
+det-vs-gsw-0022300490_360,player 11 2PT Shot Miss color black  _ player 14 Rebound color white  _ .
+mia-vs-lac-0022300458_294,player 2 2ptmade Made assisted by 0 color blue  _ .
+nop-vs-min-0022300471_350,player 5 2PT Shot Miss color red  _ player 5 Rebound color white  _ .
+lac-vs-nop-0022300486_316,player 25 2PT Shot Miss color black  _ player 24 Rebound color white  _ player 7 2ptmade Made assisted by 24 color white  _ .
+orl-vs-gsw-0022300463_424,player 5 2PT Shot Miss color blue  _ player 5 Rebound color blue  _ player 5 2PT Shot Made color blue  _ .
+nyk-vs-phi-0022300483_381,player 55 Turnover color blue  _ player 5, Steal color red  _ .
+bkn-vs-hou-0022300469_382,player 33 2PT Shot Miss color white  _ player 8 Rebound color black  _ .
+phx-vs-lac-0022300511_376,player 4 Block color white  _ player 4 Rebound color white  _ .
+nop-vs-min-0022300471_322,player 3 2PT Shot Miss color red  _ player 40 Rebound color red  _ player 3 2ptmade Made assisted by 40 color red  _ .
+mem-vs-lal-0022300491_349,player 23 Free Throw Miss color purple  _ player 18 Rebound color white  _ .
+chi-vs-phi-0022300459_393,player 21 2ptmade Made assisted by 32 color blue  _ player 11 Foul color red  _ .
+det-vs-uta-0022300474_445,player 14 Rebound color white  _ player 2 3PT Shot Miss color white  _ player 12 Rebound color white  _ .
+orl-vs-den-0022300488_346,player 27 2PT Shot Miss color blue  _ player 12 Rebound color white  _ .
+sac-vs-det-0022300512_339,player 0 2PT Shot Miss color blue  _ player 10 Rebound color white  _ .
+bos-vs-okc-0022300462_378,player 7 3PT Shot Miss color black  _ player 0 Rebound color black  _ player 0 2PT Shot Miss color black  _ player 7 Block color blue  _ player 0 Rebound color black  _ player 0 2PT Shot Made color black  _ .
+por-vs-dal-0022300472_361,player 1 2PT Shot Miss color red  _ player 17 Foul color red  _ .
+mia-vs-phx-0022300489_324,player 13 2ptmade Made assisted by 55 color white  _ player 8 Foul color purple  _ .
+nop-vs-min-0022300471_308,player 15 2PT Shot Miss color red  _ player 15 Rebound color red  _ .
+cha-vs-sac-0022300464_344,player 0 2PT Shot Made color white  _ player 13 Foul color violet  _ .
+mem-vs-lal-0022300491_379,player 12 3PT Shot Miss color white  _ player 36 Rebound color white  _ .
+det-vs-hou-0022300453_354,player 2 Turnover color black  _ player 1 Steal color red  _ .
+cha-vs-chi-0022300484_311,player 3 Turnover color light blue  _ player 11 Steal color white  _ .
+orl-vs-den-0022300488_333,player 22 3PT Shot Miss color white  _ player 27 Rebound color blue  _ player 27 Turnover color blue  _ player 12 Steal color white  _ .
+bkn-vs-hou-0022300469_366,player 1 2PT Shot Miss color white  _ player 5 Block color black  _ player 33 Rebound color white  _ player 1 3PT Shot Miss color white  _ player 8 Rebound color black  _ .
+nop-vs-min-0022300471_360,player 11 2PT Shot Miss color red  _ player 11 Rebound color white  _ .
+orl-vs-gsw-0022300463_353,player 22 Turnover color blue  _ player 2 Steal color white  _ .
+cle-vs-tor-0022300452_395,player 31 Free Throw Miss color red  _ player 43 Rebound color white  _ .
+orl-vs-sac-0022300476_384,player 5 2PT Shot Miss color purple  _ player 4 Rebound color white  _ .
+det-vs-gsw-0022300490_400,player 2 2PT Shot Made color white  _ player 32 Foul color black  _ .
+bkn-vs-hou-0022300469_390,player 1 3PT Shot Miss color white  _ player 9 Rebound color white  _ player 8 Foul color black  _ .
+mem-vs-lal-0022300491_336,player 12 3PT Shot Miss color purple  _ player 18 Rebound color white  _ .
+min-vs-nyk-0022300451_374,player 3 Foul color white  _ player 3 Turnover color white  _ .
+det-vs-uta-0022300474_466,player 20 Turnover color blue  _ player 2 Steal color white  _ player 2 3ptmade Made assisted by 23 color white  _ .
+ind-vs-mil-0022300454_370,player 1 2PT Shot Miss color white  _ player 34 Block color green  _ .
+mia-vs-lac-0022300458_338,player 13 2PT Shot Miss color white  _ player 24 Rebound color blue  _ .
+orl-vs-sac-0022300476_417,player 12 2PT Shot Miss color white  _ player 10 Rebound color purple  _ .
+mia-vs-phx-0022300489_305,player 13 2ptmade Made assisted by 0 color white  _ player 8 Foul color purple  _ .
+cle-vs-tor-0022300452_364,player 17 Free Throw Miss color white  _ player 20 Rebound color red  _ .
+bos-vs-okc-0022300462_361,player 3 Turnover color blue  _ player 11 Steal color black  _ player 0 2ptmade Made assisted by 9 color black  _ .
+min-vs-orl-0022300513_413,player 23 3PT Shot Miss color white  _ player 2 Rebound color blue  _ .
+mia-vs-phx-0022300489_363,player 3 3PT Shot Miss color purple  _ player 0 Rebound color white  _ .
+sac-vs-det-0022300512_336,player 44 3PT Shot Miss color blue  _ player 41 Rebound color white  _ .
+mia-vs-phx-0022300489_344,player 14 3PT Shot Miss color white  _ player 14 Rebound color purple  _ .
+chi-vs-phi-0022300459_426,player 5 3PT Shot Miss color blue  _ player 35 Rebound color red  _ .
+min-vs-hou-0022300485_312,player 10 2PT Shot Miss color white  _ player 1 Rebound color blue  _ .
+ind-vs-mil-0022300454_443,player 0 3PT Shot Miss color green  _ player 33 Rebound color white  _ player 22 Foul color green  _ .
+por-vs-dal-0022300472_394,player 1 3PT Shot Miss color blue  _ player 33 Rebound color red  _ .
+cha-vs-den-0022300455_347,player 8 3PT Shot Miss color blue  _ player 4 Rebound color white  _ .
+mia-vs-lac-0022300458_355,player 13 3PT Shot Miss color white  _ player 40 Rebound color blue  _ .
+mil-vs-sas-0022300477_89,player 34 2PT Shot Miss color white  _ player 14 Rebound color black  _ .
+lac-vs-nop-0022300486_367,player 4 Turnover color white  _ player 8 Steal color black  _ player 8 2PT Shot Miss color black  _ player 5 Block color white  _ .
+orl-vs-sac-0022300476_466,player 4 3PT Shot Miss color white  _ player 10 Rebound color purple  _ .
+dal-vs-uta-0022300457_395,player 1 3PT Shot Miss color white  _ player 00 Rebound color black  _ player 30 3PT Shot Miss color black  _ player 18 Rebound color white  _ .
+cha-vs-den-0022300455_377,player 8 2PT Shot Miss color white  _ player 0 Block color blue  _ .
+mem-vs-lal-0022300491_385,player 12 2PT Shot Miss color white  _ player 3 Block color purple  _ .
+por-vs-dal-0022300472_383,player 5 Free Throw Miss color red  _ player 30 Rebound color blue  _ .
+orl-vs-sac-0022300476_477,player 5 3PT Shot Miss color white  _ player 13 Rebound color purple  _ .
+den-vs-gsw-0022300478_331,player 2 2PT Shot Miss color blue  _ player 50 Block color white  _ .
+bos-vs-ind-0022300507_351,player 9 3PT Shot Miss color green  _ player 40 Rebound color green  _ player 40 2PT Shot Miss color green  _ player 7 Rebound color white  _ .
+okc-vs-atl-0022300467_398,player 15 2PT Shot Miss color red  _ player 15 Rebound color red  _ player 15 2PT Shot Made color red  _ .
+den-vs-gsw-0022300478_360,player 11 2PT Shot Miss color blue  _ player 20 Rebound color blue  _ .
+mem-vs-lal-0022300491_387,player 15 3PT Shot Miss color purple  _ player 18 Rebound color white  _ .
+det-vs-uta-0022300474_398,player 14 2PT Shot Miss color white  _ player 23 Rebound color blue  _ .
+det-vs-hou-0022300453_351,player 9 Free Throw Miss color black  _ player 10 Rebound color red  _ .
+chi-vs-phi-0022300459_378,player 5, 2PT Shot Miss color red  _ player 32 Rebound color blue  _ .
+por-vs-dal-0022300472_427,player 00 Free Throw Miss color blue  _ player 33 Rebound color red  _ .
+ind-vs-mil-0022300454_376,player 1 3PT Shot Miss color white  _ player 11 Rebound color green  _ .
+okc-vs-atl-0022300467_350,player 11 3PT Shot Miss color red  _ player 8 Rebound color light blue  _ player 21 2ptmade Made assisted by 8 color light blue  _ .
+bkn-vs-nop-0022300461_352,player 14 3PT Shot Miss color white  _ player 11 Rebound color black  _ .
+mem-vs-lal-0022300491_362,player 23 Free Throw Miss color purple  _ player 18 Rebound color white  _ .
+mil-vs-hou-0022300496_421,player 34 2PT Shot Miss color green  _ player 10 Rebound color white  _ player 10 Turnover color white  _ player 22 Steal color green  _ player 0 3PT Shot Miss color green  _ player 34 Rebound color green  _ player 34 2PT Shot Made color green  _ .
+mil-vs-hou-0022300496_388,player 4 Turnover color white  _ player 4 Foul color white  _ .
+okc-vs-atl-0022300467_417,player 1 Turnover color red  _ player 11 Steal color light blue  _ player 2 2ptmade Made assisted by 8 color light blue  _ .
+det-vs-gsw-0022300490_348,player 30 2PT Shot Miss color black  _ player 0 Block color white  _ .
+lac-vs-nop-0022300486_351,player 24 2PT Shot Miss color black  _ player 7 Rebound color white  _ .
+orl-vs-den-0022300488_357,player 15 Turnover color blue  _ player 5 Steal color white  _ .
+bos-vs-ind-0022300493_343,player 0 2PT Shot Miss color green  _ player 00 Block color black  _ .
+nyk-vs-phi-0022300483_348,player 11 3PT Shot Miss color blue  _ player 0 Rebound color red  _ .
+nyk-vs-phi-0022300483_332,player 0 2PT Shot Miss color red  _ player 0 Rebound color red  _ player 8 Foul color blue  _ .
+det-vs-gsw-0022300490_337,player 24 2PT Shot Miss color white  _ player 0 Rebound color white  _ player 11 Foul color black  _ .
+nop-vs-min-0022300471_334,player 14 2PT Shot Miss color red  _ player 27 Block color white  _ .
+por-vs-dal-0022300472_419,player 33 2PT Shot Miss color red  _ player 1 Block color blue  _ player 18 Rebound color blue  _ .
+min-vs-orl-0022300513_369,player 10 3PT Shot Miss color white  _ player 5 Rebound color white  _ .
+mia-vs-lac-0022300458_309,player 0 2PT Shot Miss color blue  _ player 14 Rebound color white  _ .

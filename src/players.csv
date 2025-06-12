@@ -1,0 +1,538 @@
+Player Name,Number,Team
+Trae Young,11,ATL
+Dyson Daniels,5,ATL
+Zaccharie Risacher,10,ATL
+Onyeka Okongwu,17,ATL
+Vit Krejci,27,ATL
+Clint Capela,15,ATL
+Garrison Mathews,24,ATL
+Jalen Johnson,1,ATL
+Dominick Barlow,0,ATL
+Mouhamed Gueye,18,ATL
+Keaton Wallace  (TW),2,ATL
+Terance Mann,14,ATL
+Georges Niang,20,ATL
+Caris LeVert,3,ATL
+Larry Nance Jr.,22,ATL
+Kobe Bufkin,4,ATL
+Daeqwon Plowden  (TW),29,ATL
+Jacob Toppin  (TW),00,ATL
+Payton Pritchard,11,BOS
+Derrick White,9,BOS
+Luke Kornet,40,BOS
+Jayson Tatum,0,BOS
+Sam Hauser,30,BOS
+Jaylen Brown,7,BOS
+Jrue Holiday,4,BOS
+Neemias Queta,88,BOS
+Al Horford,42,BOS
+Jordan Walsh,27,BOS
+Kristaps Porziņģis,8,BOS
+Xavier Tillman Sr.,26,BOS
+Baylor Scheierman,55,BOS
+Drew Peterson  (TW),13,BOS
+Torrey Craig,12,BOS
+JD Davison,20,BOS
+Miles Norris  (TW),44,BOS
+Keon Johnson,45,BRK
+Jalen Wilson,22,BRK
+Nic Claxton,33,BRK
+Ziaire Williams,"1, 8",BRK
+Tyrese Martin,13,BRK
+Cameron Johnson,2,BRK
+Day'Ron Sharpe,20,BRK
+Noah Clowney,21,BRK
+Trendon Watford,9,BRK
+Reece Beekman  (TW),4,BRK
+D'Angelo Russell,1,BRK
+Tosan Evbuomwan  (TW),12,BRK
+Cam Thomas,24,BRK
+Maxwell Lewis,27,BRK
+Dariq Whitehead,0,BRK
+Drew Timme,26,BRK
+Tyson Etienne  (TW),10,BRK
+De'Anthony Melton,,BRK
+Moussa Diabaté,14,CHO
+Josh Green,10,CHO
+Seth Curry,30,CHO
+Miles Bridges,0,CHO
+Nick Smith Jr.,8,CHO
+Tidjane Salaün,31,CHO
+LaMelo Ball,1,CHO
+DaQuan Jeffries,3,CHO
+Mark Williams,5,CHO
+Taj Gibson,67,CHO
+KJ Simpson  (TW),25,CHO
+Brandon Miller,24,CHO
+Jusuf Nurkić,11,CHO
+Grant Williams,2,CHO
+Wendell Moore Jr.  (TW),9,CHO
+Josh Okogie,12,CHO
+Damion Baugh  (TW),7,CHO
+Tre Mann,23,CHO
+Jaylen Sims,33,CHO
+Matas Buzelis,14,CHI
+Julian Phillips,15,CHI
+Coby White,0,CHI
+Nikola Vučević,9,CHI
+Dalen Terry,25,CHI
+Josh Giddey,3,CHI
+Jalen Smith,7,CHI
+Patrick Williams,44,CHI
+Talen Horton-Tucker,22,CHI
+Ayo Dosunmu,11,CHI
+Jevon Carter,5,CHI
+Lonzo Ball,2,CHI
+Zach Collins,12,CHI
+Kevin Huerter,13,CHI
+Tre Jones,30,CHI
+E.J. Liddell  (TW),32,CHI
+Jahmir Young  (TW),17,CHI
+Emanuel Miller  (TW),20,CHI
+Jarrett Allen,31,CLE
+Darius Garland,10,CLE
+Donovan Mitchell,45,CLE
+Evan Mobley,4,CLE
+Sam Merrill,5,CLE
+Ty Jerome,2,CLE
+Dean Wade,32,CLE
+Isaac Okoro,35,CLE
+Craig Porter Jr.,9,CLE
+Max Strus,1,CLE
+Jaylon Tyson,24,CLE
+Tristan Thompson,13,CLE
+De'Andre Hunter,12,CLE
+Javonte Green,8,CLE
+Luke Travers  (TW),33,CLE
+Emoni Bates  (TW),21,CLE
+Nae'Qwan Tomlin  (TW),30,CLE
+Chuma Okeke,18,CLE
+Spencer Dinwiddie,26,DAL
+Klay Thompson,31,DAL
+Naji Marshall,13,DAL
+P.J. Washington,25,DAL
+Daniel Gafford,21,DAL
+Jaden Hardy,1,DAL
+Dwight Powell,7,DAL
+Olivier-Maxence Prosper,8,DAL
+Kyrie Irving,11,DAL
+Kessler Edwards  (TW),20,DAL
+Dereck Lively II,2,DAL
+Brandon Williams,10,DAL
+Max Christie,00,DAL
+Dante Exum,0,DAL
+Caleb Martin,16,DAL
+Kai Jones  (TW),23,DAL
+Anthony Davis,3,DAL
+Christian Braun,0,DEN
+Michael Porter Jr.,1,DEN
+Russell Westbrook,4,DEN
+Nikola Jokić,15,DEN
+Peyton Watson,8,DEN
+Jamal Murray,27,DEN
+Julian Strawther,3,DEN
+Zeke Nnaji,22,DEN
+DeAndre Jordan,6,DEN
+Aaron Gordon,32,DEN
+Hunter Tyson,5,DEN
+Jalen Pickett,24,DEN
+Trey Alexander  (TW),23,DEN
+Spencer Jones  (TW),21,DEN
+PJ Hall  (TW),13,DEN
+Dario Šarić,9,DEN
+Vlatko Čančar,31,DEN
+DaRon Holmes,,DEN
+Malik Beasley,5,DET
+Ron Holland,00,DET
+Jalen Duren,0,DET
+Tim Hardaway Jr.,8,DET
+Simone Fontecchio,19,DET
+Tobias Harris,12,DET
+Isaiah Stewart,28,DET
+Cade Cunningham,2,DET
+Ausar Thompson,9,DET
+Marcus Sasser,25,DET
+Paul Reed,7,DET
+Jaden Ivey,23,DET
+Dennis Schröder,17,DET
+Lindy Waters III,43,DET
+Bobi Klintman,34,DET
+Daniss Jenkins  (TW),24,DET
+Tolu Smith  (TW),35,DET
+Ron Harper Jr.  (TW),13,DET
+Buddy Hield,7,GSW
+Kevon Looney,5,GSW
+Moses Moody,4,GSW
+Stephen Curry,30,GSW
+Draymond Green,23,GSW
+Brandin Podziemski,2,GSW
+Trayce Jackson-Davis,32,GSW
+Gary Payton II,0,GSW
+Gui Santos,15,GSW
+Jonathan Kuminga,00,GSW
+Quinten Post,21,GSW
+Pat Spencer,61,GSW
+Jimmy Butler,10,GSW
+Kevin Knox,31,GSW
+Jackson Rowe  (TW),44,GSW
+Braxton Key,12,GSW
+Taran Armstrong  (TW),,GSW
+Jalen Green,4,HOU
+Alperen Şengün,28,HOU
+Dillon Brooks,9,HOU
+Amen Thompson,1,HOU
+Aaron Holiday,0,HOU
+Fred VanVleet,5,HOU
+Steven Adams,12,HOU
+Jabari Smith Jr.,10,HOU
+Tari Eason,17,HOU
+Reed Sheppard,15,HOU
+Jae'Sean Tate,8,HOU
+Cam Whitmore,7,HOU
+Jock Landale,2,HOU
+Jeff Green,32,HOU
+Jeenathan Williams,19,HOU
+Jack McVeigh  (TW),58,HOU
+N'Faly Dante  (TW),3,HOU
+David Roddy  (TW),21,HOU
+Obi Toppin,1,IND
+T.J. McConnell,9,IND
+Pascal Siakam,43,IND
+Jarace Walker,5,IND
+Tyrese Haliburton,0,IND
+Bennedict Mathurin,00,IND
+Myles Turner,33,IND
+Andrew Nembhard,2,IND
+Ben Sheppard,26,IND
+Thomas Bryant,3,IND
+Johnny Furphy,12,IND
+Aaron Nesmith,23,IND
+Quenton Jackson  (TW),29,IND
+Enrique Freeman  (TW),8,IND
+Tony Bradley,13,IND
+James Johnson,16,IND
+RayJ Dennis  (TW),10,IND
+Isaiah Jackson,22,IND
+Ivica Zubac,40,LAC
+James Harden,1,LAC
+Nicolas Batum,33,LAC
+Derrick Jones Jr.,55,LAC
+Kris Dunn,8,LAC
+Amir Coffey,7,LAC
+Norman Powell,24,LAC
+Kobe Brown,21,LAC
+Kawhi Leonard,2,LAC
+Jordan Miller,11,LAC
+Bogdan Bogdanović,10,LAC
+Drew Eubanks,15,LAC
+Ben Simmons,25,LAC
+Cam Christie,12,LAC
+Patty Mills,88,LAC
+Trentyn Flowers  (TW),9,LAC
+Patrick Baldwin Jr.  (TW),23,LAC
+Seth Lundy  (TW),,LAC
+Dalton Knecht,4,LAL
+Austin Reaves,15,LAL
+Gabe Vincent,7,LAL
+LeBron James,23,LAL
+Rui Hachimura,28,LAL
+Jaxson Hayes,11,LAL
+Dorian Finney-Smith,17,LAL
+Christian Koloko  (TW),10,LAL
+Jarred Vanderbilt,2,LAL
+Shake Milton,20,LAL
+Jordan Goodwin,30,LAL
+Luka Dončić,77,LAL
+Bronny James,9,LAL
+Trey Jemison  (TW),55,LAL
+Alex Len,27,LAL
+Markieff Morris,88,LAL
+Maxi Kleber,14,LAL
+Jaylen Wells,0,MEM
+Scotty Pippen Jr.,1,MEM
+Jaren Jackson Jr.,13,MEM
+Desmond Bane,22,MEM
+Zach Edey,14,MEM
+Santi Aldama,7,MEM
+Luke Kennard,10,MEM
+Brandon Clarke,15,MEM
+Jay Huff,30,MEM
+Ja Morant,12,MEM
+John Konchar,46,MEM
+GG Jackson II,45,MEM
+Vince Williams Jr.,5,MEM
+Cam Spencer  (TW),24,MEM
+Yuki Kawamura  (TW),17,MEM
+Lamar Stevens,8,MEM
+Marvin Bagley III,35,MEM
+Zyon Pullin  (TW),2,MEM
+Bam Adebayo,13,MIA
+Tyler Herro,14,MIA
+Duncan Robinson,55,MIA
+Haywood Highsmith,24,MIA
+Jaime Jaquez Jr.,11,MIA
+Terry Rozier,2,MIA
+Kel'el Ware,7,MIA
+Pelle Larsson,9,MIA
+Alec Burks,18,MIA
+Nikola Jović,5,MIA
+Davion Mitchell,45,MIA
+Kyle Anderson,20,MIA
+Kevin Love,42,MIA
+Andrew Wiggins,22,MIA
+Keshad Johnson,16,MIA
+Dru Smith  (TW),12,MIA
+Josh Christopher  (TW),8,MIA
+Isaiah Stevens  (TW),4,MIA
+Brook Lopez,11,MIL
+Taurean Prince,12,MIL
+Gary Trent Jr.,5,MIL
+A.J. Green,20,MIL
+Giannis Antetokounmpo,34,MIL
+Andre Jackson Jr.,44,MIL
+Damian Lillard,0,MIL
+Ryan Rollins,13,MIL
+Bobby Portis,9,MIL
+Pat Connaughton,24,MIL
+Kyle Kuzma,18,MIL
+Kevin Porter Jr.,3,MIL
+Tyler Smith,21,MIL
+Stanley Umude  (TW),17,MIL
+Chris Livingston,7,MIL
+Jericho Sims,00,MIL
+Pete Nance  (TW),35,MIL
+Jamaree Bouyea  (TW),15,MIL
+Jaden McDaniels,3,MIN
+Nickeil Alexander-Walker,9,MIN
+Naz Reid,11,MIN
+Anthony Edwards,5,MIN
+Rudy Gobert,27,MIN
+Mike Conley,10,MIN
+Julius Randle,30,MIN
+Donte DiVincenzo,0,MIN
+Rob Dillingham,4,MIN
+Josh Minott,8,MIN
+Jaylen Clark,22,MIN
+Luka Garza,55,MIN
+Terrence Shannon Jr.,00,MIN
+Joe Ingles,7,MIN
+Leonard Miller,33,MIN
+Bones Hyland  (TW),77,MIN
+Tristen Newton  (TW),13,MIN
+Jesse Edwards  (TW),14,MIN
+Yves Missi,21,NOP
+Jeremiah Robinson-Earl,50,NOP
+CJ McCollum,3,NOP
+Jordan Hawkins,24,NOP
+Jose Alvarado,15,NOP
+Trey Murphy III,25,NOP
+Antonio Reeves,12,NOP
+Brandon Boston Jr.,11,NOP
+Karlo Matković,17,NOP
+Jamal Cain  (TW),8,NOP
+Dejounte Murray,5,NOP
+Zion Williamson,1,NOP
+Bruce Brown,00,NOP
+Kelly Olynyk,13,NOP
+Herbert Jones,2,NOP
+Elfrid Payton,"4, 22",NOP
+Keion Brooks Jr.  (TW),0,NOP
+Lester Quiñones  (TW),22,NOP
+Kylor Kelley,35,NOP
+Mikal Bridges,25,NYK
+Josh Hart,3,NYK
+OG Anunoby,8,NYK
+Karl-Anthony Towns,32,NYK
+Cameron Payne,1,NYK
+Jalen Brunson,11,NYK
+Miles McBride,2,NYK
+Precious Achiuwa,5,NYK
+Landry Shamet,44,NYK
+Tyler Kolek,13,NYK
+Ariel Hukporti,55,NYK
+Pacome Dadiet,4,NYK
+Mitchell Robinson,23,NYK
+Delon Wright,0,NYK
+Anton Watson  (TW),21,NYK
+MarJon Beauchamp  (TW),14,NYK
+Kevin McCullar Jr.  (TW),9,NYK
+P.J. Tucker,17,NYK
+Shai Gilgeous-Alexander,2,OKC
+Aaron Wiggins,21,OKC
+Isaiah Joe,11,OKC
+Luguentz Dort,5,OKC
+Jalen Williams,8,OKC
+Kenrich Williams,34,OKC
+Cason Wallace,22,OKC
+Isaiah Hartenstein,55,OKC
+Alex Caruso,9,OKC
+Dillon Jones,3,OKC
+Jaylin Williams,6,OKC
+Ousmane Dieng,13,OKC
+Adam Flagler  (TW),14,OKC
+Ajay Mitchell,25,OKC
+Chet Holmgren,7,OKC
+Branden Carlson  (TW),15,OKC
+Alex Ducas  (TW),88,OKC
+Nikola Topić,,OKC
+Anthony Black,0,ORL
+Kentavious Caldwell-Pope,3,ORL
+Tristan Da Silva,23,ORL
+Jonathan Isaac,1,ORL
+Goga Bitadze,35,ORL
+Wendell Carter Jr.,34,ORL
+Cole Anthony,50,ORL
+Franz Wagner,22,ORL
+Jett Howard,13,ORL
+Caleb Houstan,2,ORL
+Cory Joseph,10,ORL
+Gary Harris,14,ORL
+Paolo Banchero,5,ORL
+Jalen Suggs,4,ORL
+Trevelin Queen  (TW),12,ORL
+Moritz Wagner,21,ORL
+Mac McClung  (TW),8,ORL
+Ethan Thompson  (TW),,ORL
+Ricky Council IV,14,PHI
+Guerschon Yabusele,28,PHI
+Kelly Oubre Jr.,9,PHI
+Adem Bona,30,PHI
+Tyrese Maxey,0,PHI
+Justin Edwards,19,PHI
+Paul George,8,PHI
+Jeff Dowtin  (TW),11,PHI
+Andre Drummond,"1, 5",PHI
+Eric Gordon,23,PHI
+Kyle Lowry,7,PHI
+Quentin Grimes,5,PHI
+Jared Butler,12,PHI
+Jared McCain,20,PHI
+Lonnie Walker IV,16,PHI
+Joel Embiid,21,PHI
+Alex Reese  (TW),65,PHI
+Jalen Hood-Schifino  (TW),17,PHI
+Isaiah Mobley,25,PHI
+Tyus Jones,21,PHO
+Devin Booker,1,PHO
+Royce O'Neale,00,PHO
+Ryan Dunn,0,PHO
+Mason Plumlee,22,PHO
+Grayson Allen,8,PHO
+Kevin Durant,35,PHO
+Oso Ighodaro,4,PHO
+Bradley Beal,3,PHO
+Monte Morris,23,PHO
+Nick Richards,2,PHO
+Bol Bol,11,PHO
+Collin Gillespie  (TW),12,PHO
+Damion Lee,10,PHO
+TyTy Washington Jr.  (TW),14,PHO
+Cody Martin,17,PHO
+Jalen Bridges  (TW),15,PHO
+Vasilije Micić,18,PHO
+Toumani Camara,33,POR
+Shaedon Sharpe,17,POR
+Deni Avdija,8,POR
+Anfernee Simons,1,POR
+Kris Murray,24,POR
+Dalano Banton,5,POR
+Donovan Clingan,23,POR
+Scoot Henderson,00,POR
+Jabari Walker,34,POR
+Rayan Rupert,21,POR
+Jerami Grant,9,POR
+Duop Reath,26,POR
+Deandre Ayton,2,POR
+Robert Williams,35,POR
+Justin Minaya  (TW),10,POR
+Matisse Thybulle,4,POR
+Bryce McGowens  (TW),11,POR
+Sidy Cissoko  (TW),91,POR
+Keon Ellis,23,SAC
+DeMar DeRozan,10,SAC
+Keegan Murray,13,SAC
+Domantas Sabonis,11,SAC
+Trey Lyles,41,SAC
+Malik Monk,0,SAC
+Doug McDermott,7,SAC
+Isaac Jones,"3, 17",SAC
+Devin Carter,22,SAC
+Zach LaVine,8,SAC
+Jonas Valančiūnas,17,SAC
+Markelle Fultz,20,SAC
+Jake LaRavia,33,SAC
+Isaiah Crawford  (TW),24,SAC
+Mason Jones  (TW),15,SAC
+Jae Crowder,99,SAC
+Terence Davis,9,SAC
+Harrison Barnes,40,SAS
+Julian Champagnie,30,SAS
+Chris Paul,3,SAS
+Stephon Castle,5,SAS
+Keldon Johnson,0,SAS
+Devin Vassell,24,SAS
+Sandro Mamukelashvili,54,SAS
+Blake Wesley,14,SAS
+Jeremy Sochan,10,SAS
+Malaki Branham,22,SAS
+Victor Wembanyama,1,SAS
+Charles Bassey,28,SAS
+Bismack Biyombo,18,SAS
+Jordan McLaughlin,11,SAS
+De'Aaron Fox,4,SAS
+David Duke Jr.  (TW),7,SAS
+Harrison Ingram  (TW),55,SAS
+Riley Minix  (TW),27,SAS
+Jamal Shead,23,TOR
+Scottie Barnes,4,TOR
+Ochai Agbaji,30,TOR
+Jonathan Mogbo,2,TOR
+Jamison Battle,77,TOR
+RJ Barrett,9,TOR
+Jakob Poeltl,19,TOR
+Gradey Dick,1,TOR
+Ja'Kobe Walter,14,TOR
+Chris Boucher,25,TOR
+Immanuel Quickley,5,TOR
+Garrett Temple,17,TOR
+A.J. Lawson,0,TOR
+Colin Castleton,11,TOR
+Jared Rhoden  (TW),8,TOR
+Ulrich Chomche  (TW),22,TOR
+Brandon Ingram,,TOR
+Kyle Filipowski,22,UTA
+Brice Sensabaugh,28,UTA
+Isaiah Collier,13,UTA
+Keyonte George,3,UTA
+Johnny Juzang,33,UTA
+Collin Sexton,2,UTA
+Walker Kessler,24,UTA
+Cody Williams,5,UTA
+Lauri Markkanen,23,UTA
+John Collins,20,UTA
+Svi Mykhailiuk,19,UTA
+Micah Potter  (TW),25,UTA
+Jordan Clarkson,00,UTA
+KJ Martin,99,UTA
+Jaden Springer,11,UTA
+Oscar Tshiebwe  (TW),34,UTA
+Elijah Harkless  (TW),16,UTA
+Taylor Hendricks,0,UTA
+Bub Carrington,8,WAS
+Jordan Poole,13,WAS
+Kyshawn George,18,WAS
+Alex Sarr,20,WAS
+Justin Champagnie,9,WAS
+Corey Kispert,24,WAS
+Bilal Coulibaly,0,WAS
+Anthony Gill,16,WAS
+Tristan Vukcevic  (TW),00,WAS
+Richaun Holmes,22,WAS
+Malcolm Brogdon,15,WAS
+AJ Johnson,5,WAS
+Marcus Smart,36,WAS
+Colby Jones,1,WAS
+Khris Middleton,32,WAS
+Jaylen Martin  (TW),4,WAS
+JT Thor  (TW),21,WAS
+Saddiq Bey,,WAS
