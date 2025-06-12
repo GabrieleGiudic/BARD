@@ -60,34 +60,34 @@ evaluation results.
 3. get_data.py
    Download and save detailed game data from the URLs obtained.
 
-3.1 get_data_failed.py
+4. get_data_failed.py
    Use the script if any file was not correctly downloaded
 
-4. Update referee.csv
+5. Update referee.csv
    Manually update data/referee.csv with the latest referee information from one of these sources:
    - https://www.basketball-reference.com/referees/2025_register.html
    - https://www.nbastuffer.com/2024-2025-nba-referee-stats/
 
-5. substitue_player_number.py
+6. substitue_player_number.py
    Replace player numbers in the datasets.
 
-6. make_coarse.py
+7. make_coarse.py
    Generate coarse label
 
-7. make_multilabel.py
+8. make_multilabel.py
    Create multilabel annotations from the coarse data.
 
-8. make_json_and_csv.py
+9. make_json_and_csv.py
    Convert the processed data into JSON and CSV formats for easy usage.
 
-9. make_stats.py
+10. make_stats.py
    Compute detailed player and team statistics based on the prepared datasets.
 
-10. run_gemini.py
+11. run_gemini.py
     Run the final analysis or machine learning model (e.g., Gemini) to interpret or predict basketball stats.
 
-11. compare_gemini.py  
+12. compare_gemini.py  
     Compare Gemini results against benchmark statistics to evaluate model accuracy.
 
-12. compare_gemini_action_dependent.py  
+13. compare_gemini_action_dependent.py  
     Compare Gemini results against benchmark statistics to evaluate model accuracy starting from action identification
