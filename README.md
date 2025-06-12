@@ -31,7 +31,7 @@ evaluation results.
 
 ![Screenshot 2](figures/action_bar_chart_unique_colors.png)
 
-#### Example Clip & Label
+#### 🏀 Example Clip & Label
 
 **🎥 Clip:**  
 [Green Tip Layup Shot (21 PTS)](https://www.nba.com/stats/events/?CFID=&CFPARAMS=&GameEventID=632&GameID=0022401228&Season=2024-25&flag=1&title=Green%20Tip%20Layup%20Shot%20(21%20PTS))
@@ -45,7 +45,7 @@ evaluation results.
   { "player": "23", "action": "2PT Shot", "result": false, "assisted": false, "other_player": null, "color": "blue" },
   { "player": "23", "action": "Rebound", "result": null, "assisted": null, "other_player": null, "color": "blue" },
   { "player": "23", "action": "2PT Shot", "result": true, "assisted": false, "other_player": null, "color": "blue" }
-]``` 
+]
 
 
 ##### 💻 File Execution Order
