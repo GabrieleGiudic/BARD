@@ -2,7 +2,7 @@
 
 ## 📄 Abstract
 
-Abstract. In this work, we present the BARD dataset. It is designed
+In this work, we present the BARD dataset. It is designed
 to advance Basketball Action Recognition task. Our contributions in-
 clude significantly improved annotation accuracy and the integration of
 additional variables, such as player jersey numbers and team color in-
@@ -14,31 +14,38 @@ evaluation results.
 
 ### 📘 Summary
 
-+---------------------+----------------------------+---------------------------------------------+
-|     Property        |           Value            |                 Description                 |
-+---------------------+----------------------------+---------------------------------------------+
-| Season              | 2024–2025                  | Most updated season                         |
-| Teams               | 30                         | Selected NBA teams                          |
-| Games               | 60                         | Total number of games sampled               |
-| Initial clips       | 24,692                     | Raw video segments collected                |
-| Final clips         | 14,676                     | After filtering and consolidation           |
-| Resolution          | 720p                       | High-definition video                       |
-| Labels              | Structured JSON            | Multiclass based labels                     |
-| Action recognition  | Coarse and Event           | Play-by-play annotation                     |
-| New fields          | Player numbers, team colors| Anonymous identification metadata           |
-+---------------------+----------------------------+---------------------------------------------+
+| Property           | Value                     | Description                                 |
+|--------------------|---------------------------|---------------------------------------------|
+| Season             | 2024–2025                 | Most updated season                         |
+| Teams              | 30                        | Selected NBA teams                          |
+| Games              | 60                        | Total number of games sampled               |
+| Initial clips      | 24,692                    | Raw video segments collected                |
+| Final clips        | 14,676                    | After filtering and consolidation           |
+| Resolution         | 720p                      | High-definition video                       |
+| Labels             | Structured JSON           | Multiclass based labels                     |
+| Action recognition | Coarse and Event          | Play-by-play annotation                     |
+| New fields         | Player numbers, team colors | Anonymous identification metadata         |
 
 
 ![Screenshot 1](figures/histogram.png)
 
 ![Screenshot 2](figures/action_bar_chart_unique_colors.png)
 
-#### Example
+#### Example Clip & Label
 
-The pair:
-[🎥 url] https://www.nba.com/stats/events/?CFID=&CFPARAMS=&GameEventID=632&GameID=0022401228&Season=2024-25&flag=1&title=Green%20Tip%20Layup%20Shot%20(21%20PTS)
-[label] [{'player': '0', 'action': '2PT Shot', 'result': False, 'assisted': False, 'other_player': None, 'color': 'blue'}, {'player': '23', 'action': 'Rebound', 'result': None, 'assisted': None, 'other_player': None, 'color': 'blue'}, {'player': '23', 'action': '2PT Shot', 'result': False, 'assisted': False, 'other_player': None, 'color': 'blue'}, {'player': '23', 'action': 'Rebound', 'result': None, 'assisted': None, 'other_player': None, 'color': 'blue'}, {'player': '23', 'action': '2PT Shot', 'result': True, 'assisted': False, 'other_player': None, 'color': 'blue'}]
+**🎥 Clip:**  
+[Green Tip Layup Shot (21 PTS)](https://www.nba.com/stats/events/?CFID=&CFPARAMS=&GameEventID=632&GameID=0022401228&Season=2024-25&flag=1&title=Green%20Tip%20Layup%20Shot%20(21%20PTS))
 
+**📝 Multi-label Annotation:**
+
+```json
+[
+  { "player": "0", "action": "2PT Shot", "result": false, "assisted": false, "other_player": null, "color": "blue" },
+  { "player": "23", "action": "Rebound", "result": null, "assisted": null, "other_player": null, "color": "blue" },
+  { "player": "23", "action": "2PT Shot", "result": false, "assisted": false, "other_player": null, "color": "blue" },
+  { "player": "23", "action": "Rebound", "result": null, "assisted": null, "other_player": null, "color": "blue" },
+  { "player": "23", "action": "2PT Shot", "result": true, "assisted": false, "other_player": null, "color": "blue" }
+]
 
 
 ##### 💻 File Execution Order
