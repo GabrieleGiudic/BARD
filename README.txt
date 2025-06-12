@@ -29,7 +29,7 @@ evaluation results.
 +---------------------+----------------------------+---------------------------------------------+
 
 
-![Screenshot 1](images/histogram.png)
+![Screenshot 1](figures/histogram.png)
 
 ![Screenshot 2](figures/action_bar_chart_unique_colors.png)
 
