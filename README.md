@@ -3,10 +3,10 @@
 ## 📄 Abstract
 
 In this work, we present the BARD dataset. It is designed
-to advance Basketball Action Recognition task. Our contributions in-
-clude significantly improved annotation accuracy and the integration of
-additional variables, such as player jersey numbers and team color in-
-formation with respect to existing datasets. We also introduce a novel
+to advance Basketball Action Recognition task. Our contributions include
+ significantly improved annotation accuracy and the integration of
+additional variables, such as player jersey numbers and team color 
+information with respect to existing datasets. We also introduce a novel
 output format that supports multi-class classification tasks. Finally, we
 conducted a human validation study on a subsample of the annotations,
 with expert reviewers assessing the labeling quality and reporting the
