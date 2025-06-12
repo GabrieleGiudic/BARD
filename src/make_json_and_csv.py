@@ -263,7 +263,8 @@ fig.patch.set_facecolor('#ffffff')
 bin_centers = (bins[:-1] + bins[1:]) / 2
 
 # Set x-ticks at bin centers
-plt.xticks(bin_centers, labels=[f'{int(center)}' for center in bin_centers], fontsize=13)
+numbers = np.array(list(range(1, 6)))
+plt.xticks(bin_centers, labels=[f'{int(center)}' for center in numbers], fontsize=13)
 plt.yticks(fontsize=13)
 
 plt.tight_layout()
