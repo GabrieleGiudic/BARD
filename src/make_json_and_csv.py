@@ -221,112 +221,194 @@ df.to_csv(os.path.join(output_folder,"dataset.csv"), index=False, sep=';')
 
 
 
+
 #MAKE SOME GRAPHS
 
 import matplotlib.pyplot as plt
 import numpy as np
 
+single = True
+if not single:
 
-# Histogram data
-counts, bins = np.histogram(df["numerosity"], bins=5)
-
-# Colors for each bar
-colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']  # blue, orange, green, red, purple
-
-# Plot setup
-fig, ax = plt.subplots(figsize=(10, 6))
-
-# Plot bars with different colors
-bar_widths = np.diff(bins) * 0.9
-bar_positions = bins[:-1] + np.diff(bins) * 0.05  # Shift to center
-
-bar_container = ax.bar(bar_positions, counts, width=bar_widths,
-                       color=colors, edgecolor='black',
-                       align='edge', linewidth=1)
-
-
-# Annotate bars with counts
-for rect in bar_container:
-    height = rect.get_height()
-    if height > 0:
-        ax.text(rect.get_x() + rect.get_width()/2, height + 0.4, f'{int(height)}', 
-                ha='center', va='bottom', fontsize=13, fontweight='bold')
-
-# Styling
-ax.set_title('Number of Action per Class', fontsize=20, fontweight='bold', color='#333333')
-ax.set_xlabel('Number of Action per Class', fontsize=15)
-ax.set_ylabel('Frequency', fontsize=15)
-ax.grid(axis='y', linestyle='--', alpha=0.6)
-ax.set_facecolor('#fafafa')
-fig.patch.set_facecolor('#ffffff')
-
-bin_centers = (bins[:-1] + bins[1:]) / 2
-
-# Set x-ticks at bin centers
-numbers = np.array(list(range(1, 6)))
-plt.xticks(bin_centers, labels=[f'{int(center)}' for center in numbers], fontsize=13)
-plt.yticks(fontsize=13)
-
-plt.tight_layout()
-plt.savefig('../figures/histogram.png', dpi=300)
-plt.show()
-
-
-#Check category
-action_map = {}
-for i in range(0,len(df)):
-    action_list = df.iloc[i]['actions']
-    for action in action_list:
-        assisted = action['assisted']
-        suffix = ""
-        if assisted:
-            suffix = " AST"
-        if action['action']+suffix in action_map.keys():
-            action_map[action['action']+suffix] = action_map[action['action']+suffix] + 1
-        else:
-            action_map[action['action']+suffix] = 1
-            
-number_actions = 0
-for k in action_map.keys():
-    number_actions = number_actions + action_map[k]
+    # Histogram data
+    counts, bins = np.histogram(df["numerosity"], bins=5)
     
-# Convert to DataFrame
-df = pd.DataFrame(list(action_map.items()), columns=["Action", "Count"])
-df = df.sort_values(by="Count", ascending=False)
+    # Colors for each bar
+    colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']  # blue, orange, green, red, purple
+    
+    # Plot setup
+    fig, ax = plt.subplots(figsize=(10, 6))
+    
+    # Plot bars with different colors
+    bar_widths = np.diff(bins) * 0.9
+    bar_positions = bins[:-1] + np.diff(bins) * 0.05  # Shift to center
+    
+    bar_container = ax.bar(bar_positions, counts, width=bar_widths,
+                           color=colors, edgecolor='black',
+                           align='edge', linewidth=1)
+    
+    
+    # Annotate bars with counts
+    for rect in bar_container:
+        height = rect.get_height()
+        if height > 0:
+            ax.text(rect.get_x() + rect.get_width()/2, height + 0.4, f'{int(height)}', 
+                    ha='center', va='bottom', fontsize=13, fontweight='bold')
+    
+    # Styling
+    ax.set_title('Number of Action per Class', fontsize=20, fontweight='bold', color='#333333')
+    ax.set_xlabel('Number of Action per Class', fontsize=15)
+    ax.set_ylabel('Frequency', fontsize=15)
+    ax.grid(axis='y', linestyle='--', alpha=0.6)
+    ax.set_facecolor('#fafafa')
+    fig.patch.set_facecolor('#ffffff')
+    
+    bin_centers = (bins[:-1] + bins[1:]) / 2
+    
+    # Set x-ticks at bin centers
+    numbers = np.array(list(range(1, 6)))
+    plt.xticks(bin_centers, labels=[f'{int(center)}' for center in numbers], fontsize=13)
+    plt.yticks(fontsize=13)
+    
+    plt.tight_layout()
+    plt.savefig('../figures/histogram.png', dpi=300)
+    plt.show()
+    
+    
+    #Check category
+    action_map = {}
+    for i in range(0,len(df)):
+        action_list = df.iloc[i]['actions']
+        for action in action_list:
+            assisted = action['assisted']
+            suffix = ""
+            if assisted:
+                suffix = " AST"
+            if action['action']+suffix in action_map.keys():
+                action_map[action['action']+suffix] = action_map[action['action']+suffix] + 1
+            else:
+                action_map[action['action']+suffix] = 1
+                
+    number_actions = 0
+    for k in action_map.keys():
+        number_actions = number_actions + action_map[k]
+        
+    # Convert to DataFrame
+    df = pd.DataFrame(list(action_map.items()), columns=["Action", "Count"])
+    df = df.sort_values(by="Count", ascending=False)
+    
+    # 9 unique colors
+    colors = [
+        '#1f77b4',  # blue
+        '#ff7f0e',  # orange
+        '#2ca02c',  # green
+        '#d62728',  # red
+        '#9467bd',  # purple
+        '#8c564b',  # brown
+        '#e377c2',  # pink
+        '#7f7f7f',  # gray
+        '#bcbd22'   # olive
+    ]
+    
+    # Plot setup
+    fig, ax = plt.subplots(figsize=(12, 7))
+    bars = ax.bar(df["Action"], df["Count"], color=colors, edgecolor='black', linewidth=1)
+    
+    # Annotate each bar
+    for bar in bars:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2, height + 100, f'{height}', 
+                ha='center', va='bottom', fontsize=12, fontweight='bold')
+    
+    # Styling
+    ax.set_title("Count of Each Action Type ("+ str(number_actions) +")", fontsize=20, fontweight='bold', color='#333333')
+    ax.set_xlabel('Action Type', fontsize=15)
+    ax.set_ylabel('Count', fontsize=15)
+    ax.set_facecolor('#fafafa')
+    fig.patch.set_facecolor('#ffffff')
+    ax.grid(axis='y', linestyle='--', alpha=0.6)
+    
+    plt.xticks(rotation=45, fontsize=13)
+    plt.yticks(fontsize=13)
+    plt.tight_layout()
+    plt.savefig('../figures/action_bar_chart_unique_colors.png', dpi=300)
+    plt.show()
 
-# 9 unique colors
-colors = [
-    '#1f77b4',  # blue
-    '#ff7f0e',  # orange
-    '#2ca02c',  # green
-    '#d62728',  # red
-    '#9467bd',  # purple
-    '#8c564b',  # brown
-    '#e377c2',  # pink
-    '#7f7f7f',  # gray
-    '#bcbd22'   # olive
-]
-
-# Plot setup
-fig, ax = plt.subplots(figsize=(12, 7))
-bars = ax.bar(df["Action"], df["Count"], color=colors, edgecolor='black', linewidth=1)
-
-# Annotate each bar
-for bar in bars:
-    height = bar.get_height()
-    ax.text(bar.get_x() + bar.get_width()/2, height + 100, f'{height}', 
-            ha='center', va='bottom', fontsize=12, fontweight='bold')
-
-# Styling
-ax.set_title("Count of Each Action Type ("+ str(number_actions) +")", fontsize=20, fontweight='bold', color='#333333')
-ax.set_xlabel('Action Type', fontsize=15)
-ax.set_ylabel('Count', fontsize=15)
-ax.set_facecolor('#fafafa')
-fig.patch.set_facecolor('#ffffff')
-ax.grid(axis='y', linestyle='--', alpha=0.6)
-
-plt.xticks(rotation=45, fontsize=13)
-plt.yticks(fontsize=13)
-plt.tight_layout()
-plt.savefig('../figures/action_bar_chart_unique_colors.png', dpi=300)
-plt.show()
+else:
+    # Histogram data
+    counts, bins = np.histogram(df["numerosity"], bins=5)
+    
+    # Colors for histogram bars
+    hist_colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']
+    
+    # Compute histogram positions
+    bar_widths = np.diff(bins) * 0.9
+    bar_positions = bins[:-1] + np.diff(bins) * 0.05
+    bin_centers = (bins[:-1] + bins[1:]) / 2
+    numbers = np.array(list(range(1, 6)))
+    
+    # Build action map
+    action_map = {}
+    for i in range(len(df)):
+        for action in df.iloc[i]['actions']:
+            key = action['action'] + (" AST" if action['assisted'] else "")
+            action_map[key] = action_map.get(key, 0) + 1
+    
+    # Action data to DataFrame
+    number_actions = sum(action_map.values())
+    action_df = pd.DataFrame(list(action_map.items()), columns=["Action", "Count"])
+    action_df = action_df.sort_values(by="Count", ascending=False)
+    
+    # Unique bar colors
+    action_colors = [
+        '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd',
+        '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22'
+    ]
+    
+    # Create side-by-side plots
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 7))
+    
+    # --- Plot 1: Histogram ---
+    bar_container = ax1.bar(bar_positions, counts, width=bar_widths,
+                            color=hist_colors, edgecolor='black', align='edge', linewidth=1)
+    
+    
+    # Annotate histogram bars
+    for rect in bar_container:
+        height = rect.get_height()
+        if height > 0:
+            ax1.text(rect.get_x() + rect.get_width()/2, height + 0.4, f'{int(height)}',
+                     ha='center', va='bottom', fontsize=14, fontweight='bold')
+    
+    ax1.set_title('Number of Action per Class', fontsize=22, fontweight='bold', color='#333333')
+    ax1.set_xlabel('Number of Action per Class', fontsize=17)
+    ax1.set_ylabel('Frequency', fontsize=17)
+    ax1.set_xticks(bin_centers)
+    ax1.set_xticklabels([f'{int(c)}' for c in numbers], fontsize=14)
+    ax1.set_yticklabels(ax1.get_yticks(), fontsize=14)
+    ax1.grid(axis='y', linestyle='--', alpha=0.6)
+    ax1.set_facecolor('#fafafa')
+    
+    # --- Plot 2: Action Bar Chart ---
+    bars = ax2.bar(action_df["Action"], action_df["Count"], color=action_colors,
+                   edgecolor='black', linewidth=1)
+    
+    # Annotate action bars
+    for bar in bars:
+        height = bar.get_height()
+        ax2.text(bar.get_x() + bar.get_width()/2, height + 50, f'{height}',
+                 ha='center', va='bottom', fontsize=13, fontweight='bold')
+    
+    ax2.set_title(f"Count of Each Action Type ({number_actions})", fontsize=22, fontweight='bold', color='#333333')
+    ax2.set_xlabel('Action Type', fontsize=17)
+    ax2.set_ylabel('Count', fontsize=17)
+    ax2.set_xticklabels(action_df["Action"], rotation=45, ha='right', fontsize=14)
+    ax2.set_yticklabels(ax2.get_yticks(), fontsize=14)
+    ax2.grid(axis='y', linestyle='--', alpha=0.6)
+    ax2.set_facecolor('#fafafa')
+    
+    # Layout and export
+    fig.patch.set_facecolor('#ffffff')
+    plt.tight_layout()
+    plt.savefig('../figures/combined_graphs.png', dpi=300)
+    plt.show()

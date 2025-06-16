@@ -1,5 +1,5 @@
-
-GEMINI_API_KEY = ""
+import os
+GEMINI_API_KEY = os.environ['GEMINI']
 
 prompt = ("""
 Analyze the basketball video and extract all key actions performed by players. Identify the jersey number, jersey color, and action type for each event. Provide the results in a structured JSON array format as shown below:
@@ -21,12 +21,12 @@ Return a JSON array where each object represents an individual action:
 
 [
   {
-    "player": <jersey_number>,  # integer, required
+    "player": <jersey_number>,  # integer-like (generally integer value but admit the 00 case), required
     "jersey_color": "<color>",  # string, required (e.g., white, blue, black, green, red, light blue, yellow, purple)
     "action": "<type_of_action>",  # string, required
     "result": <true | false | null>,  # true = made, false = missed, null if not applicable
     "assisted": <true | false | null>,  # true = assisted, false = not assisted, null if not applicable
-    "other_player": <jersey_number | null>  # integer if another player is involved, null if not
+    "other_player": <jersey_number | null>  # integer-like (generally integer value but admit the 00 case) if another player is involved, null if not
   },
   {
     "player": <jersey_number>,
@@ -39,7 +39,7 @@ Return a JSON array where each object represents an individual action:
 ]
 
 Field Definitions:
-- player (integer, required) – Jersey number of the player performing the action.
+- player (integer-like (generally integer value but admit the 00 case), required) – Jersey number of the player performing the action.
 - jersey_color (string, required) – The primary color of the player’s jersey.
 - action (string, required) – The type of action performed.
 - result (boolean | null, required) –
@@ -50,7 +50,7 @@ Field Definitions:
   - true → The shot was assisted.
   - false → The shot was unassisted.
   - null → Not applicable for non-shooting actions.
-- other_player (integer | null, required) –
+- other_player (integer-like (generally integer value but admit the 00 case) | null, required) –
   - Jersey number of another involved player (e.g., assister).
   - null if no other player is involved.
 
@@ -95,7 +95,6 @@ import pandas as pd
 
 df = pd.read_csv('benchmark.csv', sep=';')
 
-import os
 from google import genai
 import time
 client = genai.Client(api_key=GEMINI_API_KEY)

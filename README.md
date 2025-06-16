@@ -1,16 +1,14 @@
-# 🏀👁️ BARD: A Basketball Action Recognition Dataset for multi-labeling classification 👁️🏀
+# 🏀👁️ BARD: A Basketball Action Recognition Dataset for multi-label classification 👁️🏀
 
 ## 📄 Abstract
 
-In this work, we present the BARD dataset. It is designed
-to advance Basketball Action Recognition task. Our contributions include
- significantly improved annotation accuracy and the integration of
-additional variables, such as player jersey numbers and team color 
-information with respect to existing datasets. We also introduce a novel
-output format that supports multi-class classification tasks. Finally, we
-conducted a human validation study on a subsample of the annotations,
-with expert reviewers assessing the labeling quality and reporting the
-evaluation results.
+We present the BARD dataset. It is designed to advance Basketball Action Recognition task 
+through high quality annotations and enriched contextual data.
+BARD improves upon existing datasets by including player jersey numbers, team colors and 
+a novel output format supporting multi-label classification. 
+To ensure annotation quality, we conducted a human validation study on a subsample of the annotations, 
+with expert reviewers assessing the labeling quality and reporting the evaluation results. 
+Finally, we benchmark BARD using the Gemini model, demonstrating its effectiveness for structured, multi-label action recognition tasks.
 
 ### 📘 Summary
 
@@ -40,13 +38,14 @@ evaluation results.
 
 ```json
 [
-  { "player": "0", "action": "2PT Shot", "result": false, "assisted": false, "other_player": null, "color": "blue" },
+  { "player": "00", "action": "2PT Shot", "result": false, "assisted": false, "other_player": null, "color": "blue" },
   { "player": "23", "action": "Rebound", "result": null, "assisted": null, "other_player": null, "color": "blue" },
   { "player": "23", "action": "2PT Shot", "result": false, "assisted": false, "other_player": null, "color": "blue" },
   { "player": "23", "action": "Rebound", "result": null, "assisted": null, "other_player": null, "color": "blue" },
   { "player": "23", "action": "2PT Shot", "result": true, "assisted": false, "other_player": null, "color": "blue" }
 ]
 ``` 
+
 
 
 ##### 💻 File Execution Order

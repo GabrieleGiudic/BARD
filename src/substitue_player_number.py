@@ -15,7 +15,7 @@ with os.scandir(data_path_orig) as entries:
         if entry.is_dir() and entry.name!='src':
             tokens.append(entry.name)
 
-df = pd.read_csv('../data/players.csv',sep=";")
+df = pd.read_csv('../data/players.csv',sep=";", dtype={'Number': str})
 
 #Replace complex chars with plain ones
 df['Player Name'] = df['Player Name'].str.replace("ć", "c", regex=False)
@@ -142,12 +142,12 @@ for token in tokens:
                 if d in subset_team1["Player Name 2"].to_numpy():
                     val = "1"
                     j = subset_team1["Player Name 2"].to_numpy().tolist().index(d)
-                    d = "team"+val +"-number"  + str(int(subset_team1["Number"].iloc[j]))
+                    d = "team"+val +"-number"  + str(subset_team1["Number"].iloc[j])
                    
                 if d in subset_team2["Player Name 2"].to_numpy():
                     val = "2"
                     j = subset_team2["Player Name 2"].to_numpy().tolist().index(d)
-                    d = "team"+val +"-number"  + str(int(subset_team2["Number"].iloc[j]))
+                    d = "team"+val +"-number"  + str(subset_team2["Number"].iloc[j])
                 new_d = new_d + " " + d
                 continue
             
@@ -159,7 +159,7 @@ for token in tokens:
                     val = "2"
                 for j in range(0,len(curr_t["Player Name"])):
                     if d in curr_t["Player Name"].iloc[j]:
-                        d = "team"+val +"-number"  + str(int(curr_t["Number"].iloc[j]))
+                        d = "team"+val +"-number"  + str(curr_t["Number"].iloc[j])
                         break
                 
                 new_d = new_d + " " + d
@@ -168,12 +168,12 @@ for token in tokens:
             if in_team1:
                 for j in range(0,len(subset_team1["Player Name"])):
                     if d in subset_team1["Player Name"].iloc[j]:
-                        d = "team1-number"  + str(int(subset_team1["Number"].iloc[j]))
+                        d = "team1-number"  + str(subset_team1["Number"].iloc[j])
                         break
             if in_team2:
                 for j in range(0,len(subset_team2["Player Name"])):
                     if d in subset_team2["Player Name"].iloc[j]:
-                        d = "team2-number"  + str(int(subset_team2["Number"].iloc[j]))
+                        d = "team2-number"  + str(subset_team2["Number"].iloc[j])
                         break
             new_d = new_d + " " + d
        

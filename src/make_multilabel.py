@@ -101,16 +101,20 @@ for ii in range(0,len(tokens)):
     count = 0
     new_desc = []
     new_desc.append([desc[0]["info_coarse"]])
+    hashes_video2 = None
     for i in range(1,len(desc)):
         print(i)
         
-        hashes_video1 = get_video_hashes(os.path.join(data_path_orig,token, str(i-1) + '.mp4'))
+        if i == 1:
+            hashes_video1 = get_video_hashes(os.path.join(data_path_orig,token, str(i-1) + '.mp4'))
+        else:
+            hashes_video1 = hashes_video2
+            
         hashes_video2 = get_video_hashes(os.path.join(data_path_orig,token, str(i) + '.mp4'))
         check = True
         
         if len(hashes_video1)==0 or len(hashes_video2)==0:
             check = False
-        # Get the difference in minutes and seconds
         
         threshold=0.4
         if check:
