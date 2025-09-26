@@ -90,3 +90,7 @@ Finally, we benchmark BARD using the Gemini model, demonstrating its effectivene
 
 13. compare_gemini_action_dependent.py  
     Compare Gemini results against benchmark statistics to evaluate model accuracy starting from action identification
+
+
+## License
+This project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
