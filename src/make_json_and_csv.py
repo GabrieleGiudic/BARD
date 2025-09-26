@@ -149,7 +149,7 @@ def switch(player,action_key,additional_key,other_player,color):
 
 
 # Define preprocessing functions
-def process(dataset, colors, urls,values,numbers):
+def process(dataset, colors, urls,values,numbers,with_url,token):
     
     # Process and save images and labels
     for key in dataset.keys():
@@ -176,11 +176,14 @@ def process(dataset, colors, urls,values,numbers):
             vals.append(val)
             
         if len(vals)>0:
-            urls.append(dataset[key]["url"])
+            if with_url:
+                urls.append(dataset[key]["url"])
+            else:
+                urls.append(token + "/" + str(key) + ".mp4")
             values.append(vals)
             numbers.append(len(vals))
 
-def save_dataset(input_folder,output_folder):
+def save_dataset(input_folder,output_folder,with_url):
     
     tokens = []
     with os.scandir(input_folder) as entries:
@@ -199,7 +202,7 @@ def save_dataset(input_folder,output_folder):
         with open(json_file, "r") as file:
             colors = json.load(file)
         
-        process(dataset,colors,urls,actions,numbers)
+        process(dataset,colors,urls,actions,numbers,with_url,token)
     
     df = pd.DataFrame({
     'urls': urls,
@@ -213,11 +216,15 @@ def save_dataset(input_folder,output_folder):
 input_folder = './../data'
 output_folder = './../dataset'
 
-df = save_dataset(input_folder,output_folder)
+with_url = True
+df = save_dataset(input_folder,output_folder,with_url)
 
 df = df[df["numerosity"] <= 5] #remove class with more than 5 actions
 
-df.to_csv(os.path.join(output_folder,"dataset.csv"), index=False, sep=';')
+dataset_name = "dataset"
+if not with_url:
+    dataset_name = dataset_name + "_paths"
+df.to_csv(os.path.join(output_folder,dataset_name + ".csv"), index=False, sep=';')
 
 
 
