@@ -30,19 +30,25 @@ def extract_url_information(url):
     wait.until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
 
     # Extract URL information from visible elements
-    visible_urls = [a.get_attribute('href') for a in driver.find_elements(By.TAG_NAME, 'a') if a.is_displayed()]
+    #visible_urls = [a.get_attribute('href') for a in driver.find_elements(By.TAG_NAME, 'a') if a.is_displayed()]
 
     # Extract URL information from hidden elements using JavaScript
+    
     hidden_urls = driver.execute_script("""
-    return Array.from(document.querySelectorAll('a')).filter(a => {
-        const rect = a.getBoundingClientRect();
-        return rect.width === 0 || rect.height === 0 || rect.top < 0 || rect.left < 0 || rect.bottom > window.innerHeight || rect.right   
-     > window.innerWidth;
-        }).map(a => a.href);
+    // 1. Find the left column
+    const container = document.querySelector('.Columns_left__XkWXE');
+    if (!container) return [];
+
+    // 2. Select only the main game card links using their specific data-id
+    // This excludes 'Box Score', 'Watch', and Player links automatically
+    const gameAnchors = container.querySelectorAll('a[data-id="nba:games:main:game:card"]');
+
+    // 3. Return the hrefs (No visibility filter needed)
+    return Array.from(gameAnchors).map(a => a.getAttribute('href'));
     """)
 
     # Combine visible and hidden URLs
-    all_urls = visible_urls + hidden_urls
+    all_urls = hidden_urls
 
     # Extract additional information from each URL (e.g., domain, path, query parameters)
     url_info = []
