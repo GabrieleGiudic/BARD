@@ -39,7 +39,7 @@ players_data = []
 import time
 
 for t  in nba_team_abbreviations:
-    url = "https://www.basketball-reference.com/teams/"+ t +"/2025.html#all_roster"
+    url = "https://www.basketball-reference.com/teams/"+ t +"/2024.html#all_roster"
     
     # Send a GET request to fetch the HTML content
     response = requests.get(url)
@@ -78,7 +78,7 @@ for t  in nba_team_abbreviations:
 
 df = pd.DataFrame(players_data)
 
-df.to_csv('players.csv', index=False)
+df.to_csv('players2024.csv', index=False)
 
 # To load the DataFrame back
 loaded_df = pd.read_csv('players.csv')
