@@ -53,8 +53,12 @@ for token  in tokens:
     
     path = os.path.join(data_path_orig,token,'new_info.pkl')
    
-    with open(path, 'rb') as f:
-        sanitized_text = pickle.load(f)
+    try:
+        with open(path, 'rb') as f:
+            sanitized_text = pickle.load(f)
+    except:
+        print(token + ": not made coarse")
+        continue
     
     
     for i in range(0,len(sanitized_text)):
