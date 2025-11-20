@@ -67,7 +67,11 @@ for token in tokens:
     
     
     pkl_file = os.path.join(data_path,"url_info.pkl" ) 
-    data = load_pkl(pkl_file)
+    try:
+        data = load_pkl(pkl_file)
+    except:
+        print(token + ": not susbtitued")
+        continue
     
     for i in range(0,len(data)):
         data[i]["info_player_number"] = data[i]["info"]
