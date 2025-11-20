@@ -96,7 +96,13 @@ for ii in range(0,len(tokens)):
     folder = os.path.join(data_path_orig,token)
                 
     pkl_file = os.path.join(folder,"coarse_info.pkl" ) 
-    desc = load_pkl(pkl_file)
+    try:
+        desc = load_pkl(pkl_file)
+    except:
+        print(token + ": not made multilabel")
+        continue
+    
+    
         
     count = 0
     new_desc = []
