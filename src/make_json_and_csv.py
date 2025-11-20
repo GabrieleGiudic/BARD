@@ -387,8 +387,8 @@ else:
             ax1.text(rect.get_x() + rect.get_width()/2, height + 0.4, f'{int(height)}',
                      ha='center', va='bottom', fontsize=14, fontweight='bold')
     
-    ax1.set_title('Number of Action per Class', fontsize=22, fontweight='bold', color='#333333')
-    ax1.set_xlabel('Number of Action per Class', fontsize=17)
+    ax1.set_title('Number of Actions per Class', fontsize=22, fontweight='bold', color='#333333')
+    ax1.set_xlabel('Number of Actions per Class', fontsize=17)
     ax1.set_ylabel('Frequency', fontsize=17)
     ax1.set_xticks(bin_centers)
     ax1.set_xticklabels([f'{int(c)}' for c in numbers], fontsize=14)
