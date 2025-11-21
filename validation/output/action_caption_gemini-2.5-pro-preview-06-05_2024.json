@@ -1,0 +1,432 @@
+[
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bkn-vs-hou-0022300469_366.mp4",
+        "ground_truth": "A player with jersey number 1 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 5 and jersey_color black made a Block\nA player with jersey number 33 and jersey_color white made a 3PT Shot which result was made\nA player with jersey number 1 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 8 and jersey_color black made a Rebound",
+        "prediction": "A player with jersey number 26 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 8 and jersey_color black made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bkn-vs-hou-0022300469_377.mp4",
+        "ground_truth": "A player with jersey number 28 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 2 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 20 and jersey_color black made a 3PT Shot which result was miss\nA player with jersey number 2 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bkn-vs-hou-0022300469_382.mp4",
+        "ground_truth": "A player with jersey number 33 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 8 and jersey_color black made a Rebound",
+        "prediction": "A player with jersey number 2 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 8 and jersey_color black made a Block\nA player with jersey number 8 and jersey_color black made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bkn-vs-hou-0022300469_390.mp4",
+        "ground_truth": "A player with jersey number 1 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 9 and jersey_color white made a Rebound\nA player with jersey number 8 and jersey_color black made a Foul",
+        "prediction": "A player with jersey number 4 and jersey_color black made a Foul involving other player with jersey number 33\nA player with jersey number 33 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 10"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bkn-vs-nop-0022300461_352.mp4",
+        "ground_truth": "A player with jersey number 14 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 11 and jersey_color black made a Rebound",
+        "prediction": "A player with jersey number 11 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 8 and jersey_color green made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bos-vs-ind-0022300493_343.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color green made a 2PT Shot which result was miss\nA player with jersey number 00 and jersey_color black made a Block",
+        "prediction": "A player with jersey number 0 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 36\nA player with jersey number 0 and jersey_color yellow made a Foul involving other player with jersey number 0"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bos-vs-ind-0022300493_366.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 0 and jersey_color green made a Rebound",
+        "prediction": "A player with jersey number 0 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 0 and jersey_color green made a Block\nA player with jersey number 7 and jersey_color green made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bos-vs-ind-0022300493_393.mp4",
+        "ground_truth": "A player with jersey number 00 and jersey_color black made a 2PT Shot which result was made\nA player with jersey number 12 and jersey_color green made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 0 and jersey_color yellow made a 2PT Shot which result was made\nA player with jersey number 42 and jersey_color green made a Foul involving other player with jersey number 0"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bos-vs-ind-0022300507_351.mp4",
+        "ground_truth": "A player with jersey number 9 and jersey_color green made a 3PT Shot which result was miss\nA player with jersey number 40 and jersey_color green made a Rebound\nA player with jersey number 40 and jersey_color green made a 2PT Shot which result was miss\nA player with jersey number 7 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 7 and jersey_color green made a 3PT Shot which result was miss\nA player with jersey number 7 and jersey_color green made a Rebound\nA player with jersey number 7 and jersey_color green made a 2PT Shot which result was miss\nA player with jersey number 0 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bos-vs-ind-0022300507_364.mp4",
+        "ground_truth": "A player with jersey number 8 and jersey_color green made a Free Throw",
+        "prediction": "A player with jersey number 8 and jersey_color green made a Free Throw"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bos-vs-okc-0022300462_361.mp4",
+        "ground_truth": "A player with jersey number 3 and jersey_color blue made a Turnover\nA player with jersey number 11 and jersey_color black made a Steal\nA player with jersey number 0 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 9",
+        "prediction": "A player with jersey number 8 and jersey_color light blue made a Turnover\nA player with jersey number 11 and jersey_color green made a Steal\nA player with jersey number 0 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 11"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/bos-vs-okc-0022300462_378.mp4",
+        "ground_truth": "A player with jersey number 7 and jersey_color black made a 3PT Shot which result was miss\nA player with jersey number 0 and jersey_color black made a Rebound\nA player with jersey number 0 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 7 and jersey_color blue made a Block\nA player with jersey number 0 and jersey_color black made a Rebound\nA player with jersey number 0 and jersey_color black made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 7 and jersey_color green made a 3PT Shot which result was miss\nA player with jersey number 0 and jersey_color green made a Rebound\nA player with jersey number 0 and jersey_color green made a 2PT Shot which result was miss\nA player with jersey number 5 and jersey_color blue made a Block\nA player with jersey number 0 and jersey_color green made a Rebound\nA player with jersey number 0 and jersey_color green made a 2PT Shot which result was made"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/cha-vs-chi-0022300484_311.mp4",
+        "ground_truth": "A player with jersey number 3 and jersey_color lightblue made a Turnover\nA player with jersey number 11 and jersey_color white made a Steal",
+        "prediction": "A player with jersey number 3 and jersey_color light blue made a Turnover\nA player with jersey number 11 and jersey_color white made a Steal"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/cha-vs-den-0022300455_347.mp4",
+        "ground_truth": "A player with jersey number 8 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 4 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 8 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 4 and jersey_color light blue made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/cha-vs-den-0022300455_377.mp4",
+        "ground_truth": "A player with jersey number 8 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 0 and jersey_color blue made a Block",
+        "prediction": "A player with jersey number 7 and jersey_color light blue made a 3PT Shot which result was miss\nA player with jersey number 0 and jersey_color light blue made a Rebound\nA player with jersey number 2 and jersey_color light blue made a 2PT Shot which result was miss\nA player with jersey number 7 and jersey_color blue made a Foul involving other player with jersey number 2"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/cha-vs-sac-0022300464_344.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color white made a 2PT Shot which result was made\nA player with jersey number 13 and jersey_color violet made a 3PT Shot which result was made",
+        "prediction": "A player with jersey number 3 and jersey_color white made a 2PT Shot which result was made\nA player with jersey number 10 and jersey_color purple made a Foul involving other player with jersey number 3"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/chi-vs-nyk-0022300468_317.mp4",
+        "ground_truth": "A player with jersey number 30 and jersey_color white made a Free Throw",
+        "prediction": "A player with jersey number 30 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 55 and jersey_color white made a 2PT Shot which result was miss"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/chi-vs-phi-0022300459_378.mp4",
+        "ground_truth": "A player with jersey number 7 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 25 and jersey_color red made a Rebound",
+        "prediction": "A player with jersey number 4 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 25 and jersey_color blue made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/chi-vs-phi-0022300459_393.mp4",
+        "ground_truth": "A player with jersey number 21 and jersey_color red made a 2PT Shot which result was made and was assisted by other player with jersey number 25\nA player with jersey number 11 and jersey_color blue made a Foul",
+        "prediction": "A player with jersey number 11 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 21 and jersey_color red made a Foul involving other player with jersey number 11"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/chi-vs-phi-0022300459_426.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color red made a 3PT Shot which result was miss\nA player with jersey number 35 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 5 and jersey_color red made a 3PT Shot which result was miss\nA player with jersey number 7 and jersey_color blue made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/cle-vs-tor-0022300452_364.mp4",
+        "ground_truth": "A player with jersey number 17 and jersey_color white made a Free Throw\nA player with jersey number 20 and jersey_color red made a Rebound",
+        "prediction": "A player with jersey number 3 and jersey_color white made a Free Throw\nA player with jersey number 20 and jersey_color red made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/cle-vs-tor-0022300452_395.mp4",
+        "ground_truth": "A player with jersey number 31 and jersey_color red made a Free Throw\nA player with jersey number 43 and jersey_color white made a 3PT Shot which result was made",
+        "prediction": "A player with jersey number 45 and jersey_color white made a Free Throw\nA player with jersey number 43 and jersey_color red made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/dal-vs-uta-0022300457_323.mp4",
+        "ground_truth": "A player with jersey number 77 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 24 and jersey_color black made a Block",
+        "prediction": "A player with jersey number 2 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 41 and jersey_color black made a Block"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/den-vs-gsw-0022300478_331.mp4",
+        "ground_truth": "A player with jersey number 2 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 50 and jersey_color white made a Block",
+        "prediction": "A player with jersey number 2 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 50 and jersey_color white made a Block\nA player with jersey number 2 and jersey_color blue made a Violation"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/den-vs-gsw-0022300478_360.mp4",
+        "ground_truth": "A player with jersey number 11 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 20 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 11 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 20 and jersey_color blue made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/det-vs-gsw-0022300490_360.mp4",
+        "ground_truth": "A player with jersey number 11 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 14 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 11 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 14 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/det-vs-gsw-0022300490_400.mp4",
+        "ground_truth": "A player with jersey number 2 and jersey_color white made a 2PT Shot which result was made\nA player with jersey number 32 and jersey_color black made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 44 and jersey_color white made a 2PT Shot which result was made\nA player with jersey number 32 and jersey_color black made a Violation"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/det-vs-hou-0022300453_341.mp4",
+        "ground_truth": "A player with jersey number 9 and jersey_color black made a Turnover",
+        "prediction": "A player with jersey number 28 and jersey_color dark made a Foul involving other player with jersey number 10\nA player with jersey number 28 and jersey_color dark made a Turnover"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/det-vs-hou-0022300453_351.mp4",
+        "ground_truth": "A player with jersey number 9 and jersey_color black made a Free Throw\nA player with jersey number 10 and jersey_color red made a Rebound",
+        "prediction": "A player with jersey number 8 and jersey_color black made a 2PT Shot which result was made\nA player with jersey number 17 and jersey_color red made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/det-vs-hou-0022300453_354.mp4",
+        "ground_truth": "A player with jersey number 2 and jersey_color black made a Turnover\nA player with jersey number 1 and jersey_color red made a Steal",
+        "prediction": "A player with jersey number 2 and jersey_color black made a Turnover\nA player with jersey number 9 and jersey_color red made a Steal\nA player with jersey number 1 and jersey_color red made a 2PT Shot which result was made and was assisted by other player with jersey number 9\nA player with jersey number 0 and jersey_color black made a Foul involving other player with jersey number 1"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/det-vs-uta-0022300474_398.mp4",
+        "ground_truth": "A player with jersey number 14 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made",
+        "prediction": "A player with jersey number 23 and jersey_color red made a 3PT Shot which result was miss\nA player with jersey number 23 and jersey_color purple made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/det-vs-uta-0022300474_466.mp4",
+        "ground_truth": "A player with jersey number 20 and jersey_color blue made a Turnover\nA player with jersey number 2 and jersey_color white made a Steal\nA player with jersey number 2 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 23",
+        "prediction": "A player with jersey number 2 and jersey_color white made a 3PT Shot which result was made"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/ind-vs-mil-0022300454_376.mp4",
+        "ground_truth": "A player with jersey number 1 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 11 and jersey_color green made a Rebound",
+        "prediction": "A player with jersey number 1 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 34 and jersey_color green made a Block\nA player with jersey number 34 and jersey_color green made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/ind-vs-mil-0022300454_443.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color green made a 3PT Shot which result was miss\nA player with jersey number 33 and jersey_color white made a 3PT Shot which result was made\nA player with jersey number 22 and jersey_color green made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 5 and jersey_color green made a 3PT Shot which result was miss\nA player with jersey number 33 and jersey_color white made a Foul involving other player with jersey number 5"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/lac-vs-nop-0022300486_316.mp4",
+        "ground_truth": "A player with jersey number 25 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 24 and jersey_color white made a Rebound\nA player with jersey number 7 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 24",
+        "prediction": "A player with jersey number 17 and jersey_color green made a 2PT Shot which result was miss\nA player with jersey number 17 and jersey_color green made a Rebound\nA player with jersey number 7 and jersey_color white made a Steal\nA player with jersey number 2 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 7"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/lac-vs-nop-0022300486_351.mp4",
+        "ground_truth": "A player with jersey number 24 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 7 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 14 and jersey_color black made a 3PT Shot which result was miss\nA player with jersey number 7 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/lac-vs-nop-0022300486_367.mp4",
+        "ground_truth": "A player with jersey number 4 and jersey_color white made a Turnover\nA player with jersey number 8 and jersey_color black made a Steal\nA player with jersey number 8 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 5 and jersey_color white made a Block",
+        "prediction": "A player with jersey number 8 and jersey_color black made a Steal\nA player with jersey number 10 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 8"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mem-vs-lal-0022300491_336.mp4",
+        "ground_truth": "A player with jersey number 12 and jersey_color purple made a 2PT Shot which result was miss\nA player with jersey number 18 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 12 and jersey_color purple made a 3PT Shot which result was miss\nA player with jersey number 13 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mem-vs-lal-0022300491_349.mp4",
+        "ground_truth": "A player with jersey number 23 and jersey_color purple made a Free Throw\nA player with jersey number 18 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color purple made a Free Throw\nA player with jersey number 23 and jersey_color purple made a Free Throw\nA player with jersey number 13 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mem-vs-lal-0022300491_362.mp4",
+        "ground_truth": "A player with jersey number 23 and jersey_color purple made a Free Throw\nA player with jersey number 18 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color purple made a Free Throw\nA player with jersey number 18 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mem-vs-lal-0022300491_379.mp4",
+        "ground_truth": "A player with jersey number 12 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 36 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 12 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 36 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mem-vs-lal-0022300491_385.mp4",
+        "ground_truth": "A player with jersey number 12 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 3 and jersey_color purple made a Block",
+        "prediction": "A player with jersey number 23 and jersey_color purple made a Steal\nA player with jersey number 12 and jersey_color white made a Turnover"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mem-vs-lal-0022300491_387.mp4",
+        "ground_truth": "A player with jersey number 15 and jersey_color purple made a 3PT Shot which result was miss\nA player with jersey number 18 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 15 and jersey_color purple made a 3PT Shot which result was miss\nA player with jersey number 18 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mia-vs-lac-0022300458_294.mp4",
+        "ground_truth": "A player with jersey number 2 and jersey_color blue made a 2PT Shot which result was made and was assisted by other player with jersey number 0",
+        "prediction": "A player with jersey number 2 and jersey_color blue made a 2PT Shot which result was made"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mia-vs-lac-0022300458_309.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 14 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 0 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 14 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mia-vs-lac-0022300458_338.mp4",
+        "ground_truth": "A player with jersey number 13 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 24 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 13 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 40 and jersey_color blue made a Block\nA player with jersey number 2 and jersey_color blue made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mia-vs-lac-0022300458_355.mp4",
+        "ground_truth": "A player with jersey number 13 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 40 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 14 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 44 and jersey_color blue made a Rebound\nA player with jersey number 11 and jersey_color white made a Foul involving other player with jersey number 44"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mia-vs-phx-0022300489_305.mp4",
+        "ground_truth": "A player with jersey number 13 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 0\nA player with jersey number 8 and jersey_color purple made a Foul",
+        "prediction": "A player with jersey number 13 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 11"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mia-vs-phx-0022300489_324.mp4",
+        "ground_truth": "A player with jersey number 13 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 55\nA player with jersey number 8 and jersey_color purple made a Foul",
+        "prediction": "A player with jersey number 8 and jersey_color purple made a 2PT Shot which result was made\nA player with jersey number 13 and jersey_color white made a Foul involving other player with jersey number 8"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mia-vs-phx-0022300489_344.mp4",
+        "ground_truth": "A player with jersey number 14 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 14 and jersey_color purple made a Rebound",
+        "prediction": "A player with jersey number 55 and jersey_color white made a 3PT Shot which result was made and was assisted by other player with jersey number 22"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mia-vs-phx-0022300489_363.mp4",
+        "ground_truth": "A player with jersey number 3 and jersey_color purple made a 3PT Shot which result was miss\nA player with jersey number 0 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 8 and jersey_color purple made a 3PT Shot which result was miss\nA player with jersey number 0 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mil-vs-hou-0022300496_388.mp4",
+        "ground_truth": "A player with jersey number 32 and jersey_color white made a 2PT Shot which result was made\nA player with jersey number 32 and jersey_color white made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 11 and jersey_color green made a Steal\nA player with jersey number 28 and jersey_color white made a Turnover"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/mil-vs-sas-0022300477_89.mp4",
+        "ground_truth": "A player with jersey number 34 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 14 and jersey_color black made a Rebound",
+        "prediction": "A player with jersey number 34 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 26 and jersey_color black made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/min-vs-hou-0022300485_312.mp4",
+        "ground_truth": "A player with jersey number 10 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 1 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 4 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 6 and jersey_color blue made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/min-vs-nyk-0022300451_374.mp4",
+        "ground_truth": "A player with jersey number 3 and jersey_color white made a Foul\nA player with jersey number 3 and jersey_color white made a Turnover",
+        "prediction": "A player with jersey number 3 and jersey_color white made a Foul involving other player with jersey number 5"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/min-vs-nyk-0022300451_388.mp4",
+        "ground_truth": "A player with jersey number 3 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 27 and jersey_color blue made a Rebound\nA player with jersey number 32 and jersey_color blue made a 2PT Shot which result was made and was assisted by other player with jersey number 10",
+        "prediction": "A player with jersey number 3 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 10 and jersey_color blue made a Rebound\nA player with jersey number 32 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 10"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/min-vs-orl-0022300513_369.mp4",
+        "ground_truth": "A player with jersey number 10 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 5 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 10 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 5 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/min-vs-orl-0022300513_413.mp4",
+        "ground_truth": "A player with jersey number 23 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 2 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 3 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 23 and jersey_color white made a Rebound\nA player with jersey number 23 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 0 and jersey_color blue made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/nop-vs-min-0022300471_308.mp4",
+        "ground_truth": "A player with jersey number 15 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 15 and jersey_color red made a Rebound",
+        "prediction": "A player with jersey number 10 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 27 and jersey_color light blue made a Block\nA player with jersey number 10 and jersey_color light blue made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/nop-vs-min-0022300471_322.mp4",
+        "ground_truth": "A player with jersey number 3 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 40 and jersey_color red made a Rebound\nA player with jersey number 3 and jersey_color red made a 2PT Shot which result was made and was assisted by other player with jersey number 40",
+        "prediction": "A player with jersey number 3 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 40 and jersey_color red made a Rebound\nA player with jersey number 3 and jersey_color red made a 2PT Shot which result was made and was assisted by other player with jersey number 40"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/nop-vs-min-0022300471_334.mp4",
+        "ground_truth": "A player with jersey number 14 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 27 and jersey_color white made a Block",
+        "prediction": "A player with jersey number 9 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 5 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/nop-vs-min-0022300471_350.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 5 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 3 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 5 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/nop-vs-min-0022300471_358.mp4",
+        "ground_truth": "A player with jersey number 23 and jersey_color white made a 3PT Shot which result was made and was assisted by other player with jersey number 11",
+        "prediction": "A player with jersey number 7 and jersey_color white made a 3PT Shot which result was made and was assisted by other player with jersey number 23"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/nop-vs-min-0022300471_360.mp4",
+        "ground_truth": "A player with jersey number 11 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 11 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 22 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 0 and jersey_color light blue made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/nyk-vs-phi-0022300483_332.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 0 and jersey_color red made a Rebound\nA player with jersey number 8 and jersey_color blue made a Foul",
+        "prediction": "A player with jersey number 0 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 22 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 3 and jersey_color blue made a Foul involving other player with jersey number 22"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/nyk-vs-phi-0022300483_348.mp4",
+        "ground_truth": "A player with jersey number 11 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 0 and jersey_color red made a Rebound",
+        "prediction": "A player with jersey number 25 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 21 and jersey_color red made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/nyk-vs-phi-0022300483_381.mp4",
+        "ground_truth": "A player with jersey number 55 and jersey_color blue made a Turnover\nA player with jersey number 7 and jersey_color red made a Steal",
+        "prediction": "A player with jersey number 7 and jersey_color red made a Foul involving other player with jersey number 25\nA player with jersey number 25 and jersey_color blue made a 2PT Shot which result was miss"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/okc-vs-atl-0022300467_350.mp4",
+        "ground_truth": "A player with jersey number 11 and jersey_color red made a 3PT Shot which result was miss\nA player with jersey number 8 and jersey_color lightblue made a Rebound\nA player with jersey number 21 and jersey_color lightblue made a 2PT Shot which result was made and was assisted by other player with jersey number 8",
+        "prediction": "A player with jersey number 11 and jersey_color red made a Steal\nA player with jersey number 21 and jersey_color blue made a Steal\nA player with jersey number 21 and jersey_color blue made a 2PT Shot which result was made"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/okc-vs-atl-0022300467_398.mp4",
+        "ground_truth": "A player with jersey number 15 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 15 and jersey_color red made a Rebound\nA player with jersey number 15 and jersey_color red made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 15 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 15 and jersey_color red made a Rebound\nA player with jersey number 15 and jersey_color red made a 2PT Shot which result was made"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/okc-vs-bkn-0022300481_356.mp4",
+        "ground_truth": "A player with jersey number 8 and jersey_color lightblue made a Free Throw",
+        "prediction": "A player with jersey number 3 and jersey_color blue made a 3PT Shot which result was made"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/orl-vs-den-0022300488_333.mp4",
+        "ground_truth": "A player with jersey number 22 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 27 and jersey_color blue made a Rebound\nA player with jersey number 27 and jersey_color blue made a Turnover\nA player with jersey number 12 and jersey_color white made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 21 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 15 and jersey_color blue made a Rebound\nA player with jersey number 15 and jersey_color blue made a Turnover\nA player with jersey number 12 and jersey_color white made a Steal"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/orl-vs-den-0022300488_346.mp4",
+        "ground_truth": "A player with jersey number 27 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 12 and jersey_color white made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 27 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 27 and jersey_color blue made a Turnover"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/orl-vs-den-0022300488_357.mp4",
+        "ground_truth": "A player with jersey number 15 and jersey_color blue made a Turnover\nA player with jersey number 5 and jersey_color white made a Steal",
+        "prediction": "A player with jersey number 27 and jersey_color blue made a Turnover\nA player with jersey number 1 and jersey_color white made a Steal"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/orl-vs-gsw-0022300463_353.mp4",
+        "ground_truth": "A player with jersey number 22 and jersey_color blue made a 2PT Shot which result was made\nA player with jersey number 2 and jersey_color white made a Steal",
+        "prediction": "A player with jersey number 22 and jersey_color blue made a Turnover\nA player with jersey number 11 and jersey_color white made a Steal"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/orl-vs-sac-0022300476_384.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color purple made a 2PT Shot which result was miss\nA player with jersey number 4 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 5 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 22 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/orl-vs-sac-0022300476_417.mp4",
+        "ground_truth": "A player with jersey number 12 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 10 and jersey_color purple made a Rebound",
+        "prediction": "A player with jersey number 3 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 10 and jersey_color black made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/orl-vs-sac-0022300476_466.mp4",
+        "ground_truth": "A player with jersey number 4 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 10 and jersey_color purple made a Rebound",
+        "prediction": "A player with jersey number 35 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 10 and jersey_color black made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/orl-vs-sac-0022300476_477.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 13 and jersey_color purple made a 3PT Shot which result was made",
+        "prediction": "A player with jersey number 5 and jersey_color white made a 3PT Shot which result was miss"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/por-vs-dal-0022300472_361.mp4",
+        "ground_truth": "A player with jersey number 1 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 17 and jersey_color red made a Foul",
+        "prediction": "A player with jersey number 1 and jersey_color dark blue made a 2PT Shot which result was made\nA player with jersey number 23 and jersey_color red made a Foul involving other player with jersey number 1"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/por-vs-dal-0022300472_383.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color red made a Free Throw\nA player with jersey number 30 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 5 and jersey_color red made a Free Throw\nA player with jersey number 30 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/por-vs-dal-0022300472_394.mp4",
+        "ground_truth": "A player with jersey number 1 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 33 and jersey_color red made a 3PT Shot which result was made",
+        "prediction": "A player with jersey number 9 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 8 and jersey_color red made a Block\nA player with jersey number 23 and jersey_color red made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/por-vs-dal-0022300472_419.mp4",
+        "ground_truth": "A player with jersey number 33 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 1 and jersey_color blue made a Block\nA player with jersey number 18 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 33 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 18 and jersey_color blue made a Block\nA player with jersey number 18 and jersey_color blue made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/por-vs-dal-0022300472_427.mp4",
+        "ground_truth": "A player with jersey number 00 and jersey_color blue made a Free Throw\nA player with jersey number 33 and jersey_color red made a 3PT Shot which result was made",
+        "prediction": "A player with jersey number 10 and jersey_color blue made a 2PT Shot which result was made"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/sac-vs-det-0022300512_336.mp4",
+        "ground_truth": "A player with jersey number 44 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 41 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 44 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 13 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/sac-vs-det-0022300512_339.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 10 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 0 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 10 and jersey_color white made a Rebound"
+    },
+    {
+        "image": "/leonardo_work/uBS25_EcoGiu/pipeline_cv/yolobb/src/QWEN_FINE_TUNE/BARD_benchmark/data/sac-vs-det-0022300512_366.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 10 and jersey_color white made a Rebound\nA player with jersey number 10 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 10 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 0 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 10 and jersey_color white made a Rebound\nA player with jersey number 10 and jersey_color white made a 2PT Shot which result was miss"
+    }
+]
