@@ -93,7 +93,8 @@ Instructions:
 
 import pandas as pd
 
-df = pd.read_csv('benchmark.csv', sep=';')
+split = '2025'
+df = pd.read_csv('../validation/'+split+'/benchmark.csv')
 
 from google import genai
 import time
@@ -103,7 +104,7 @@ results = {}
 
 for i in range(0,len(df)):
     
-    video_file_path = os.path.join('../validation/multi',df.iloc[i]['files'] +  '.mp4')
+    video_file_path = df.iloc[i]['files']
     
     try:
         # --- 3. Upload the Video File ---
@@ -145,7 +146,7 @@ for i in range(0,len(df)):
  
 import json
 
-with open("gemini-2.5-pro-preview-06-05.json", "w") as f:
+with open("gemini-2.5-pro-preview-06-05_"+split+".json", "w") as f:
     json.dump(results, f, indent=4)
 
 converted_results = []
@@ -164,4 +165,4 @@ gemini = pd.DataFrame({
     'number_actions': number_actions
 })
 
-gemini.to_csv('gemini-2.5-pro-preview-06-05.csv', sep=';', index=False)
+gemini.to_csv('gemini-2.5-pro-preview-06-05_'+split+'.csv', sep=';', index=False)
