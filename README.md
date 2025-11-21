@@ -85,12 +85,11 @@ Finally, we benchmark BARD using the Gemini model, demonstrating its effectivene
 11. run_gemini.py
     Run the final analysis or machine learning model (e.g., Gemini) to interpret or predict basketball stats.
 
-12. compare_gemini.py  
-    Compare Gemini results against benchmark statistics to evaluate model accuracy.
-
-13. compare_gemini_action_dependent.py  
-    Compare Gemini results against benchmark statistics to evaluate model accuracy starting from action identification
-
+## Validation
+The validation folder contains the following:
+- 2024 and 2025 subfolders: Each contains video data for the respective year in the multi folder, annotations in benchmark.csv and Gemini predictions in pred_gemini.json.
+- output subfolder: Contains pred_gemini.json (renamed) and possibly other files if you want to evaluate your own models.
+- metrics subfolder: Contains run_all.sh (set your python_path.txt) to reproduce the results from our paper.
 
 ## License
 This project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
