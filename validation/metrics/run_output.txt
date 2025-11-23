@@ -323,3 +323,1560 @@ Traceback (most recent call last):
     from dtw._dtw_utils import _computeCM_wrapper
   File "dtw\\_dtw_utils.pyx", line 1, in init dtw._dtw_utils
 ImportError: numpy.core.multiarray failed to import (auto-generated because you didn't call 'numpy.import_array()' after cimporting numpy; use '<void>numpy._import_array' to disable if you are certain you don't need it).
+
+===========================================================================
+?? Basketball Event Evaluation Report
+    Source File: action_caption_gemini-2.5-pro-preview-06-05_2024.json
+===========================================================================
+
+Total Ground Truth Events:     192
+Total Predicted Events:        185
+Total Videos Processed:        86
+
+## 1. Video-Level Accuracy
+---------------------------------------------------------------------------
+Perfect Video Accuracy (Ordered):   0.1163 (10/86)
+Perfect Ordered Actions Accuracy:   0.3837 (33/86)
+Perfect Unordered Actions Accuracy: 0.3837 (33/86)
+Exact Event Count Accuracy:         0.6395 (55/86)
+Tolerant Count Accuracy (+-1):      0.9419 (81/86)
+
+## 2. Event-Level Matching Performance
+---------------------------------------------------------------------------
+--- Exact Action Match ---
+Precision:      0.7243 (134/185)
+Recall:         0.6979 (134/192)
+F1-Score:       0.7109
+
+--- Action + Color Match ---
+Precision:      0.5892 (109/185)
+Recall:         0.5677 (109/192)
+F1-Score:       0.5782
+
+--- Action + Color + Player Match ---
+Precision:      0.3027 (56/185)
+Recall:         0.2917 (56/192)
+F1-Score:       0.2971
+
+--- Action Class Match ---
+Precision:      0.8000 (148/185)
+Recall:         0.7708 (148/192)
+F1-Score:       0.7851
+
+--- Class + Color Match ---
+Precision:      0.6649 (123/185)
+Recall:         0.6406 (123/192)
+F1-Score:       0.6525
+
+--- Class + Color + Player Match ---
+Precision:      0.3351 (62/185)
+Recall:         0.3229 (62/192)
+F1-Score:       0.3289
+
+## 3. Conditional Attribute Accuracy
+---------------------------------------------------------------------------
+ (Accuracy of attributes, given a successful parent match)
+ATTRIBUTE                                                    | ACCURACY
+---------------------------------------------------------------------------
+Result (given correct SHOT Action)                           | 0.9130 (63/69)
+Assisted status (given correct 2PT/3PT Shot)                 | 0.8889 (56/63)
+  -> Other Player (given 2PT/3PT Shot & Assisted is TRUE)    | 0.2000 (1/5)
+Jersey Color (given correct Action)                          | 0.8134 (109/134)
+Player Number (given correct Action & Color)                 | 0.5138 (56/109)
+
+## 4. Detailed Confusion Matrices
+---------------------------------------------------------------------------
+
+--- Confusion Matrix: Unordered Action Classes ---
+                Predicted
+True           |        block         foul      rebound         shot        steal     turnover    violation __SPURIOUS__  __MISSING__
+-------------------------------------------------------------------------------------------------------------------------------------
+ block        |            4            0            0            0            0            0            0            0            6
+ foul         |            0            6            0            0            0            0            0            0            1
+ rebound      |            0            0           45            0            0            0            0            0            8
+ shot         |            0            0            0           83            0            0            0            0           21
+ steal        |            0            0            0            0            6            0            0            0            2
+ turnover     |            0            0            0            0            0            4            0            0            6
+ violation    |            0            0            0            0            0            0            0            0            0
+ __SPURIOUS__ |            5            9            5            6            6            4            2            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Unordered Actions ---
+                Predicted
+True           |     2pt shot     3pt shot        block         foul   free throw      rebound        steal     turnover    violation __SPURIOUS__  __MISSING__
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 2pt shot     |           43            0            0            0            0            0            0            0            0            0           20
+ 3pt shot     |            0           20            0            0            0            0            0            0            0            0           11
+ block        |            0            0            4            0            0            0            0            0            0            0            6
+ foul         |            0            0            0            6            0            0            0            0            0            0            1
+ free throw   |            0            0            0            0            6            0            0            0            0            0            4
+ rebound      |            0            0            0            0            0           45            0            0            0            0            8
+ steal        |            0            0            0            0            0            0            6            0            0            0            2
+ turnover     |            0            0            0            0            0            0            0            4            0            0            6
+ violation    |            0            0            0            0            0            0            0            0            0            0            0
+ __SPURIOUS__ |           11            8            5            9            1            5            6            4            2            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Jersey Color (given correct Action) ---
+             Predicted
+True        |     black      blue      dark     green lightblue    purple       red     white    yellow
+-------------------------------------------------------------------------------------------------------
+ black     |        10         0         1         9         0         0         0         0         1
+ blue      |         0        23         0         0         0         0         3         2         0
+ dark      |         0         0         0         0         0         0         0         0         0
+ green     |         0         0         0         8         0         0         0         0         0
+ lightblue |         0         1         0         0         0         0         0         0         0
+ purple    |         3         0         0         0         0         4         0         1         0
+ red       |         0         2         0         0         0         0        19         1         0
+ white     |         0         0         0         1         0         1         0        44         0
+ yellow    |         0         0         0         0         0         0         0         0         0
+
+--- Confusion Matrix: Jersey Number (given correct Action and Color) ---
+         Predicted
+True    |     0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    17    18    20    21    22    23    24    25    26    27    33    34    35    36    40    41    44    50    55    77
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0     |     7     0     0     1     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 1     |     0     0     0     0     0     0     1     0     0     1     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 2     |     1     0     4     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0
+ 3     |     0     0     0     4     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 4     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0
+ 5     |     0     1     0     1     0     5     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 6     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 7     |     1     0     1     0     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 8     |     0     0     0     1     1     0     0     0     5     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 9     |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 10    |     0     0     0     0     1     0     0     0     0     0     4     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 11    |     0     0     0     0     0     0     0     0     0     0     0     3     0     0     0     0     0     0     0     0     1     0     0     1     0     0     0     1     0     0     0     0     0     0     0     0
+ 12    |     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 13    |     0     0     0     0     0     0     0     0     0     0     0     0     0     2     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 14    |     0     0     0     0     0     0     0     0     0     1     0     1     0     0     2     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     1     0
+ 15    |     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     4     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 17    |     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 18    |     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 20    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 21    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 22    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 23    |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 24    |     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0
+ 25    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 26    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 27    |     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     2     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 33    |     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     1     0     0     0     0     0     0     0     0     0
+ 34    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0
+ 35    |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 36    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0
+ 40    |     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     1     0     0     0
+ 41    |     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 44    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0
+ 50    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0
+ 55    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 77    |     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+## 5. Sequence-Level Metrics (DTW-aligned)
+---------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "caption_nograph.py", line 618, in <module>
+    main()
+  File "caption_nograph.py", line 546, in main
+    from dtw import dtw
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\__init__.py", line 17, in <module>
+    from dtw.dtw import *
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\dtw.py", line 36, in <module>
+    from dtw._globalCostMatrix import _globalCostMatrix
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\_globalCostMatrix.py", line 3, in <module>
+    from dtw._dtw_utils import _computeCM_wrapper
+  File "dtw\\_dtw_utils.pyx", line 1, in init dtw._dtw_utils
+ImportError: numpy.core.multiarray failed to import (auto-generated because you didn't call 'numpy.import_array()' after cimporting numpy; use '<void>numpy._import_array' to disable if you are certain you don't need it).
+
+===========================================================================
+?? Basketball Event Evaluation Report
+    Source File: action_caption_gemini-2.5-pro-preview-06-05_2025.json
+===========================================================================
+
+Total Ground Truth Events:     188
+Total Predicted Events:        183
+Total Videos Processed:        90
+
+## 1. Video-Level Accuracy
+---------------------------------------------------------------------------
+Perfect Video Accuracy (Ordered):   0.1889 (17/90)
+Perfect Ordered Actions Accuracy:   0.6222 (56/90)
+Perfect Unordered Actions Accuracy: 0.6222 (56/90)
+Exact Event Count Accuracy:         0.6889 (62/90)
+Tolerant Count Accuracy (+-1):      0.8889 (80/90)
+
+## 2. Event-Level Matching Performance
+---------------------------------------------------------------------------
+--- Exact Action Match ---
+Precision:      0.8525 (156/183)
+Recall:         0.8298 (156/188)
+F1-Score:       0.8410
+
+--- Action + Color Match ---
+Precision:      0.6885 (126/183)
+Recall:         0.6702 (126/188)
+F1-Score:       0.6792
+
+--- Action + Color + Player Match ---
+Precision:      0.4481 (82/183)
+Recall:         0.4362 (82/188)
+F1-Score:       0.4420
+
+--- Action Class Match ---
+Precision:      0.8634 (158/183)
+Recall:         0.8404 (158/188)
+F1-Score:       0.8518
+
+--- Class + Color Match ---
+Precision:      0.7104 (130/183)
+Recall:         0.6915 (130/188)
+F1-Score:       0.7008
+
+--- Class + Color + Player Match ---
+Precision:      0.4536 (83/183)
+Recall:         0.4415 (83/188)
+F1-Score:       0.4474
+
+## 3. Conditional Attribute Accuracy
+---------------------------------------------------------------------------
+ (Accuracy of attributes, given a successful parent match)
+ATTRIBUTE                                                    | ACCURACY
+---------------------------------------------------------------------------
+Result (given correct SHOT Action)                           | 0.9167 (77/84)
+Assisted status (given correct 2PT/3PT Shot)                 | 0.8667 (65/75)
+  -> Other Player (given 2PT/3PT Shot & Assisted is TRUE)    | 0.5000 (4/8)
+Jersey Color (given correct Action)                          | 0.8077 (126/156)
+Player Number (given correct Action & Color)                 | 0.6508 (82/126)
+
+## 4. Detailed Confusion Matrices
+---------------------------------------------------------------------------
+
+--- Confusion Matrix: Unordered Action Classes ---
+                Predicted
+True           |        block         foul      rebound         shot        steal     turnover __SPURIOUS__  __MISSING__
+------------------------------------------------------------------------------------------------------------------------
+ block        |            5            0            0            0            0            0            0            3
+ foul         |            0           10            0            0            0            0            0            0
+ rebound      |            0            0           40            0            0            0            0           13
+ shot         |            0            0            0           86            0            0            0            6
+ steal        |            0            0            0            0            9            0            0            3
+ turnover     |            0            0            0            0            0            8            0            5
+ __SPURIOUS__ |            5            1            7            8            2            2            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Unordered Actions ---
+                Predicted
+True           |     2pt shot     3pt shot        block         foul   free throw      rebound        steal     turnover __SPURIOUS__  __MISSING__
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 2pt shot     |           47            0            0            0            0            0            0            0            0            4
+ 3pt shot     |            0           28            0            0            0            0            0            0            0            2
+ block        |            0            0            5            0            0            0            0            0            0            3
+ foul         |            0            0            0           10            0            0            0            0            0            0
+ free throw   |            0            0            0            0            9            0            0            0            0            2
+ rebound      |            0            0            0            0            0           40            0            0            0           13
+ steal        |            0            0            0            0            0            0            9            0            0            3
+ turnover     |            0            0            0            0            0            0            0            8            0            5
+ __SPURIOUS__ |            6            4            5            1            0            7            2            2            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Jersey Color (given correct Action) ---
+          Predicted
+True     |  black   blue   gray  green   grey purple    red   teal  white yellow
+--------------------------------------------------------------------------------
+ black  |     20      0      0      4      0      0      2      1      3      0
+ blue   |      4     21      0      0      0      0      3      0      3      0
+ gray   |      1      0      0      0      1      0      0      0      0      0
+ green  |      0      0      0      3      0      0      0      0      0      0
+ grey   |      0      0      0      0      0      0      0      0      0      0
+ purple |      0      0      0      0      0      6      0      0      1      0
+ red    |      1      1      0      0      0      0      9      0      0      0
+ teal   |      0      0      0      0      0      0      0      0      0      0
+ white  |      2      3      0      0      0      0      1      0     58      0
+ yellow |      0      0      0      0      0      0      0      0      1      7
+
+--- Confusion Matrix: Jersey Number (given correct Action and Color) ---
+         Predicted
+True    |     0     1     2     3     4     5     7     8     9    10    11    12    13    14    15    17    18    19    20    21    22    23    24    25    27    28    30    31    32    33    34    43    77
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0     |     5     0     0     0     0     0     0     1     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0
+ 1     |     1     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 2     |     0     1     2     0     1     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 3     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 4     |     0     0     1     0     5     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 5     |     1     0     0     1     1     2     0     1     0     0     0     0     0     0     0     2     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 7     |     0     0     0     0     0     0     3     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 8     |     2     0     0     0     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 9     |     0     0     0     0     0     0     0     1     4     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 10    |     0     0     0     0     0     0     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 11    |     0     0     0     0     0     0     0     0     0     0     7     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 12    |     1     0     0     0     0     0     0     0     0     0     0     3     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 13    |     0     0     0     1     0     0     0     0     0     0     0     1     7     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 14    |     0     0     0     0     0     0     0     0     0     0     0     0     1     2     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0
+ 15    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     4     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 17    |     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     4     0     0     0     0     1     0     0     0     0     0     0     0     0     1     0     0     0
+ 18    |     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 19    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 20    |     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 21    |     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 22    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0
+ 23    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     3     0     0     0     0     0     0     2     0     0     0     0
+ 24    |     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     2     0     1     0     0     0     0     0     0     0     0     0     0
+ 25    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 27    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0
+ 28    |     0     0     0     0     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     5     0     0     0     0     0     0     0
+ 30    |     0     0     0     1     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     0     0     0
+ 31    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0
+ 32    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0
+ 33    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0
+ 34    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0
+ 43    |     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0
+ 77    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     0     0     0     1     0     0     0     1     0     0     0     0     0     0     0
+
+## 5. Sequence-Level Metrics (DTW-aligned)
+---------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "caption_nograph.py", line 618, in <module>
+    main()
+  File "caption_nograph.py", line 546, in main
+    from dtw import dtw
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\__init__.py", line 17, in <module>
+    from dtw.dtw import *
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\dtw.py", line 36, in <module>
+    from dtw._globalCostMatrix import _globalCostMatrix
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\_globalCostMatrix.py", line 3, in <module>
+    from dtw._dtw_utils import _computeCM_wrapper
+  File "dtw\\_dtw_utils.pyx", line 1, in init dtw._dtw_utils
+ImportError: numpy.core.multiarray failed to import (auto-generated because you didn't call 'numpy.import_array()' after cimporting numpy; use '<void>numpy._import_array' to disable if you are certain you don't need it).
+
+===========================================================================
+?? Basketball Event Evaluation Report
+    Source File: action_caption_Qwen2.5-VL-3B-BARD_only2024.json
+===========================================================================
+
+Total Ground Truth Events:     192
+Total Predicted Events:        159
+Total Videos Processed:        86
+
+## 1. Video-Level Accuracy
+---------------------------------------------------------------------------
+Perfect Video Accuracy (Ordered):   0.0000 (0/86)
+Perfect Ordered Actions Accuracy:   0.3023 (26/86)
+Perfect Unordered Actions Accuracy: 0.3023 (26/86)
+Exact Event Count Accuracy:         0.5930 (51/86)
+Tolerant Count Accuracy (+-1):      0.9186 (79/86)
+
+## 2. Event-Level Matching Performance
+---------------------------------------------------------------------------
+--- Exact Action Match ---
+Precision:      0.6667 (106/159)
+Recall:         0.5521 (106/192)
+F1-Score:       0.6040
+
+--- Action + Color Match ---
+Precision:      0.4654 (74/159)
+Recall:         0.3854 (74/192)
+F1-Score:       0.4217
+
+--- Action + Color + Player Match ---
+Precision:      0.1069 (17/159)
+Recall:         0.0885 (17/192)
+F1-Score:       0.0969
+
+--- Action Class Match ---
+Precision:      0.7736 (123/159)
+Recall:         0.6406 (123/192)
+F1-Score:       0.7009
+
+--- Class + Color Match ---
+Precision:      0.5535 (88/159)
+Recall:         0.4583 (88/192)
+F1-Score:       0.5014
+
+--- Class + Color + Player Match ---
+Precision:      0.1258 (20/159)
+Recall:         0.1042 (20/192)
+F1-Score:       0.1140
+
+## 3. Conditional Attribute Accuracy
+---------------------------------------------------------------------------
+ (Accuracy of attributes, given a successful parent match)
+ATTRIBUTE                                                    | ACCURACY
+---------------------------------------------------------------------------
+Result (given correct SHOT Action)                           | 0.6557 (40/61)
+Assisted status (given correct 2PT/3PT Shot)                 | 0.8627 (44/51)
+  -> Other Player (given 2PT/3PT Shot & Assisted is TRUE)    | 0.3333 (1/3)
+Jersey Color (given correct Action)                          | 0.6981 (74/106)
+Player Number (given correct Action & Color)                 | 0.2297 (17/74)
+
+## 4. Detailed Confusion Matrices
+---------------------------------------------------------------------------
+
+--- Confusion Matrix: Unordered Action Classes ---
+                Predicted
+True           |        block         foul      rebound         shot        steal     turnover __SPURIOUS__  __MISSING__
+------------------------------------------------------------------------------------------------------------------------
+ block        |            0            0            0            0            0            0            0           10
+ foul         |            0            1            0            0            0            0            0            6
+ rebound      |            0            0           44            0            0            0            0            9
+ shot         |            0            0            0           78            0            0            0           26
+ steal        |            0            0            0            0            0            0            0            8
+ turnover     |            0            0            0            0            0            0            0           10
+ __SPURIOUS__ |            3            5           19            9            0            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Unordered Actions ---
+                Predicted
+True           |     2pt shot     3pt shot        block         foul   free throw      rebound        steal     turnover __SPURIOUS__  __MISSING__
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 2pt shot     |           47            0            0            0            0            0            0            0            0           16
+ 3pt shot     |            0            4            0            0            0            0            0            0            0           27
+ block        |            0            0            0            0            0            0            0            0            0           10
+ foul         |            0            0            0            1            0            0            0            0            0            6
+ free throw   |            0            0            0            0           10            0            0            0            0            0
+ rebound      |            0            0            0            0            0           44            0            0            0            9
+ steal        |            0            0            0            0            0            0            0            0            0            8
+ turnover     |            0            0            0            0            0            0            0            0            0           10
+ __SPURIOUS__ |           23            2            3            5            1           19            0            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Jersey Color (given correct Action) ---
+             Predicted
+True        |     black      blue     green lightblue    orange    purple       red     white
+---------------------------------------------------------------------------------------------
+ black     |         8         1         1         0         0         0         1         3
+ blue      |         0        15         0         0         0         0         0         5
+ green     |         0         0         5         0         0         0         0         1
+ lightblue |         0         2         0         0         0         0         0         0
+ orange    |         0         0         0         0         0         0         0         0
+ purple    |         1         1         0         0         0         3         0         2
+ red       |         0         2         0         0         1         0        12         3
+ white     |         4         3         1         0         0         1         0        30
+
+--- Confusion Matrix: Jersey Number (given correct Action and Color) ---
+         Predicted
+True    |    00     0     1     2     3     4     5     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24    25    27    28    30    32    33    35    44    45    77    88
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 00    |     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 0     |     0     1     0     0     0     0     0     1     1     1     1     0     1     0     0     0     0     1     0     0     0     2     0     0     0     0     0     0     0     0     1     0     0     0     0     0
+ 1     |     0     0     2     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 2     |     1     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0
+ 3     |     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0
+ 4     |     0     0     1     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 5     |     0     0     0     0     0     0     0     0     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 7     |     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0
+ 8     |     0     0     0     0     0     0     0     1     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1
+ 9     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 10    |     0     0     0     0     0     0     1     0     0     0     1     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 11    |     0     0     1     0     0     0     0     0     1     0     1     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 12    |     0     0     0     0     0     0     0     0     2     0     0     0     1     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 13    |     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 14    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 15    |     0     0     0     0     0     0     0     0     0     0     1     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 16    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 17    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 18    |     0     0     0     0     0     0     0     0     0     0     0     1     0     1     0     0     0     0     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 19    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 20    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     1     0     0
+ 21    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 22    |     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 23    |     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0
+ 24    |     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 25    |     0     0     0     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 27    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0
+ 28    |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 30    |     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0
+ 32    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0
+ 33    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 35    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 44    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 45    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 77    |     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 88    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+## 5. Sequence-Level Metrics (DTW-aligned)
+---------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "caption_nograph.py", line 618, in <module>
+    main()
+  File "caption_nograph.py", line 546, in main
+    from dtw import dtw
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\__init__.py", line 17, in <module>
+    from dtw.dtw import *
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\dtw.py", line 36, in <module>
+    from dtw._globalCostMatrix import _globalCostMatrix
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\_globalCostMatrix.py", line 3, in <module>
+    from dtw._dtw_utils import _computeCM_wrapper
+  File "dtw\\_dtw_utils.pyx", line 1, in init dtw._dtw_utils
+ImportError: numpy.core.multiarray failed to import (auto-generated because you didn't call 'numpy.import_array()' after cimporting numpy; use '<void>numpy._import_array' to disable if you are certain you don't need it).
+
+===========================================================================
+?? Basketball Event Evaluation Report
+    Source File: action_caption_Qwen2.5-VL-3B-BARD_only2025.json
+===========================================================================
+
+Total Ground Truth Events:     188
+Total Predicted Events:        157
+Total Videos Processed:        90
+
+## 1. Video-Level Accuracy
+---------------------------------------------------------------------------
+Perfect Video Accuracy (Ordered):   0.0111 (1/90)
+Perfect Ordered Actions Accuracy:   0.3444 (31/90)
+Perfect Unordered Actions Accuracy: 0.3444 (31/90)
+Exact Event Count Accuracy:         0.5444 (49/90)
+Tolerant Count Accuracy (+-1):      0.8333 (75/90)
+
+## 2. Event-Level Matching Performance
+---------------------------------------------------------------------------
+--- Exact Action Match ---
+Precision:      0.6369 (100/157)
+Recall:         0.5319 (100/188)
+F1-Score:       0.5797
+
+--- Action + Color Match ---
+Precision:      0.4841 (76/157)
+Recall:         0.4043 (76/188)
+F1-Score:       0.4406
+
+--- Action + Color + Player Match ---
+Precision:      0.1274 (20/157)
+Recall:         0.1064 (20/188)
+F1-Score:       0.1159
+
+--- Action Class Match ---
+Precision:      0.7643 (120/157)
+Recall:         0.6383 (120/188)
+F1-Score:       0.6957
+
+--- Class + Color Match ---
+Precision:      0.5669 (89/157)
+Recall:         0.4734 (89/188)
+F1-Score:       0.5159
+
+--- Class + Color + Player Match ---
+Precision:      0.1274 (20/157)
+Recall:         0.1064 (20/188)
+F1-Score:       0.1159
+
+## 3. Conditional Attribute Accuracy
+---------------------------------------------------------------------------
+ (Accuracy of attributes, given a successful parent match)
+ATTRIBUTE                                                    | ACCURACY
+---------------------------------------------------------------------------
+Result (given correct SHOT Action)                           | 0.6491 (37/57)
+Assisted status (given correct 2PT/3PT Shot)                 | 0.6957 (32/46)
+  -> Other Player (given 2PT/3PT Shot & Assisted is TRUE)    | 0.2000 (1/5)
+Jersey Color (given correct Action)                          | 0.7600 (76/100)
+Player Number (given correct Action & Color)                 | 0.2632 (20/76)
+
+## 4. Detailed Confusion Matrices
+---------------------------------------------------------------------------
+
+--- Confusion Matrix: Unordered Action Classes ---
+                Predicted
+True           |        block         foul      rebound         shot        steal     turnover __SPURIOUS__  __MISSING__
+------------------------------------------------------------------------------------------------------------------------
+ block        |            2            0            0            0            0            0            0            6
+ foul         |            0            4            0            0            0            0            0            6
+ rebound      |            0            0           37            0            0            0            0           16
+ shot         |            0            0            0           77            0            0            0           15
+ steal        |            0            0            0            0            0            0            0           12
+ turnover     |            0            0            0            0            0            0            0           13
+ __SPURIOUS__ |            1            4           16           16            0            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Unordered Actions ---
+                Predicted
+True           |     2pt shot     3pt shot        block         foul   free throw      rebound        steal     turnover __SPURIOUS__  __MISSING__
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 2pt shot     |           41            0            0            0            0            0            0            0            0           10
+ 3pt shot     |            0            5            0            0            0            0            0            0            0           25
+ block        |            0            0            2            0            0            0            0            0            0            6
+ foul         |            0            0            0            4            0            0            0            0            0            6
+ free throw   |            0            0            0            0           11            0            0            0            0            0
+ rebound      |            0            0            0            0            0           37            0            0            0           16
+ steal        |            0            0            0            0            0            0            0            0            0           12
+ turnover     |            0            0            0            0            0            0            0            0            0           13
+ __SPURIOUS__ |           34            1            1            4            1           16            0            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Jersey Color (given correct Action) ---
+          Predicted
+True     |  black   blue   gray  green purple    red  white yellow
+------------------------------------------------------------------
+ black  |     13      0      0      2      0      2      2      0
+ blue   |      1     15      0      0      1      2      2      0
+ gray   |      1      0      2      0      0      0      0      0
+ green  |      0      0      0      1      0      0      0      0
+ purple |      0      0      0      0      5      0      0      0
+ red    |      1      2      0      0      0      7      0      0
+ white  |      2      2      3      0      2      0     27      0
+ yellow |      0      0      0      0      0      0      2      3
+
+--- Confusion Matrix: Jersey Number (given correct Action and Color) ---
+         Predicted
+True    |     0     1     2     3     4     5     7     8     9    10    11    13    14    15    17    18    19    21    22    23    24    25    27    28    30    31    32    34    43    77
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0     |     0     0     0     0     0     0     1     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 1     |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 2     |     0     0     2     0     0     0     0     0     0     0     0     0     0     0     1     0     1     0     0     1     0     0     0     0     0     0     0     0     0     1
+ 3     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0
+ 4     |     0     0     1     0     1     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 5     |     0     1     0     0     0     1     0     0     0     0     0     0     0     0     2     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 7     |     0     1     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 8     |     0     2     0     0     0     0     0     1     1     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 9     |     0     0     0     0     0     0     0     1     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 10    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 11    |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     2     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 13    |     0     2     0     0     0     0     0     0     0     0     0     2     1     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 14    |     0     0     0     0     0     0     0     0     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 15    |     0     0     0     0     0     0     0     0     0     0     0     0     0     1     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 17    |     0     0     0     0     0     0     0     1     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0
+ 18    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 19    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 21    |     0     0     0     0     0     0     0     1     0     0     1     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 22    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0
+ 23    |     0     0     0     0     0     0     0     1     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 24    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0
+ 25    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 27    |     0     1     0     0     0     0     0     0     0     0     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 28    |     0     2     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 30    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0
+ 31    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 32    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     1     0     0     0
+ 34    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0
+ 43    |     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 77    |     0     0     0     0     0     0     0     0     0     0     0     0     1     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+## 5. Sequence-Level Metrics (DTW-aligned)
+---------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "caption_nograph.py", line 618, in <module>
+    main()
+  File "caption_nograph.py", line 546, in main
+    from dtw import dtw
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\__init__.py", line 17, in <module>
+    from dtw.dtw import *
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\dtw.py", line 36, in <module>
+    from dtw._globalCostMatrix import _globalCostMatrix
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\_globalCostMatrix.py", line 3, in <module>
+    from dtw._dtw_utils import _computeCM_wrapper
+  File "dtw\\_dtw_utils.pyx", line 1, in init dtw._dtw_utils
+ImportError: numpy.core.multiarray failed to import (auto-generated because you didn't call 'numpy.import_array()' after cimporting numpy; use '<void>numpy._import_array' to disable if you are certain you don't need it).
+
+===========================================================================
+?? Basketball Event Evaluation Report
+    Source File: action_caption_Qwen2.5-VL-3B-Instruct2024.json
+===========================================================================
+
+Total Ground Truth Events:     192
+Total Predicted Events:        642
+Total Videos Processed:        86
+
+## 1. Video-Level Accuracy
+---------------------------------------------------------------------------
+Perfect Video Accuracy (Ordered):   0.0000 (0/86)
+Perfect Ordered Actions Accuracy:   0.0000 (0/86)
+Perfect Unordered Actions Accuracy: 0.0000 (0/86)
+Exact Event Count Accuracy:         0.0581 (5/86)
+Tolerant Count Accuracy (+-1):      0.4186 (36/86)
+
+## 2. Event-Level Matching Performance
+---------------------------------------------------------------------------
+--- Exact Action Match ---
+Precision:      0.0841 (54/642)
+Recall:         0.2812 (54/192)
+F1-Score:       0.1295
+
+--- Action + Color Match ---
+Precision:      0.0452 (29/642)
+Recall:         0.1510 (29/192)
+F1-Score:       0.0695
+
+--- Action + Color + Player Match ---
+Precision:      0.0093 (6/642)
+Recall:         0.0312 (6/192)
+F1-Score:       0.0144
+
+--- Action Class Match ---
+Precision:      0.1542 (99/642)
+Recall:         0.5156 (99/192)
+F1-Score:       0.2374
+
+--- Class + Color Match ---
+Precision:      0.0763 (49/642)
+Recall:         0.2552 (49/192)
+F1-Score:       0.1175
+
+--- Class + Color + Player Match ---
+Precision:      0.0156 (10/642)
+Recall:         0.0521 (10/192)
+F1-Score:       0.0240
+
+## 3. Conditional Attribute Accuracy
+---------------------------------------------------------------------------
+ (Accuracy of attributes, given a successful parent match)
+ATTRIBUTE                                                    | ACCURACY
+---------------------------------------------------------------------------
+Result (given correct SHOT Action)                           | 0.3077 (16/52)
+Assisted status (given correct 2PT/3PT Shot)                 | 0.1373 (7/51)
+  -> Other Player (given 2PT/3PT Shot & Assisted is TRUE)    | 0.0000 (0/7)
+Jersey Color (given correct Action)                          | 0.5370 (29/54)
+Player Number (given correct Action & Color)                 | 0.2069 (6/29)
+
+## 4. Detailed Confusion Matrices
+---------------------------------------------------------------------------
+
+--- Confusion Matrix: Unordered Action Classes ---
+                Predicted
+True           |        block         foul      rebound         shot        steal     turnover __SPURIOUS__  __MISSING__
+------------------------------------------------------------------------------------------------------------------------
+ block        |            0            0            0            0            0            0            0           10
+ foul         |            0            1            0            0            0            0            0            6
+ rebound      |            0            0            1            0            0            0            0           52
+ shot         |            0            0            0           97            0            0            0            7
+ steal        |            0            0            0            0            0            0            0            8
+ turnover     |            0            0            0            0            0            0            0           10
+ __SPURIOUS__ |            0           14            0          502           27            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Unordered Actions ---
+                Predicted
+True           |     2pt shot     3pt shot        block         foul   free throw      rebound        steal     turnover __SPURIOUS__  __MISSING__
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 2pt shot     |           43            0            0            0            0            0            0            0            0           20
+ 3pt shot     |            0            8            0            0            0            0            0            0            0           23
+ block        |            0            0            0            0            0            0            0            0            0           10
+ foul         |            0            0            0            1            0            0            0            0            0            6
+ free throw   |            0            0            0            0            1            0            0            0            0            9
+ rebound      |            0            0            0            0            0            1            0            0            0           52
+ steal        |            0            0            0            0            0            0            0            0            0            8
+ turnover     |            0            0            0            0            0            0            0            0            0           10
+ __SPURIOUS__ |          432           38            0           14           77            0           27            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Jersey Color (given correct Action) ---
+             Predicted
+True        |     black      blue     green lightblue    orange    purple       red     white
+---------------------------------------------------------------------------------------------
+ black     |         4         2         2         0         0         0         1         0
+ blue      |         0         5         0         0         0         0         1         3
+ green     |         0         0         3         0         0         0         0         0
+ lightblue |         0         1         0         0         0         0         0         0
+ orange    |         0         0         0         0         0         0         0         0
+ purple    |         0         0         0         0         0         0         0         2
+ red       |         0         2         0         0         1         0         3         5
+ white     |         4         3         0         0         0         3         0         9
+
+--- Confusion Matrix: Jersey Number (given correct Action and Color) ---
+         Predicted
+True    |     0     1     2     7     8    10    11    12    13    14    15    21    22    23    24    25    26    27    28    40    43    44
+---------------------------------------------------------------------------------------------------------------------------------------------
+ 0     |     0     0     0     0     1     1     2     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 1     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0
+ 2     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1
+ 7     |     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0
+ 8     |     0     0     0     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 10    |     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 11    |     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     1     0     0     0     0
+ 12    |     0     0     0     0     0     1     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0
+ 13    |     0     0     0     0     0     0     2     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 14    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0
+ 15    |     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 21    |     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 22    |     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 23    |     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0
+ 24    |     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 25    |     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 26    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 27    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 28    |     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 40    |     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0
+ 43    |     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0
+ 44    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+## 5. Sequence-Level Metrics (DTW-aligned)
+---------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "caption_nograph.py", line 618, in <module>
+    main()
+  File "caption_nograph.py", line 546, in main
+    from dtw import dtw
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\__init__.py", line 17, in <module>
+    from dtw.dtw import *
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\dtw.py", line 36, in <module>
+    from dtw._globalCostMatrix import _globalCostMatrix
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\_globalCostMatrix.py", line 3, in <module>
+    from dtw._dtw_utils import _computeCM_wrapper
+  File "dtw\\_dtw_utils.pyx", line 1, in init dtw._dtw_utils
+ImportError: numpy.core.multiarray failed to import (auto-generated because you didn't call 'numpy.import_array()' after cimporting numpy; use '<void>numpy._import_array' to disable if you are certain you don't need it).
+
+===========================================================================
+?? Basketball Event Evaluation Report
+    Source File: action_caption_Qwen2.5-VL-3B-Instruct2025.json
+===========================================================================
+
+Total Ground Truth Events:     188
+Total Predicted Events:        739
+Total Videos Processed:        90
+
+## 1. Video-Level Accuracy
+---------------------------------------------------------------------------
+Perfect Video Accuracy (Ordered):   0.0000 (0/90)
+Perfect Ordered Actions Accuracy:   0.0889 (8/90)
+Perfect Unordered Actions Accuracy: 0.0889 (8/90)
+Exact Event Count Accuracy:         0.2111 (19/90)
+Tolerant Count Accuracy (+-1):      0.2889 (26/90)
+
+## 2. Event-Level Matching Performance
+---------------------------------------------------------------------------
+--- Exact Action Match ---
+Precision:      0.0839 (62/739)
+Recall:         0.3298 (62/188)
+F1-Score:       0.1338
+
+--- Action + Color Match ---
+Precision:      0.0541 (40/739)
+Recall:         0.2128 (40/188)
+F1-Score:       0.0863
+
+--- Action + Color + Player Match ---
+Precision:      0.0189 (14/739)
+Recall:         0.0745 (14/188)
+F1-Score:       0.0302
+
+--- Action Class Match ---
+Precision:      0.1299 (96/739)
+Recall:         0.5106 (96/188)
+F1-Score:       0.2071
+
+--- Class + Color Match ---
+Precision:      0.0812 (60/739)
+Recall:         0.3191 (60/188)
+F1-Score:       0.1294
+
+--- Class + Color + Player Match ---
+Precision:      0.0284 (21/739)
+Recall:         0.1117 (21/188)
+F1-Score:       0.0453
+
+## 3. Conditional Attribute Accuracy
+---------------------------------------------------------------------------
+ (Accuracy of attributes, given a successful parent match)
+ATTRIBUTE                                                    | ACCURACY
+---------------------------------------------------------------------------
+Result (given correct SHOT Action)                           | 0.4107 (23/56)
+Assisted status (given correct 2PT/3PT Shot)                 | 0.1346 (7/52)
+  -> Other Player (given 2PT/3PT Shot & Assisted is TRUE)    | 0.0000 (0/7)
+Jersey Color (given correct Action)                          | 0.6452 (40/62)
+Player Number (given correct Action & Color)                 | 0.3500 (14/40)
+
+## 4. Detailed Confusion Matrices
+---------------------------------------------------------------------------
+
+--- Confusion Matrix: Unordered Action Classes ---
+                Predicted
+True           |        block         foul      rebound         shot        steal     turnover __SPURIOUS__  __MISSING__
+------------------------------------------------------------------------------------------------------------------------
+ block        |            0            0            0            0            0            0            0            8
+ foul         |            0            2            0            0            0            0            0            8
+ rebound      |            0            0            3            0            0            0            0           50
+ shot         |            0            0            0           90            0            0            0            2
+ steal        |            0            0            0            0            1            0            0           11
+ turnover     |            0            0            0            0            0            0            0           13
+ __SPURIOUS__ |            0            3            5          611           24            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Unordered Actions ---
+                Predicted
+True           |     2pt shot     3pt shot        block         foul   free throw      rebound        steal     turnover __SPURIOUS__  __MISSING__
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 2pt shot     |           42            0            0            0            0            0            0            0            0            9
+ 3pt shot     |            0           10            0            0            0            0            0            0            0           20
+ block        |            0            0            0            0            0            0            0            0            0            8
+ foul         |            0            0            0            2            0            0            0            0            0            8
+ free throw   |            0            0            0            0            4            0            0            0            0            7
+ rebound      |            0            0            0            0            0            3            0            0            0           50
+ steal        |            0            0            0            0            0            0            1            0            0           11
+ turnover     |            0            0            0            0            0            0            0            0            0           13
+ __SPURIOUS__ |          591           54            0            3            0            5           24            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Jersey Color (given correct Action) ---
+          Predicted
+True     |  black   blue   gray  green purple    red  white yellow
+------------------------------------------------------------------
+ black  |      9      2      0      0      0      0      5      0
+ blue   |      1      5      0      0      0      1      0      0
+ gray   |      0      0      0      0      0      0      0      0
+ green  |      0      0      0      1      0      0      0      0
+ purple |      0      0      0      0      2      0      1      0
+ red    |      1      1      0      0      0      2      0      0
+ white  |      3      4      1      2      1      1     13      3
+ yellow |      0      0      0      0      0      0      1      2
+
+--- Confusion Matrix: Jersey Number (given correct Action and Color) ---
+         Predicted
+True    |     0     2     4     5     7     8     9    10    11    13    14    15    17    18    19    21    22    23    24    25    28    30    32    34    43
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0     |     0     0     0     0     0     0     0     0     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0
+ 2     |     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0
+ 4     |     0     0     1     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 5     |     0     0     0     0     0     0     0     0     1     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 7     |     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 8     |     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 9     |     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 10    |     0     0     0     0     0     0     0     1     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 11    |     0     0     0     0     0     0     0     1     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 13    |     0     0     0     0     0     0     1     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0
+ 14    |     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 15    |     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 17    |     0     0     0     0     0     1     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0
+ 18    |     0     0     0     0     0     0     0     1     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 19    |     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 21    |     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 22    |     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 23    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0
+ 24    |     0     1     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 25    |     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 28    |     0     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 30    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     1     0     0     0     0
+ 32    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 34    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0
+ 43    |     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+## 5. Sequence-Level Metrics (DTW-aligned)
+---------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "caption_nograph.py", line 618, in <module>
+    main()
+  File "caption_nograph.py", line 546, in main
+    from dtw import dtw
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\__init__.py", line 17, in <module>
+    from dtw.dtw import *
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\dtw.py", line 36, in <module>
+    from dtw._globalCostMatrix import _globalCostMatrix
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\_globalCostMatrix.py", line 3, in <module>
+    from dtw._dtw_utils import _computeCM_wrapper
+  File "dtw\\_dtw_utils.pyx", line 1, in init dtw._dtw_utils
+ImportError: numpy.core.multiarray failed to import (auto-generated because you didn't call 'numpy.import_array()' after cimporting numpy; use '<void>numpy._import_array' to disable if you are certain you don't need it).
+
+===========================================================================
+?? Basketball Event Evaluation Report
+    Source File: action_caption_Qwen2.5-VL-3B-Instruct_ft52024.json
+===========================================================================
+
+Total Ground Truth Events:     192
+Total Predicted Events:        163
+Total Videos Processed:        86
+
+## 1. Video-Level Accuracy
+---------------------------------------------------------------------------
+Perfect Video Accuracy (Ordered):   0.0116 (1/86)
+Perfect Ordered Actions Accuracy:   0.3488 (30/86)
+Perfect Unordered Actions Accuracy: 0.3488 (30/86)
+Exact Event Count Accuracy:         0.5814 (50/86)
+Tolerant Count Accuracy (+-1):      0.8953 (77/86)
+
+## 2. Event-Level Matching Performance
+---------------------------------------------------------------------------
+--- Exact Action Match ---
+Precision:      0.7239 (118/163)
+Recall:         0.6146 (118/192)
+F1-Score:       0.6648
+
+--- Action + Color Match ---
+Precision:      0.5583 (91/163)
+Recall:         0.4740 (91/192)
+F1-Score:       0.5127
+
+--- Action + Color + Player Match ---
+Precision:      0.1227 (20/163)
+Recall:         0.1042 (20/192)
+F1-Score:       0.1127
+
+--- Action Class Match ---
+Precision:      0.8098 (132/163)
+Recall:         0.6875 (132/192)
+F1-Score:       0.7437
+
+--- Class + Color Match ---
+Precision:      0.6319 (103/163)
+Recall:         0.5365 (103/192)
+F1-Score:       0.5803
+
+--- Class + Color + Player Match ---
+Precision:      0.1350 (22/163)
+Recall:         0.1146 (22/192)
+F1-Score:       0.1239
+
+## 3. Conditional Attribute Accuracy
+---------------------------------------------------------------------------
+ (Accuracy of attributes, given a successful parent match)
+ATTRIBUTE                                                    | ACCURACY
+---------------------------------------------------------------------------
+Result (given correct SHOT Action)                           | 0.7164 (48/67)
+Assisted status (given correct 2PT/3PT Shot)                 | 0.8596 (49/57)
+  -> Other Player (given 2PT/3PT Shot & Assisted is TRUE)    | 0.2500 (1/4)
+Jersey Color (given correct Action)                          | 0.7712 (91/118)
+Player Number (given correct Action & Color)                 | 0.2198 (20/91)
+
+## 4. Detailed Confusion Matrices
+---------------------------------------------------------------------------
+
+--- Confusion Matrix: Unordered Action Classes ---
+                Predicted
+True           |        block         foul      rebound         shot        steal     turnover __SPURIOUS__  __MISSING__
+------------------------------------------------------------------------------------------------------------------------
+ block        |            0            0            0            0            0            0            0           10
+ foul         |            0            4            0            0            0            0            0            3
+ rebound      |            0            0           45            0            0            0            0            8
+ shot         |            0            0            0           81            0            0            0           23
+ steal        |            0            0            0            0            1            0            0            7
+ turnover     |            0            0            0            0            0            1            0            9
+ __SPURIOUS__ |            1            5           15           10            0            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Unordered Actions ---
+                Predicted
+True           |     2pt shot     3pt shot        block         foul   free throw      rebound        steal     turnover __SPURIOUS__  __MISSING__
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 2pt shot     |           47            0            0            0            0            0            0            0            0           16
+ 3pt shot     |            0           10            0            0            0            0            0            0            0           21
+ block        |            0            0            0            0            0            0            0            0            0           10
+ foul         |            0            0            0            4            0            0            0            0            0            3
+ free throw   |            0            0            0            0           10            0            0            0            0            0
+ rebound      |            0            0            0            0            0           45            0            0            0            8
+ steal        |            0            0            0            0            0            0            1            0            0            7
+ turnover     |            0            0            0            0            0            0            0            1            0            9
+ __SPURIOUS__ |           17            5            1            5            2           15            0            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Jersey Color (given correct Action) ---
+             Predicted
+True        |     black      blue     green lightblue    orange    purple       red     white
+---------------------------------------------------------------------------------------------
+ black     |         9         2         0         0         0         0         1         2
+ blue      |         0        19         0         0         0         0         1         4
+ green     |         0         0         4         0         0         0         0         1
+ lightblue |         0         1         0         0         0         0         1         0
+ orange    |         0         0         0         0         0         0         0         0
+ purple    |         1         1         0         0         0         4         0         2
+ red       |         1         0         0         0         1         0        15         4
+ white     |         3         0         1         0         0         2         0        38
+
+--- Confusion Matrix: Jersey Number (given correct Action and Color) ---
+         Predicted
+True    |    00     0     1     2     3     4     5     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24    25    27    28    30    32    33    34    35    40    41    42    44    77    88
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 00    |     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 0     |     0     1     0     0     0     0     0     1     1     1     1     1     0     0     0     0     0     0     0     0     0     1     2     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0
+ 1     |     0     0     2     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 2     |     1     0     1     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0
+ 3     |     0     0     1     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0
+ 4     |     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 5     |     0     0     0     0     0     0     0     0     0     1     0     1     1     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 7     |     0     0     0     1     0     0     0     1     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 8     |     0     0     2     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1
+ 9     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 10    |     0     0     0     0     0     0     1     0     0     0     2     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 11    |     0     1     0     0     0     0     0     0     1     0     0     0     0     1     0     0     0     0     0     1     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 12    |     0     0     0     0     0     0     0     0     1     0     0     1     1     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 13    |     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     1     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 14    |     0     0     0     1     0     0     0     0     0     0     1     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 15    |     0     0     0     0     0     0     0     0     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0
+ 16    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 17    |     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 18    |     0     0     0     0     0     0     0     0     0     1     0     0     0     1     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 19    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 20    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0
+ 21    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 22    |     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 23    |     0     0     0     0     0     0     0     0     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 24    |     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 25    |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 27    |     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0
+ 28    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 30    |     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 32    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0
+ 33    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0
+ 34    |     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 35    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 40    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 41    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 42    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 44    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 77    |     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 88    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+## 5. Sequence-Level Metrics (DTW-aligned)
+---------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "caption_nograph.py", line 618, in <module>
+    main()
+  File "caption_nograph.py", line 546, in main
+    from dtw import dtw
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\__init__.py", line 17, in <module>
+    from dtw.dtw import *
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\dtw.py", line 36, in <module>
+    from dtw._globalCostMatrix import _globalCostMatrix
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\_globalCostMatrix.py", line 3, in <module>
+    from dtw._dtw_utils import _computeCM_wrapper
+  File "dtw\\_dtw_utils.pyx", line 1, in init dtw._dtw_utils
+ImportError: numpy.core.multiarray failed to import (auto-generated because you didn't call 'numpy.import_array()' after cimporting numpy; use '<void>numpy._import_array' to disable if you are certain you don't need it).
+
+===========================================================================
+?? Basketball Event Evaluation Report
+    Source File: action_caption_Qwen2.5-VL-3B-Instruct_ft52025.json
+===========================================================================
+
+Total Ground Truth Events:     188
+Total Predicted Events:        158
+Total Videos Processed:        90
+
+## 1. Video-Level Accuracy
+---------------------------------------------------------------------------
+Perfect Video Accuracy (Ordered):   0.0111 (1/90)
+Perfect Ordered Actions Accuracy:   0.4000 (36/90)
+Perfect Unordered Actions Accuracy: 0.4000 (36/90)
+Exact Event Count Accuracy:         0.5556 (50/90)
+Tolerant Count Accuracy (+-1):      0.8333 (75/90)
+
+## 2. Event-Level Matching Performance
+---------------------------------------------------------------------------
+--- Exact Action Match ---
+Precision:      0.7025 (111/158)
+Recall:         0.5904 (111/188)
+F1-Score:       0.6416
+
+--- Action + Color Match ---
+Precision:      0.5316 (84/158)
+Recall:         0.4468 (84/188)
+F1-Score:       0.4855
+
+--- Action + Color + Player Match ---
+Precision:      0.1456 (23/158)
+Recall:         0.1223 (23/188)
+F1-Score:       0.1329
+
+--- Action Class Match ---
+Precision:      0.7975 (126/158)
+Recall:         0.6702 (126/188)
+F1-Score:       0.7283
+
+--- Class + Color Match ---
+Precision:      0.6139 (97/158)
+Recall:         0.5160 (97/188)
+F1-Score:       0.5607
+
+--- Class + Color + Player Match ---
+Precision:      0.1582 (25/158)
+Recall:         0.1330 (25/188)
+F1-Score:       0.1445
+
+## 3. Conditional Attribute Accuracy
+---------------------------------------------------------------------------
+ (Accuracy of attributes, given a successful parent match)
+ATTRIBUTE                                                    | ACCURACY
+---------------------------------------------------------------------------
+Result (given correct SHOT Action)                           | 0.6970 (46/66)
+Assisted status (given correct 2PT/3PT Shot)                 | 0.7091 (39/55)
+  -> Other Player (given 2PT/3PT Shot & Assisted is TRUE)    | 0.1667 (1/6)
+Jersey Color (given correct Action)                          | 0.7568 (84/111)
+Player Number (given correct Action & Color)                 | 0.2738 (23/84)
+
+## 4. Detailed Confusion Matrices
+---------------------------------------------------------------------------
+
+--- Confusion Matrix: Unordered Action Classes ---
+                Predicted
+True           |        block         foul      rebound         shot        steal     turnover __SPURIOUS__  __MISSING__
+------------------------------------------------------------------------------------------------------------------------
+ block        |            0            0            0            0            0            0            0            8
+ foul         |            0            8            0            0            0            0            0            2
+ rebound      |            0            0           36            0            0            0            0           17
+ shot         |            0            0            0           81            0            0            0           11
+ steal        |            0            0            0            0            0            0            0           12
+ turnover     |            0            0            0            0            0            1            0           12
+ __SPURIOUS__ |            0            4           11           16            0            1            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Unordered Actions ---
+                Predicted
+True           |     2pt shot     3pt shot        block         foul   free throw      rebound        steal     turnover __SPURIOUS__  __MISSING__
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 2pt shot     |           41            0            0            0            0            0            0            0            0           10
+ 3pt shot     |            0           14            0            0            0            0            0            0            0           16
+ block        |            0            0            0            0            0            0            0            0            0            8
+ foul         |            0            0            0            8            0            0            0            0            0            2
+ free throw   |            0            0            0            0           11            0            0            0            0            0
+ rebound      |            0            0            0            0            0           36            0            0            0           17
+ steal        |            0            0            0            0            0            0            0            0            0           12
+ turnover     |            0            0            0            0            0            0            0            1            0           12
+ __SPURIOUS__ |           22            7            0            4            2           11            0            1            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Jersey Color (given correct Action) ---
+          Predicted
+True     |  black   blue   gray  green purple    red  white yellow
+------------------------------------------------------------------
+ black  |     17      0      0      1      0      2      4      0
+ blue   |      2     13      0      0      0      4      4      0
+ gray   |      0      0      2      0      0      0      0      0
+ green  |      0      0      0      2      0      0      0      0
+ purple |      0      0      0      0      5      0      1      0
+ red    |      0      2      0      0      0      8      0      0
+ white  |      2      2      1      0      3      0     32      0
+ yellow |      0      0      0      0      0      0      1      3
+
+--- Confusion Matrix: Jersey Number (given correct Action and Color) ---
+         Predicted
+True    |     0     1     2     3     4     5     7     8     9    10    11    13    14    15    17    18    19    21    22    23    24    25    27    28    30    31    32    33    34    43    77
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0     |     0     0     1     0     0     0     1     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 1     |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 2     |     0     0     2     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 3     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 4     |     0     0     0     0     1     0     0     0     1     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 5     |     0     0     0     0     0     2     0     1     0     0     0     0     0     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 7     |     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 8     |     0     0     0     0     0     0     0     1     1     0     1     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0
+ 9     |     1     0     0     0     0     0     0     1     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 10    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     1     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 11    |     0     0     0     0     0     0     0     1     0     1     0     0     0     0     1     2     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 13    |     0     1     0     0     0     0     0     0     0     0     0     2     1     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 14    |     0     0     0     0     0     0     0     0     1     0     0     0     1     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 15    |     0     0     0     0     0     0     0     1     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 17    |     0     0     0     0     0     0     0     2     0     0     1     0     0     0     1     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 18    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     3     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 19    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 21    |     0     0     0     0     0     0     0     1     0     0     1     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0
+ 22    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 23    |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 24    |     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     3     0     0     0     0     0     0     0
+ 25    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 27    |     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 28    |     0     1     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0
+ 30    |     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     1     1     0     0     0     0     0     0
+ 31    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 32    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 33    |     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 34    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0
+ 43    |     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 77    |     0     0     0     0     0     0     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+## 5. Sequence-Level Metrics (DTW-aligned)
+---------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "caption_nograph.py", line 618, in <module>
+    main()
+  File "caption_nograph.py", line 546, in main
+    from dtw import dtw
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\__init__.py", line 17, in <module>
+    from dtw.dtw import *
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\dtw.py", line 36, in <module>
+    from dtw._globalCostMatrix import _globalCostMatrix
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\_globalCostMatrix.py", line 3, in <module>
+    from dtw._dtw_utils import _computeCM_wrapper
+  File "dtw\\_dtw_utils.pyx", line 1, in init dtw._dtw_utils
+ImportError: numpy.core.multiarray failed to import (auto-generated because you didn't call 'numpy.import_array()' after cimporting numpy; use '<void>numpy._import_array' to disable if you are certain you don't need it).
+
+===========================================================================
+?? Basketball Event Evaluation Report
+    Source File: action_caption_Qwen2.5-VL-7B-Instruct2024.json
+===========================================================================
+
+Total Ground Truth Events:     192
+Total Predicted Events:        251
+Total Videos Processed:        86
+
+## 1. Video-Level Accuracy
+---------------------------------------------------------------------------
+Perfect Video Accuracy (Ordered):   0.0000 (0/86)
+Perfect Ordered Actions Accuracy:   0.0116 (1/86)
+Perfect Unordered Actions Accuracy: 0.0116 (1/86)
+Exact Event Count Accuracy:         0.2442 (21/86)
+Tolerant Count Accuracy (+-1):      0.7674 (66/86)
+
+## 2. Event-Level Matching Performance
+---------------------------------------------------------------------------
+--- Exact Action Match ---
+Precision:      0.2470 (62/251)
+Recall:         0.3229 (62/192)
+F1-Score:       0.2799
+
+--- Action + Color Match ---
+Precision:      0.1554 (39/251)
+Recall:         0.2031 (39/192)
+F1-Score:       0.1761
+
+--- Action + Color + Player Match ---
+Precision:      0.0159 (4/251)
+Recall:         0.0208 (4/192)
+F1-Score:       0.0181
+
+--- Action Class Match ---
+Precision:      0.3825 (96/251)
+Recall:         0.5000 (96/192)
+F1-Score:       0.4334
+
+--- Class + Color Match ---
+Precision:      0.2271 (57/251)
+Recall:         0.2969 (57/192)
+F1-Score:       0.2573
+
+--- Class + Color + Player Match ---
+Precision:      0.0438 (11/251)
+Recall:         0.0573 (11/192)
+F1-Score:       0.0497
+
+## 3. Conditional Attribute Accuracy
+---------------------------------------------------------------------------
+ (Accuracy of attributes, given a successful parent match)
+ATTRIBUTE                                                    | ACCURACY
+---------------------------------------------------------------------------
+Result (given correct SHOT Action)                           | 0.2500 (12/48)
+Assisted status (given correct 2PT/3PT Shot)                 | 0.1042 (5/48)
+  -> Other Player (given 2PT/3PT Shot & Assisted is TRUE)    | 0.2000 (1/5)
+Jersey Color (given correct Action)                          | 0.6290 (39/62)
+Player Number (given correct Action & Color)                 | 0.1026 (4/39)
+
+## 4. Detailed Confusion Matrices
+---------------------------------------------------------------------------
+
+--- Confusion Matrix: Unordered Action Classes ---
+                Predicted
+True           |        block         foul      rebound         shot        steal     turnover __SPURIOUS__  __MISSING__
+------------------------------------------------------------------------------------------------------------------------
+ block        |            0            0            0            0            0            0            0           10
+ foul         |            0            5            0            0            0            0            0            2
+ rebound      |            0            0            5            0            0            0            0           48
+ shot         |            0            0            0           82            0            0            0           22
+ steal        |            0            0            0            0            4            0            0            4
+ turnover     |            0            0            0            0            0            0            0           10
+ __SPURIOUS__ |            1           50            1           71           32            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Unordered Actions ---
+                Predicted
+True           |     2pt shot     3pt shot        block         foul   free throw      rebound        steal     turnover __SPURIOUS__  __MISSING__
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 2pt shot     |           41            0            0            0            0            0            0            0            0           22
+ 3pt shot     |            0            7            0            0            0            0            0            0            0           24
+ block        |            0            0            0            0            0            0            0            0            0           10
+ foul         |            0            0            0            5            0            0            0            0            0            2
+ free throw   |            0            0            0            0            0            0            0            0            0           10
+ rebound      |            0            0            0            0            0            5            0            0            0           48
+ steal        |            0            0            0            0            0            0            4            0            0            4
+ turnover     |            0            0            0            0            0            0            0            0            0           10
+ __SPURIOUS__ |           88           17            1           50            0            1           32            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Jersey Color (given correct Action) ---
+             Predicted
+True        |     black      blue     green lightblue    purple       red     white
+-----------------------------------------------------------------------------------
+ black     |         5         0         4         0         0         0         2
+ blue      |         0         7         0         0         1         0         3
+ green     |         0         0         3         0         0         0         0
+ lightblue |         0         1         0         0         0         0         0
+ purple    |         0         0         0         0         1         1         2
+ red       |         0         0         0         0         0         7         4
+ white     |         4         3         0         0         1         1        12
+
+--- Confusion Matrix: Jersey Number (given correct Action and Color) ---
+         Predicted
+True    |     0     1     2     3     5     7     8     9    10    11    12    13    14    15    17    21    22    23    24    25    27    28    32    33    40    42    77    7,
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0     |     1     0     0     0     0     0     0     0     0     2     1     0     1     0     0     1     1     0     0     0     0     0     0     0     0     0     0     1
+ 1     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     1     0     0     0     0     0     0
+ 2     |     0     0     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 3     |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0
+ 5     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 7     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0
+ 8     |     0     0     0     0     0     0     1     1     0     0     0     0     0     0     0     0     0     1     0     0     0     1     0     0     0     0     0     0
+ 9     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 10    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0
+ 11    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 12    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     1     0     0     0     0     0     1     0     0     0     0
+ 13    |     0     0     0     0     0     0     0     0     0     1     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 14    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 15    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 17    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0
+ 21    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 22    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 23    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 24    |     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 25    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 27    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 28    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 32    |     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 33    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 40    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0
+ 42    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 77    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0
+ 7,    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+## 5. Sequence-Level Metrics (DTW-aligned)
+---------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "caption_nograph.py", line 618, in <module>
+    main()
+  File "caption_nograph.py", line 546, in main
+    from dtw import dtw
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\__init__.py", line 17, in <module>
+    from dtw.dtw import *
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\dtw.py", line 36, in <module>
+    from dtw._globalCostMatrix import _globalCostMatrix
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\_globalCostMatrix.py", line 3, in <module>
+    from dtw._dtw_utils import _computeCM_wrapper
+  File "dtw\\_dtw_utils.pyx", line 1, in init dtw._dtw_utils
+ImportError: numpy.core.multiarray failed to import (auto-generated because you didn't call 'numpy.import_array()' after cimporting numpy; use '<void>numpy._import_array' to disable if you are certain you don't need it).
+
+===========================================================================
+?? Basketball Event Evaluation Report
+    Source File: action_caption_Qwen2.5-VL-7B-Instruct2025.json
+===========================================================================
+
+Total Ground Truth Events:     188
+Total Predicted Events:        264
+Total Videos Processed:        90
+
+## 1. Video-Level Accuracy
+---------------------------------------------------------------------------
+Perfect Video Accuracy (Ordered):   0.0000 (0/90)
+Perfect Ordered Actions Accuracy:   0.0667 (6/90)
+Perfect Unordered Actions Accuracy: 0.0667 (6/90)
+Exact Event Count Accuracy:         0.3556 (32/90)
+Tolerant Count Accuracy (+-1):      0.7111 (64/90)
+
+## 2. Event-Level Matching Performance
+---------------------------------------------------------------------------
+--- Exact Action Match ---
+Precision:      0.2311 (61/264)
+Recall:         0.3245 (61/188)
+F1-Score:       0.2699
+
+--- Action + Color Match ---
+Precision:      0.1553 (41/264)
+Recall:         0.2181 (41/188)
+F1-Score:       0.1814
+
+--- Action + Color + Player Match ---
+Precision:      0.0455 (12/264)
+Recall:         0.0638 (12/188)
+F1-Score:       0.0531
+
+--- Action Class Match ---
+Precision:      0.3674 (97/264)
+Recall:         0.5160 (97/188)
+F1-Score:       0.4292
+
+--- Class + Color Match ---
+Precision:      0.2159 (57/264)
+Recall:         0.3032 (57/188)
+F1-Score:       0.2522
+
+--- Class + Color + Player Match ---
+Precision:      0.0833 (22/264)
+Recall:         0.1170 (22/188)
+F1-Score:       0.0973
+
+## 3. Conditional Attribute Accuracy
+---------------------------------------------------------------------------
+ (Accuracy of attributes, given a successful parent match)
+ATTRIBUTE                                                    | ACCURACY
+---------------------------------------------------------------------------
+Result (given correct SHOT Action)                           | 0.3478 (16/46)
+Assisted status (given correct 2PT/3PT Shot)                 | 0.1522 (7/46)
+  -> Other Player (given 2PT/3PT Shot & Assisted is TRUE)    | 0.0000 (0/7)
+Jersey Color (given correct Action)                          | 0.6721 (41/61)
+Player Number (given correct Action & Color)                 | 0.2927 (12/41)
+
+## 4. Detailed Confusion Matrices
+---------------------------------------------------------------------------
+
+--- Confusion Matrix: Unordered Action Classes ---
+                Predicted
+True           |        block         foul      rebound         shot        steal     turnover __SPURIOUS__  __MISSING__
+------------------------------------------------------------------------------------------------------------------------
+ block        |            0            0            0            0            0            0            0            8
+ foul         |            0            6            0            0            0            0            0            4
+ rebound      |            0            0            4            0            0            0            0           49
+ shot         |            0            0            0           82            0            0            0           10
+ steal        |            0            0            0            0            5            0            0            7
+ turnover     |            0            0            0            0            0            0            0           13
+ __SPURIOUS__ |            1           51           28           51           36            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Unordered Actions ---
+                Predicted
+True           |     2pt shot     3pt shot        block         foul   free throw      rebound        steal     turnover __SPURIOUS__  __MISSING__
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 2pt shot     |           40            0            0            0            0            0            0            0            0           11
+ 3pt shot     |            0            6            0            0            0            0            0            0            0           24
+ block        |            0            0            0            0            0            0            0            0            0            8
+ foul         |            0            0            0            6            0            0            0            0            0            4
+ free throw   |            0            0            0            0            0            0            0            0            0           11
+ rebound      |            0            0            0            0            0            4            0            0            0           49
+ steal        |            0            0            0            0            0            0            5            0            0            7
+ turnover     |            0            0            0            0            0            0            0            0            0           13
+ __SPURIOUS__ |           78            9            1           51            0           28           36            0            0            0
+ __MISSING__  |            0            0            0            0            0            0            0            0            0            0
+
+--- Confusion Matrix: Jersey Color (given correct Action) ---
+          Predicted
+True     |  black   blue  green purple    red  white yellow
+-----------------------------------------------------------
+ black  |      9      1      1      0      0      3      0
+ blue   |      1      7      0      0      1      3      0
+ green  |      0      0      0      0      0      0      0
+ purple |      0      0      0      2      0      1      0
+ red    |      0      0      0      0      4      0      0
+ white  |      4      1      1      1      2     16      1
+ yellow |      0      0      0      0      0      0      2
+
+--- Confusion Matrix: Jersey Number (given correct Action and Color) ---
+         Predicted
+True    |     1     2     4     5     7     8     9    11    12    13    14    15    17    18    21    22    23    24    25    27    28    30    32    43
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1     |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0
+ 2     |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     1     1     0     0     0     0     0     0
+ 4     |     0     0     0     0     0     0     1     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 5     |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 7     |     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 8     |     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0
+ 9     |     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 11    |     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 12    |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 13    |     0     0     0     0     0     0     0     0     0     2     0     0     0     0     0     1     1     0     0     0     0     0     1     0
+ 14    |     0     0     0     0     0     0     0     1     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 15    |     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0
+ 17    |     0     0     0     0     0     1     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+ 18    |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 21    |     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 22    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0
+ 23    |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     2     0     0     0     0     0     0     0
+ 24    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0
+ 25    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0
+ 27    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0
+ 28    |     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     2     0     0     0     1     0     0     0
+ 30    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     3     0     0     0     1     0     0     0
+ 32    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+ 43    |     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0
+
+## 5. Sequence-Level Metrics (DTW-aligned)
+---------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "caption_nograph.py", line 618, in <module>
+    main()
+  File "caption_nograph.py", line 546, in main
+    from dtw import dtw
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\__init__.py", line 17, in <module>
+    from dtw.dtw import *
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\dtw.py", line 36, in <module>
+    from dtw._globalCostMatrix import _globalCostMatrix
+  File "C:\Projects\WPy64-3880\python-3.8.8.amd64\lib\site-packages\dtw\_globalCostMatrix.py", line 3, in <module>
+    from dtw._dtw_utils import _computeCM_wrapper
+  File "dtw\\_dtw_utils.pyx", line 1, in init dtw._dtw_utils
+ImportError: numpy.core.multiarray failed to import (auto-generated because you didn't call 'numpy.import_array()' after cimporting numpy; use '<void>numpy._import_array' to disable if you are certain you don't need it).

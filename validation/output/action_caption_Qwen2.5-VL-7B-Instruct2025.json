@@ -1,0 +1,452 @@
+[
+    {
+        "image": "data2025/det-vs-okc-0022401108_28.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 7 and jersey_color blue made a Block\nA player with jersey number 5 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/det-vs-okc-0022401108_3.mp4",
+        "ground_truth": "A player with jersey number 9 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 7 and jersey_color blue made a Block\nA player with jersey number 8 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 9 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 23.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/det-vs-okc-0022401108_24.mp4",
+        "ground_truth": "A player with jersey number 17 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 0 and jersey_color white made a Rebound\nA player with jersey number 0 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 2 and jersey_color blue made a Block\nA player with jersey number 2 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 8 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 0.\nA player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/det-vs-okc-0022401108_16.mp4",
+        "ground_truth": "A player with jersey number 7 and jersey_color blue made a 2PT Shot which result was made and was assisted by other player with jersey number 2",
+        "prediction": "A player with jersey number 7 and jersey_color blue made a 2PT Shot which result was made and was assisted by other player with jersey number 8."
+    },
+    {
+        "image": "data2025/gsw-vs-mem-0022401100_17.mp4",
+        "ground_truth": "A player with jersey number 2 and jersey_color blue made a 2PT Shot which result was miss\nA player with jersey number 14 and jersey_color red made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 2PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/gsw-vs-mem-0022401100_9.mp4",
+        "ground_truth": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 13 and jersey_color red made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/gsw-vs-mem-0022401100_21.mp4",
+        "ground_truth": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 4 and jersey_color blue made a Rebound\nA player with jersey number 13 and jersey_color red made a Foul",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/gsw-vs-mem-0022401100_5.mp4",
+        "ground_truth": "A player with jersey number 10 and jersey_color blue made a Free Throw which result was made",
+        "prediction": "A player with jersey number 10 and jersey_color blue made a 2PT Shot which result was made and was assisted by other player with jersey number 23."
+    },
+    {
+        "image": "data2025/min-vs-den-0022401102_30.mp4",
+        "ground_truth": "A player with jersey number 3 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 32 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/min-vs-den-0022401102_3.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color black made a Turnover\nA player with jersey number 0 and jersey_color white made a Steal\nA player with jersey number 15 and jersey_color white made a 3PT Shot which result was made",
+        "prediction": "A player with jersey number 8 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 24.\nA player with jersey number 15 and jersey_color white made a Foul involving other player with jersey number 8."
+    },
+    {
+        "image": "data2025/min-vs-den-0022401102_21.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color black made a 3PT Shot which result was miss\nA player with jersey number 27 and jersey_color black made a Rebound\nA player with jersey number 27 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 8 and jersey_color white made a Block\nA player with jersey number 24 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 0.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/min-vs-den-0022401102_25.mp4",
+        "ground_truth": "A player with jersey number 27 and jersey_color black made a Free Throw which result was miss",
+        "prediction": "A player with jersey number 0 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 15."
+    },
+    {
+        "image": "data2025/nyk-vs-cle-0022401103_5.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color blue made a Foul",
+        "prediction": "A player with jersey number 11 and jersey_color red made a 2PT Shot which result was made and was assisted by other player with jersey number 32."
+    },
+    {
+        "image": "data2025/nyk-vs-cle-0022401103_30.mp4",
+        "ground_truth": "A player with jersey number 32 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 0",
+        "prediction": "A player with jersey number 32 and jersey_color blue made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/nyk-vs-cle-0022401103_6.mp4",
+        "ground_truth": "A player with jersey number 23 and jersey_color blue made a Free Throw which result was made",
+        "prediction": "A player with jersey number 11 and jersey_color maroon made a 2PT Shot which result was made and was assisted by other player with jersey number 0."
+    },
+    {
+        "image": "data2025/orl-vs-sas-0022400988_17.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color white made a Turnover\nA player with jersey number 3 and jersey_color black made a Steal",
+        "prediction": "A player with jersey number 22 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 11.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/orl-vs-sas-0022400988_11.mp4",
+        "ground_truth": "A player with jersey number 18 and jersey_color black made a Free Throw which result was miss",
+        "prediction": "A player with jersey number 18 and jersey_color black made a 2PT Shot which result was made."
+    },
+    {
+        "image": "data2025/orl-vs-sas-0022400988_29.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 34",
+        "prediction": "A player with jersey number 11 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 5.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/orl-vs-sas-0022400988_1.mp4",
+        "ground_truth": "A player with jersey number 18 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 3",
+        "prediction": "A player with jersey number 11 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 34."
+    },
+    {
+        "image": "data2025/phi-vs-nyk-0022401098_19.mp4",
+        "ground_truth": "A player with jersey number 19 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 23 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 30 and jersey_color orange made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 14 and jersey_color white made a Rebound.\nA player with jersey number 16 and jersey_color white made a Rebound.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/phi-vs-nyk-0022401098_4.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color white made a Turnover\nA player with jersey number 0 and jersey_color blue made a Steal",
+        "prediction": "A player with jersey number 19 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 3.\nA player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/phi-vs-nyk-0022401098_22.mp4",
+        "ground_truth": "A player with jersey number 25 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 23 and jersey_color blue made a Rebound\nA player with jersey number 14 and jersey_color white made a Foul",
+        "prediction": "A player with jersey number 23 and jersey_color orange made a 2PT Shot which result was made and was assisted by other player with jersey number 30.\nA player with jersey number 11 and jersey_color white made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/phi-vs-nyk-0022401098_13.mp4",
+        "ground_truth": "A player with jersey number 23 and jersey_color blue made a Foul",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6."
+    },
+    {
+        "image": "data2025/phx-vs-mil-0022401101_16.mp4",
+        "ground_truth": "A player with jersey number 12 and jersey_color green made a Turnover\nA player with jersey number 12 and jersey_color white made a Steal",
+        "prediction": "A player with jersey number 23 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 12.\nA player with jersey number 12 and jersey_color white made a Rebound.\nA player with jersey number 23 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 12.\nA player with jersey number 12 and jersey_color white made a Rebound.\nA player with jersey number 23 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 12.\nA player with jersey number 12 and jersey_color white made a Rebound.\nA player with jersey number 23 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 12.\nA player with jersey number 12 and jersey_color white made a Rebound.\nA player with jersey number 23 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 12.\nA player with jersey number 12 and jersey_color white made a Rebound.\nA player with jersey number 23 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 12.\nA player with jersey number 12 and jersey_color white made a Rebound.\nA player with jersey number 23 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 12.\nA player with jersey number 12 and jersey_color white made a Rebound.\nA player with jersey number 23 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 12.\nA"
+    },
+    {
+        "image": "data2025/phx-vs-mil-0022401101_9.mp4",
+        "ground_truth": "A player with jersey number 34 and jersey_color green made a Free Throw which result was made",
+        "prediction": "A player with jersey number 34 and jersey_color green made a 2PT Shot which result was made."
+    },
+    {
+        "image": "data2025/phx-vs-mil-0022401101_28.mp4",
+        "ground_truth": "A player with jersey number 11 and jersey_color green made a 3PT Shot which result was made and was assisted by other player with jersey number 18",
+        "prediction": "A player with jersey number 11 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 32 and jersey_color green made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/por-vs-atl-0022401097_9.mp4",
+        "ground_truth": "A player with jersey number 17 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 17 and jersey_color black made a Rebound",
+        "prediction": "A player with jersey number 10 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 17.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/por-vs-atl-0022401097_11.mp4",
+        "ground_truth": "A player with jersey number 17 and jersey_color black made a 3PT Shot which result was miss\nA player with jersey number 5 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 33 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 17 and jersey_color white made a Block.\nA player with jersey number 11 and jersey_color white made a Rebound.\nA player with jersey number 33 and jersey_color black made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/por-vs-atl-0022401097_16.mp4",
+        "ground_truth": "A player with jersey number 8 and jersey_color black made a Free Throw which result was made",
+        "prediction": "A player with jersey number 23 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 6."
+    },
+    {
+        "image": "data2025/sac-vs-was-0022401105_16.mp4",
+        "ground_truth": "A player with jersey number 20 and jersey_color blue made a Turnover\nA player with jersey number 23 and jersey_color white made a Steal",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/sac-vs-was-0022401105_5.mp4",
+        "ground_truth": "A player with jersey number 9 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 11 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 9 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 10.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/sac-vs-was-0022401105_8.mp4",
+        "ground_truth": "A player with jersey number 11 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 20 and jersey_color blue made a Block\nA player with jersey number 5 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/sac-vs-was-0022401105_22.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color blue made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 23 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 11.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/tor-vs-chi-0022401099_5.mp4",
+        "ground_truth": "A player with jersey number 9 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 77 and jersey_color black made a Rebound",
+        "prediction": "A player with jersey number 11 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 0.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/tor-vs-chi-0022401099_16.mp4",
+        "ground_truth": "A player with jersey number 19 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 0 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 7.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/tor-vs-chi-0022401099_28.mp4",
+        "ground_truth": "A player with jersey number 4 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 19 and jersey_color black made a Rebound\nA player with jersey number 19 and jersey_color black made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 11 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 32."
+    },
+    {
+        "image": "data2025/tor-vs-chi-0022401099_2.mp4",
+        "ground_truth": "A player with jersey number 9 and jersey_color white made a 3PT Shot which result was made and was assisted by other player with jersey number 0",
+        "prediction": "A player with jersey number 23 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 9.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/atl-vs-dal-0022401109_23.mp4",
+        "ground_truth": "A player with jersey number 11 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 31 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 31 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 17.\nA player with jersey number 11 and jersey_color white made a Rebound.\nA player with jersey number 17 and jersey_color white made a Rebound.\nA player with jersey number 18 and jersey_color white made a Rebound.\nA player with jersey number 10 and jersey_color white made a Rebound.\nA player with jersey number 19 and jersey_color white made a Rebound.\nA player with jersey number 12 and jersey_color white made a Rebound.\nA player with jersey number 13 and jersey_color white made a Rebound.\nA player with jersey number 15 and jersey_color black made a Rebound.\nA player with jersey number 16 and jersey_color white made a Rebound.\nA player with jersey number 14 and jersey_color white made a Rebound.\nA player with jersey number 11 and jersey_color white made a Rebound.\nA player with jersey number 17 and jersey_color white made a Rebound.\nA player with jersey number 18 and jersey_color white made a Rebound.\nA player with jersey number 19 and jersey_color white made a Rebound.\nA player with jersey number 12 and jersey_color white made a Rebound.\nA player with jersey number 13 and jersey_color white made a Rebound.\nA player with jersey number 14 and jersey_color white made a Rebound.\nA player with jersey number 15 and jersey_color black made a Rebound.\nA player with jersey number 16 and jersey_color white made a Rebound.\nA player with jersey number 17 and jersey_color white made a Rebound.\nA player with jersey number 18 and jersey_color white made a Rebound.\nA player with jersey number 19"
+    },
+    {
+        "image": "data2025/atl-vs-dal-0022401109_27.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 31 and jersey_color blue made a Block\nA player with jersey number 2 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/atl-vs-dal-0022401109_5.mp4",
+        "ground_truth": "A player with jersey number 11 and jersey_color white made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 18 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 5.\nA player with jersey number 17 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 18.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/atl-vs-orl-0022401149_16.mp4",
+        "ground_truth": "A player with jersey number 18 and jersey_color white made a Free Throw which result was miss\nA player with jersey number 21 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 18 and jersey_color orange made a 2PT Shot which result was made and was assisted by other player with jersey number 34."
+    },
+    {
+        "image": "data2025/atl-vs-orl-0022401149_29.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color white made a Turnover\nA player with jersey number 10 and jersey_color blue made a Steal",
+        "prediction": "A player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/atl-vs-orl-0022401149_23.mp4",
+        "ground_truth": "A player with jersey number 17 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 17 and jersey_color white made a Rebound\nA player with jersey number 17 and jersey_color white made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 18 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 22.\nA player with jersey number 22 and jersey_color blue made a 2PT Shot which result was made and was assisted by other player with jersey number 18.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/atl-vs-orl-0022401149_7.mp4",
+        "ground_truth": "A player with jersey number 11 and jersey_color white made a Foul",
+        "prediction": "A player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/cha-vs-ind-0022401104_29.mp4",
+        "ground_truth": "A player with jersey number 33 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 5 and jersey_color purple made a Rebound",
+        "prediction": "A player with jersey number 0 and jersey_color purple made a 2PT Shot which result was made and was assisted by other player with jersey number 33.\nA player with jersey number 33 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 0.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/cha-vs-ind-0022401104_9.mp4",
+        "ground_truth": "A player with jersey number 43 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 43 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color purple made a Steal.\nA player with jersey number 32 and jersey_color white made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/cha-vs-ind-0022401104_5.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color purple made a Turnover\nA player with jersey number 2 and jersey_color white made a Steal\nA player with jersey number 33 and jersey_color white made a 3PT Shot which result was made and was assisted by other player with jersey number 0",
+        "prediction": "A player with jersey number 23 and jersey_color purple made a 2PT Shot which result was made and was assisted by other player with jersey number 0.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/cha-vs-ind-0022401104_1.mp4",
+        "ground_truth": "A player with jersey number 25 and jersey_color purple made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 23 and jersey_color purple made a 2PT Shot which result was made and was assisted by other player with jersey number 11.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/den-vs-gsw-0022401125_13.mp4",
+        "ground_truth": "A player with jersey number 15 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 1 and jersey_color white made a Rebound\nA player with jersey number 1 and jersey_color white made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 23 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 11."
+    },
+    {
+        "image": "data2025/den-vs-gsw-0022401125_24.mp4",
+        "ground_truth": "A player with jersey number 15 and jersey_color white made a Foul\nA player with jersey number 15 and jersey_color white made a Turnover",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/den-vs-gsw-0022401125_5.mp4",
+        "ground_truth": "A player with jersey number 1 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 0 and jersey_color white made a Rebound\nA player with jersey number 0 and jersey_color white made a 2PT Shot which result was made\nA player with jersey number 30 and jersey_color blue made a Foul",
+        "prediction": "A player with jersey number 23 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 11.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/den-vs-gsw-0022401125_19.mp4",
+        "ground_truth": "A player with jersey number 15 and jersey_color white made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 15 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 0."
+    },
+    {
+        "image": "data2025/gsw-vs-lal-0022401117_25.mp4",
+        "ground_truth": "A player with jersey number 2 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 77 and jersey_color yellow made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color yellow made a 2PT Shot which result was made and was assisted by other player with jersey number 11.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/gsw-vs-lal-0022401117_28.mp4",
+        "ground_truth": "A player with jersey number 77 and jersey_color yellow made a 3PT Shot which result was miss\nA player with jersey number 28 and jersey_color yellow made a Rebound\nA player with jersey number 28 and jersey_color yellow made a 3PT Shot which result was made",
+        "prediction": "A player with jersey number 23 and jersey_color yellow made a 2PT Shot which result was made and was assisted by other player with jersey number 10.\nA player with jersey number 10 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 23.\nA player with jersey number 28 and jersey_color yellow made a Rebound.\nA player with jersey number 11 and jersey_color white made a Foul involving other player with jersey number 23."
+    },
+    {
+        "image": "data2025/gsw-vs-lal-0022401117_19.mp4",
+        "ground_truth": "A player with jersey number 77 and jersey_color yellow made a 3PT Shot which result was miss\nA player with jersey number 11 and jersey_color yellow made a Rebound\nA player with jersey number 28 and jersey_color yellow made a 2PT Shot which result was miss\nA player with jersey number 28 and jersey_color yellow made a Rebound\nA player with jersey number 28 and jersey_color yellow made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 23 and jersey_color yellow made a 2PT Shot which result was made and was assisted by other player with jersey number 11.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/gsw-vs-phx-0022401154_5.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color purple made a 3PT Shot which result was miss\nA player with jersey number 23 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 30.\nA player with jersey number 11 and jersey_color purple made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/gsw-vs-phx-0022401154_19.mp4",
+        "ground_truth": "A player with jersey number 4 and jersey_color white made a Turnover\nA player with jersey number 0 and jersey_color purple made a Steal",
+        "prediction": "A player with jersey number 23 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 30.\nA player with jersey number 11 and jersey_color purple made a Foul involving other player with jersey number 23.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 23."
+    },
+    {
+        "image": "data2025/gsw-vs-phx-0022401154_26.mp4",
+        "ground_truth": "A player with jersey number 4 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 2 and jersey_color purple made a Block\nA player with jersey number 2 and jersey_color purple made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/gsw-vs-phx-0022401154_8.mp4",
+        "ground_truth": "A player with jersey number 10 and jersey_color white made a Free Throw which result was made",
+        "prediction": "A player with jersey number 10 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 11."
+    },
+    {
+        "image": "data2025/mem-vs-det-0022401129_16.mp4",
+        "ground_truth": "A player with jersey number 1 and jersey_color red made a Turnover\nA player with jersey number 9 and jersey_color black made a Steal",
+        "prediction": "A player with jersey number 23 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/mem-vs-det-0022401129_25.mp4",
+        "ground_truth": "A player with jersey number 13 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 28 and jersey_color black made a Block\nA player with jersey number 13 and jersey_color red made a Rebound\nA player with jersey number 28 and jersey_color black made a Foul",
+        "prediction": "A player with jersey number 23 and jersey_color red made a 2PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color black made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/mem-vs-det-0022401129_4.mp4",
+        "ground_truth": "A player with jersey number 13 and jersey_color red made a Free Throw which result was made",
+        "prediction": "A player with jersey number 13 and jersey_color red made a 2PT Shot which result was made and was assisted by other player with jersey number 22."
+    },
+    {
+        "image": "data2025/mem-vs-mia-0022401114_8.mp4",
+        "ground_truth": "A player with jersey number 12 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 7 and jersey_color black made a Rebound",
+        "prediction": "A player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 0.\nA player with jersey number 22 and jersey_color black made a Foul involving other player with jersey number 18."
+    },
+    {
+        "image": "data2025/mem-vs-mia-0022401114_26.mp4",
+        "ground_truth": "A player with jersey number 13 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 14 and jersey_color white made a Rebound\nA player with jersey number 14 and jersey_color white made a Turnover\nA player with jersey number 13 and jersey_color black made a Steal",
+        "prediction": "A player with jersey number 22 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 0.\nA player with jersey number 9 and jersey_color black made a Foul involving other player with jersey number 18."
+    },
+    {
+        "image": "data2025/mem-vs-mia-0022401114_9.mp4",
+        "ground_truth": "A player with jersey number 13 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 18",
+        "prediction": "A player with jersey number 13 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 14."
+    },
+    {
+        "image": "data2025/mia-vs-bos-0022401106_6.mp4",
+        "ground_truth": "A player with jersey number 13 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 0 and jersey_color black made a Rebound",
+        "prediction": "A player with jersey number 11 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 13.\nA player with jersey number 13 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 11.\nA player with jersey number 11 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 13.\nA player with jersey number 13 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 11.\nA player with jersey number 11 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 13.\nA player with jersey number 13 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 11.\nA player with jersey number 11 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 13.\nA player with jersey number 13 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 11.\nA player with jersey number 11 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 13.\nA player with jersey number 13 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 11.\nA player with jersey number 11 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 13.\nA player with jersey number 13 and jersey_color white made a "
+    },
+    {
+        "image": "data2025/mia-vs-bos-0022401106_8.mp4",
+        "ground_truth": "A player with jersey number 14 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 13",
+        "prediction": "A player with jersey number 14 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 7.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/mia-vs-bos-0022401106_24.mp4",
+        "ground_truth": "A player with jersey number 0 and jersey_color black made a 3PT Shot which result was made and was assisted by other player with jersey number 7",
+        "prediction": "A player with jersey number 13 and jersey_color green made a 2PT Shot which result was made and was assisted by other player with jersey number 30."
+    },
+    {
+        "image": "data2025/mia-vs-bos-0022401106_13.mp4",
+        "ground_truth": "A player with jersey number 9 and jersey_color white made a Free Throw which result was made",
+        "prediction": "A player with jersey number 9 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 77."
+    },
+    {
+        "image": "data2025/mil-vs-phi-0022401115_10.mp4",
+        "ground_truth": "A player with jersey number 13 and jersey_color blue made a Turnover\nA player with jersey number 12 and jersey_color white made a Steal\nA player with jersey number 12 and jersey_color white made a 3PT Shot which result was made",
+        "prediction": "A player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 12 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 8.\nA player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by"
+    },
+    {
+        "image": "data2025/mil-vs-phi-0022401115_7.mp4",
+        "ground_truth": "A player with jersey number 30 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 12",
+        "prediction": "A player with jersey number 28 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 34.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/min-vs-bkn-0022401113_21.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 33 and jersey_color gray made a Rebound",
+        "prediction": "A player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 6."
+    },
+    {
+        "image": "data2025/min-vs-bkn-0022401113_25.mp4",
+        "ground_truth": "A player with jersey number 30 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 27 and jersey_color gray made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/min-vs-bkn-0022401113_29.mp4",
+        "ground_truth": "A player with jersey number 30 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 27 and jersey_color white made a Rebound\nA player with jersey number 27 and jersey_color white made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 23 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 6."
+    },
+    {
+        "image": "data2025/min-vs-bkn-0022401113_12.mp4",
+        "ground_truth": "A player with jersey number 27 and jersey_color gray made a Foul",
+        "prediction": "A player with jersey number 11 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 6."
+    },
+    {
+        "image": "data2025/nop-vs-lac-0022401111_22.mp4",
+        "ground_truth": "A player with jersey number 1 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 21 and jersey_color red made a Rebound",
+        "prediction": "A player with jersey number 11 and jersey_color red made a 2PT Shot which result was made and was assisted by other player with jersey number 8."
+    },
+    {
+        "image": "data2025/nop-vs-lac-0022401111_12.mp4",
+        "ground_truth": "A player with jersey number 21 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 8 and jersey_color blue made a Rebound\nA player with jersey number 8 and jersey_color blue made a Turnover\nA player with jersey number 13 and jersey_color red made a Steal\nA player with jersey number 13 and jersey_color red made a 2PT Shot which result was miss",
+        "prediction": "A player with jersey number 8 and jersey_color red made a 2PT Shot which result was made and was assisted by other player with jersey number 40."
+    },
+    {
+        "image": "data2025/nop-vs-lac-0022401111_24.mp4",
+        "ground_truth": "A player with jersey number 8 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 2",
+        "prediction": "A player with jersey number 8 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 11."
+    },
+    {
+        "image": "data2025/por-vs-tor-0022401116_3.mp4",
+        "ground_truth": "A player with jersey number 4 and jersey_color purple made a 2PT Shot which result was miss\nA player with jersey number 8 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 9 and jersey_color purple made a 2PT Shot which result was made and was assisted by other player with jersey number 3.\nA player with jersey number 23 and jersey_color white made a Foul involving other player with jersey number 9."
+    },
+    {
+        "image": "data2025/por-vs-tor-0022401116_5.mp4",
+        "ground_truth": "A player with jersey number 5 and jersey_color white made a 3PT Shot which result was miss\nA player with jersey number 23 and jersey_color white made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color purple made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/por-vs-tor-0022401116_25.mp4",
+        "ground_truth": "A player with jersey number 8 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 23 and jersey_color white made a Rebound\nA player with jersey number 23 and jersey_color white made a 2PT Shot which result was miss\nA player with jersey number 23 and jersey_color white made a Rebound\nA player with jersey number 14 and jersey_color purple made a Foul",
+        "prediction": "A player with jersey number 23 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 6."
+    },
+    {
+        "image": "data2025/por-vs-tor-0022401116_18.mp4",
+        "ground_truth": "A player with jersey number 4 and jersey_color purple made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 11 and jersey_color white made a 2PT Shot which result was made and was assisted by other player with jersey number 32."
+    },
+    {
+        "image": "data2025/sac-vs-cha-0022401118_19.mp4",
+        "ground_truth": "A player with jersey number 10 and jersey_color black made a 3PT Shot which result was miss\nA player with jersey number 11 and jersey_color blue made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/sac-vs-cha-0022401118_25.mp4",
+        "ground_truth": "A player with jersey number 30 and jersey_color blue made a 3PT Shot which result was miss\nA player with jersey number 8 and jersey_color black made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 3PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/sac-vs-cha-0022401118_3.mp4",
+        "ground_truth": "A player with jersey number 8 and jersey_color black made a 3PT Shot which result was miss\nA player with jersey number 30 and jersey_color blue made a Rebound\nA player with jersey number 30 and jersey_color blue made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 23 and jersey_color blue made a 2PT Shot which result was made and was assisted by other player with jersey number 6."
+    },
+    {
+        "image": "data2025/sac-vs-cha-0022401118_30.mp4",
+        "ground_truth": "A player with jersey number 11 and jersey_color blue made a Free Throw which result was made",
+        "prediction": "A player with jersey number 13 and jersey_color purple made a 2PT Shot which result was made and was assisted by other player with jersey number 11."
+    },
+    {
+        "image": "data2025/uta-vs-hou-0022401107_4.mp4",
+        "ground_truth": "A player with jersey number 28 and jersey_color red made a 2PT Shot which result was miss\nA player with jersey number 22 and jersey_color black made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color red made a 2PT Shot which result was made and was assisted by other player with jersey number 9.\nA player with jersey number 11 and jersey_color black made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/uta-vs-hou-0022401107_2.mp4",
+        "ground_truth": "A player with jersey number 24 and jersey_color black made a 3PT Shot which result was miss\nA player with jersey number 28 and jersey_color red made a Rebound",
+        "prediction": "A player with jersey number 23 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 6.\nA player with jersey number 11 and jersey_color white made a Steal.\nA player with jersey number 32 and jersey_color red made a Foul involving other player with jersey number 15."
+    },
+    {
+        "image": "data2025/uta-vs-hou-0022401107_11.mp4",
+        "ground_truth": "A player with jersey number 22 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 24 and jersey_color black made a Rebound\nA player with jersey number 24 and jersey_color black made a 2PT Shot which result was miss\nA player with jersey number 17 and jersey_color red made a Rebound",
+        "prediction": "A player with jersey number 28 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 24.\nA player with jersey number 24 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 28.\nA player with jersey number 24 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 28.\nA player with jersey number 28 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 24.\nA player with jersey number 24 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 28.\nA player with jersey number 28 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 24.\nA player with jersey number 24 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 28.\nA player with jersey number 28 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 24.\nA player with jersey number 24 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 28.\nA player with jersey number 28 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 24.\nA player with jersey number 24 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 28.\nA player with jersey number 28 and jersey_color black made a "
+    },
+    {
+        "image": "data2025/uta-vs-hou-0022401107_17.mp4",
+        "ground_truth": "A player with jersey number 2 and jersey_color black made a 2PT Shot which result was made",
+        "prediction": "A player with jersey number 24 and jersey_color black made a 2PT Shot which result was made and was assisted by other player with jersey number 28.\nA player with jersey number 17 and jersey_color red made a Foul involving other player with jersey number 24."
+    }
+]
