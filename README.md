@@ -47,49 +47,51 @@ Finally, we benchmark BARD using the Gemini model, demonstrating its effectivene
 ``` 
 
 
+##### 💻 Download dataset
+If you are just interested in annotations run src/download_video.py and you will find in data the video labelled in dataset/dataset.csv
 
-##### 💻 File Execution Order
+##### 💻 File Execution Order for repoducing multi-label
 
-1. get_players.py
+1. src/get_players.py
    Retrieve player names and info for the current season.
 
-2. get_pbp_address.py
+2. src/get_pbp_address.py
    Fetch URLs of game play-by-play data that you want to analyze.
 
-3. get_data.py
+3. src/get_data.py
    Download and save detailed game data from the URLs obtained.
 
-4. get_data_failed.py
+4. src/get_data_failed.py
    Use the script if any file was not correctly downloaded
 
-5. Update referee.csv
+5. data/Update referee.csv
    Manually update data/referee.csv with the latest referee information from one of these sources:
    - https://www.basketball-reference.com/referees/2025_register.html
    - https://www.nbastuffer.com/2024-2025-nba-referee-stats/
 
-6. substitue_player_number.py
+6. src/substitue_player_number.py
    Replace player numbers in the datasets.
 
-7. make_coarse.py
+7. src/make_coarse.py
    Generate coarse label
 
-8. make_multilabel.py
+8. src/make_multilabel.py
    Create multilabel annotations from the coarse data.
 
-9. make_json_and_csv.py
+9. src/make_json_and_csv.py
    Convert the processed data into JSON and CSV formats for easy usage.
 
-10. make_stats.py
+10. src/make_stats.py
    Compute detailed player and team statistics based on the prepared datasets.
 
-11. run_gemini.py
+11. src/run_gemini.py
     Run the final analysis or machine learning model (e.g., Gemini) to interpret or predict basketball stats.
 
 ## Validation
 The validation folder contains the following:
 - 2024 and 2025 subfolders: Each contains video data for the respective year in the multi folder, annotations in benchmark.csv and Gemini predictions in pred_gemini.json.
 - output subfolder: Contains pred_gemini.json (renamed) and possibly other files if you want to evaluate your own models.
-- metrics subfolder: Contains run_all.sh (set your python_path.txt) to reproduce the results from our paper.
+- metrics subfolder: Contains run_all.sh (set your python_path.txt) to reproduce the results from our paper or if you want to check your model's output.
 
 ## License
 This project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
