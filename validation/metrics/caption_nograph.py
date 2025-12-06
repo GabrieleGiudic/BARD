@@ -26,6 +26,110 @@ def get_action_class(action: str) -> str:
 
 def parse_events(text_str: str) -> list:
     """
+    Parses natural language string into event dicts.
+    FIXES:
+    1. Handles multi-word colors (e.g., 'light blue', 'dark green').
+    2. Uses finditer to capture ALL events in the text, not just the first one.
+    3. Handles missing results (e.g., Rebounds) gracefully.
+    """
+    if not isinstance(text_str, str) or not text_str.strip():
+        return []
+
+    events = []
+    
+    # Sort actions by length (descending) to ensure "3pt shot" is matched before "shot" if overlapping
+    sorted_actions = sorted(list(KNOWN_ACTIONS), key=len, reverse=True)
+    
+    # Regex Breakdown:
+    # 1. jersey_color (.+?)  -> Matches "light blue", "dark green", "red" (stops at " made a")
+    # 2. re.IGNORECASE       -> Handles "Free Throw" vs "free throw"
+    pattern = re.compile(
+        r"A player with jersey number (\S+?) and jersey_color (.+?) "
+        r"made a (" + "|".join(re.escape(a) for a in sorted_actions) + ")"
+        r"(?: which result was (made|miss))?"
+        r"(?: and was assisted by other player with jersey number (\S+))?", 
+        re.IGNORECASE
+    )
+
+    # Use finditer to loop through ALL matches in the text block
+    for match in pattern.finditer(text_str):
+        player, jersey_color, action, result_str, other_player_str = match.groups()
+        
+        # Normalize Result
+        result = None
+        if result_str:
+            if result_str.lower() == 'made':
+                result = True
+            elif result_str.lower() == 'miss':
+                result = False
+        
+        # Normalize Assisted
+        assisted = bool(other_player_str)
+        other_player = other_player_str.strip('.') if other_player_str else None
+        
+        event = {
+            "player": player.strip('.'),
+            "action": action.lower(),
+            "result": result,
+            "assisted": assisted,
+            "other_player": other_player,
+            "jersey_color": jersey_color.strip().lower() # Strip removes surrounding spaces
+        }
+        events.append(event)
+        
+    return events
+    
+    """
+    Parses a natural language string containing one or more event descriptions
+    into a list of event dictionaries using regular expressions.
+    """
+    if not isinstance(text_str, str) or not text_str.strip():
+        return []
+
+    events = []
+    # Pattern remains the same
+    pattern = re.compile(
+        r"A player with jersey number (\S+?) and jersey_color (\w+?) "
+        r"made a (" + "|".join(KNOWN_ACTIONS) + ")"
+        r"(?: which result was (made|miss))?"
+        r"(?: and was assisted by other player with jersey number (\S+))?", re.IGNORECASE
+    )
+    
+    # FIX: Use finditer on the whole string, treating it as one block 
+    # (or you can keep the line split if you prefer, but finditer is safer).
+    
+    # We replace newlines with spaces just in case a sentence wraps weirdly, 
+    # though your current regex likely assumes single-line matches.
+    # Ideally, just iterate over the matches:
+    
+    for match in pattern.finditer(text_str):
+        player, jersey_color, action, result_str, other_player_str = match.groups()
+        
+        result = None
+        if result_str and result_str.lower() == 'made':
+            result = True
+        elif result_str and result_str.lower() == 'miss':
+            result = False
+        
+        assisted = bool(other_player_str)
+        other_player = other_player_str.strip('.') if other_player_str else None
+        
+        event = {
+            "player": player.strip('.'),
+            "action": action.lower(),
+            "result": result,
+            "assisted": assisted,
+            "other_player": other_player,
+            "jersey_color": jersey_color.lower()
+        }
+        events.append(event)
+    
+    if len(events)==0:
+        print(text_str)
+        
+    return events
+def parse_events_(text_str: str) -> list:
+    """
     Parses a natural language string containing one or more event descriptions
     into a list of event dictionaries using regular expressions.
     """
@@ -541,15 +645,12 @@ def main():
     # --- Section 5: Sequence-Level Metrics (DTW-aligned) ---
     print("\n## 5. Sequence-Level Metrics (DTW-aligned)")
     print("-" * 75)
-    import editdistance
-        
-    from dtw import dtw
+
     try:
-        import editdistance
-        
         from dtw import dtw
+        import editdistance
     except ImportError:
-        print(" Missing dependencies: please install via `pip install dtw-python editdistance`.")
+        print("⚠️ Missing dependencies: please install via `pip install dtw-python editdistance`.")
         return
 
     # Collect all action sequences
@@ -612,7 +713,7 @@ def main():
     print(f"{'Average Sequence Similarity (1 - normalized edit dist):':<40} {seq_avg_sim:.4f}")
 
     print("-" * 75)
-    print(f" On average, predicted action sequences are {seq_avg_sim*100:.1f}% similar to ground truth.")
+    print(f"ℹ️ On average, predicted action sequences are {seq_avg_sim*100:.1f}% similar to ground truth.")
 
 if __name__ == "__main__":
     main()
