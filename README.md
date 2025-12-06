@@ -7,7 +7,7 @@ BARD improves upon existing datasets by including player jersey numbers, team co
 Moreover, in addition to standard caption-based action recognition metrics, we introduce Basketball Caption Evaluation Framework (BaCEF), a new application-oriented evaluation framework. Finally, to demonstrate the quality and challenging nature of the dataset, as well as the utility of our evaluation framework and its potential applications, we evaluate both proprietary models (e.g., Gemini 2.5 Pro) and open-source models (Qwen2.5-VL-7B-Instruct, Qwen2.5-VL-3B-Instruct),
 including BQwen2.5-VL-3B, a BARD fine-tuned variant of Qwen2.5-VL-3B-Instruct, across our defined benchmarks.
 
-### 📘 Summary
+## 📘 Summary
 
 | Property           | Value                     | Description                                 |
 |--------------------|---------------------------|---------------------------------------------|
@@ -42,10 +42,10 @@ including BQwen2.5-VL-3B, a BARD fine-tuned variant of Qwen2.5-VL-3B-Instruct, a
 ``` 
 
 
-##### 💻 Download dataset
+## ⚡ Download dataset
 If you are just interested in annotations run src/download_video.py and you will find in data the video labelled in dataset/dataset.csv
 
-##### 💻 File Execution Order for repoducing multi-label
+## 📖 File Execution Order for repoducing multi-label
 
 1. src/get_players.py
    Retrieve player names and info for the current season.
@@ -82,11 +82,11 @@ If you are just interested in annotations run src/download_video.py and you will
 11. src/run_gemini.py
     Run the final analysis or machine learning model (e.g., Gemini) to interpret or predict basketball stats.
 
-## Validation
+## 👩‍🔬 Validation
 The validation folder contains the following:
 - 2024 and 2025 subfolders: Each contains video data for the respective year in the multi folder, annotations in benchmark.csv and Gemini predictions in pred_gemini.json.
 - output subfolder: Contains pred_gemini.json (renamed) and possibly other files if you want to evaluate your own models.
 - metrics subfolder: Contains run_all.sh (set your python_path.txt) to reproduce the results from our paper or if you want to check your model's output.
 
-## License
+## 🧑‍⚖️ License
 This project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
