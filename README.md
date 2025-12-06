@@ -45,7 +45,7 @@ including BQwen2.5-VL-3B, a BARD fine-tuned variant of Qwen2.5-VL-3B-Instruct, a
 ## ⚡ Download dataset
 If you are just interested in annotations run src/download_video.py and you will find in data the video labelled in dataset/dataset.csv
 
-## 📖 File Execution Order for repoducing multi-label
+## 📖 File Execution Order for reproducing multi-label
 
 1. src/get_players.py
    Retrieve player names and info for the current season.
