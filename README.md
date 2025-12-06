@@ -2,13 +2,10 @@
 
 ## 📄 Abstract
 
-We present the BARD dataset. It is designed to advance Basketball Action Recognition task 
-through high quality annotations and enriched contextual data.
-BARD improves upon existing datasets by including player jersey numbers, team colors and 
-a novel output format supporting multi-label classification. 
-To ensure annotation quality, we conducted a human validation study on a subsample of the annotations, 
-with expert reviewers assessing the labeling quality and reporting the evaluation results. 
-Finally, we benchmark BARD using the Gemini model, demonstrating its effectiveness for structured, multi-label action recognition tasks.
+We present the BARD dataset (Basketball Action Recognition Dataset). It is designed to advance video action recognition in basketball through high-quality annotations and enriched contextual data.
+BARD improves upon existing datasets by including player jersey numbers, team colors and a novel output format supporting multi-label classification. To ensure annotation quality, we conducted a human validation study on a subsample of the annotations, with expert reviewers assessing the labeling quality and reporting the evaluation results, thereby providing human validated independent benchmarks. 
+Moreover, in addition to standard caption-based action recognition metrics, we introduce Basketball Caption Evaluation Framework (BaCEF), a new application-oriented evaluation framework. Finally, to demonstrate the quality and challenging nature of the dataset, as well as the utility of our evaluation framework and its potential applications, we evaluate both proprietary models (e.g., Gemini 2.5 Pro) and open-source models (Qwen2.5-VL-7B-Instruct, Qwen2.5-VL-3B-Instruct),
+including BQwen2.5-VL-3B, a BARD fine-tuned variant of Qwen2.5-VL-3B-Instruct, across our defined benchmarks.
 
 ### 📘 Summary
 
@@ -25,9 +22,7 @@ Finally, we benchmark BARD using the Gemini model, demonstrating its effectivene
 | New fields         | Player numbers, team colors | Anonymous identification metadata         |
 
 
-![Screenshot 1](figures/histogram.png)
-
-![Screenshot 2](figures/action_bar_chart_unique_colors.png)
+![Screenshot 1](figures/beautiful_graphs_combined.png)
 
 #### Example Clip & Label
 
