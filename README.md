@@ -88,5 +88,8 @@ The validation folder contains the following:
 - output subfolder: Contains pred_gemini.json (renamed) and possibly other files if you want to evaluate your own models.
 - metrics subfolder: Contains run_all.sh (set your python_path.txt) to reproduce the results from our paper or if you want to check your model's output.
 
+## 🇮🇹🤝🇨🇳 How to get BQwen2.5-VL-3B
+Our BARD SFT version of Qwen2.5-VL-3B-Instruct is avialable here: https://huggingface.co/GabrieleGiudici/BQwen2.5-VL-3B
+
 ## 🧑‍⚖️ License
 This project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
