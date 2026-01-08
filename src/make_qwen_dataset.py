@@ -58,7 +58,7 @@ def create_caption_dataset(df, prompt_text):
                        f"made a {action_type}")
 
             # Append shot-specific details
-            if 'Shot' in action_type:
+            if 'Shot' in action_type or 'Free' in action_type :
                 if result is True:
                     caption += " which result was made"
                     if assisted is True and other_player is not None:
