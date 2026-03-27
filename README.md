@@ -1,6 +1,9 @@
 # 🏀👁️ BARD: A Basketball Action Recognition Dataset for multi-label classification 👁️🏀
 
-## 📄 Abstract
+📄 **Paper**: [Link to the paper](https://www.sciencedirect.com/science/article/pii/S1077314226000809)
+📑 **Journal**: *Computer Vision and Image Understanding (2026)*
+
+## 🔍 Abstract
 
 We present the BARD dataset (Basketball Action Recognition Dataset). It is designed to advance video action recognition in basketball through high-quality annotations and enriched contextual data.
 BARD improves upon existing datasets by including player jersey numbers, team colors and a novel output format supporting multi-label classification. To ensure annotation quality, we conducted a human validation study on a subsample of the annotations, with expert reviewers assessing the labeling quality and reporting the evaluation results, thereby providing human validated independent benchmarks. 
