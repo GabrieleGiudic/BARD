@@ -94,3 +94,16 @@ If you want to reproduce BQwen2.5-VL-3B it is possible to use data from dataset/
 
 ## 🧑‍⚖️ License
 This project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+## 📚 Citation
+
+If you use BARD in your research, please cite:
+```bibtex
+@article{giudici2026bard,
+  title={BARD: A Basketball Action Recognition Dataset for multi-label classification},
+  author={Giudici, Gabriele and Maurino, Andrea and Zuccolotto, Paola},
+  journal={Computer Vision and Image Understanding},
+  pages={104713},
+  year={2026},
+  publisher={Elsevier}
+}
