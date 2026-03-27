@@ -1,0 +1,1 @@
+This folder contains results using the updated Bqwen model under branch E-BARD at https://huggingface.co/GabrieleGiudici/BQwen2.5-VL-3B caused by commit fix 64245a6fdf6292851fa51b53f96e808f0cde12cf titled "Fix caption dataset missing Free Throw result"
