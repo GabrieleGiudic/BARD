@@ -1,12 +1,9 @@
-
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import urllib
-import urllib.request
-import urllib.parse
+import requests
 import numpy as np
 import os
 
@@ -28,7 +25,6 @@ def extract_url_information(url):
     wait = WebDriverWait(driver, random_seconds)
     wait.until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
 
-    
     wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'GamePlayByPlayRow_row__2iX_w')))
     play_rows = driver.find_elements(By.CLASS_NAME, "GamePlayByPlayRow_row__2iX_w")
     
@@ -75,26 +71,26 @@ def extract_mp4_urls(url):
         url (str): The URL of the webpage to extract information from.
 
     Returns:
-        list: A list of MP4 URLs.
+        tuple: A list of MP4 URLs, cookies, and user agent.
     """
-
     driver = webdriver.Chrome()  # Replace with your preferred WebDriver
     driver.get(url)
 
     # Wait for the page to load
-    
     wait = WebDriverWait(driver, 10)
-    
     wait.until(EC.presence_of_element_located((By.TAG_NAME, 'video')))
     
     visible_mp4_urls = [a.get_attribute('src') for a in driver.find_elements(By.TAG_NAME, 'video') if a.is_displayed() and a.get_attribute('src').endswith('.mp4')]
-   
+
     # Combine visible and hidden MP4 URLs
     all_mp4_urls = visible_mp4_urls
 
-    driver.quit()
-    return all_mp4_urls
+    cookies = driver.get_cookies()
+    user_agent = driver.execute_script("return navigator.userAgent;")
 
+    driver.quit()
+    return all_mp4_urls, cookies, user_agent
+    
 # Path to your CSV
 csv_path = '../dataset/dataset.csv'
 
@@ -112,12 +108,33 @@ for counter, url in enumerate(df['urls'], start=1):
         filename = os.path.join(output_dir, f"{counter}.mp4")
         print(f"Downloading {url} -> {filename}")
         specific_url = url
-        mp4_urls = extract_mp4_urls(specific_url)
         
-        mp4_urls = mp4_urls[0]
+        mp4_urls, cookies, user_agent = extract_mp4_urls(specific_url)
         
-        urllib.request.urlretrieve(mp4_urls, filename)
+        if not mp4_urls:
+            print(f"No video found for {url}")
+            continue
+            
+        target_mp4 = mp4_urls[0]
+        
+        session = requests.Session()
+        for cookie in cookies:
+            session.cookies.set(cookie['name'], cookie['value'])
+            
+        headers = {
+            "User-Agent": user_agent,
+            "Referer": "https://www.nba.com/",
+            "Accept": "*/*"
+        }
+        
+        response = session.get(target_mp4, headers=headers, stream=True)
+        if response.status_code == 200:
+            with open(filename, 'wb') as f:
+                for chunk in response.iter_content(chunk_size=8192):
+                    f.write(chunk)
+            print(f"Success: {filename}")
+        else:
+            print(f"Failed to download {url}: Server returned status {response.status_code}")
         
     except Exception as e:
         print(f"Failed to download {url}: {e}")
-    
