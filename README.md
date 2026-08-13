@@ -46,10 +46,26 @@ including BQwen2.5-VL-3B, a BARD fine-tuned variant of Qwen2.5-VL-3B-Instruct, a
 
 
 ## ⚡ Download dataset
-If you are just interested in annotations run src/download_video.py and you will find in data the video labelled in dataset/dataset.csv
 
-Note: the NBA website changes over time, so the scraper may need to be updated occasionally. If this happens, please feel free to contact me or open an issue.
-I will fix it when needed. Thank you for your help.
+If you are only interested in the **videos and captions**, the most robust way is to download the dataset directly from Hugging Face:
+
+```bash
+git clone https://huggingface.co/datasets/GabrieleGiudici/BARD
+cd BARD
+git lfs install
+git lfs pull
+```
+
+Alternatively, you can download the videos directly from the NBA website by running:
+
+```bash
+python src/download_video.py
+```
+
+The videos will be downloaded to `data/` according to the paths specified in `dataset/dataset.csv`.
+
+**Note:** The NBA website changes over time, so the scraper may occasionally need to be updated. If you encounter any issues, please feel free to contact me or open an issue. I will fix it when needed. Thank you for your help.
+
 
 ## 📖 File Execution Order for reproducing multi-label
 
