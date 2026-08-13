@@ -47,7 +47,7 @@ including BQwen2.5-VL-3B, a BARD fine-tuned variant of Qwen2.5-VL-3B-Instruct, a
 
 ## ⚡ Download dataset
 
-If you are only interested in the **videos and captions**, the most robust way is to download the dataset directly from Hugging Face:
+If you are only interested in the **videos and captions**, the most robust way is to download the dataset directly from Hugging Face (https://huggingface.co/datasets/GabrieleGiudici/BARD):
 
 ```bash
 git clone https://huggingface.co/datasets/GabrieleGiudici/BARD
